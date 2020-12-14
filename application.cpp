@@ -26,7 +26,7 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 	// creating the window
 	graphics->createWindow();
 	// creating the objects from the game
-	listener->create();
+	listener->create(this);
 	
 	running = true;
 
@@ -37,6 +37,8 @@ void Application::gameLoop() {
 	while (running) {
 		graphics->handleEvents();
 		if (graphics->shouldStop()) running = false;
+
+		listener->render();
 	}
 	// cleaning the memory if we are no longer running the game loop
 	dispose();
@@ -52,5 +54,19 @@ void Application::dispose() {
 
 	delete listener;
 	delete config;
+	delete logger;
 	delete graphics;
 }
+
+Graphics* Application::getGraphics() {
+	return graphics;
+}
+
+void Application::log(const char* tag, const char* message) {
+	logger->log(tag, message);
+}
+
+void Application::error(const char* tag, const char* message) {
+	logger->error(tag, message);
+}
+

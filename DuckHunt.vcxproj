@@ -148,10 +148,12 @@
     <ClCompile Include="desktop_launcher.cpp" />
     <ClCompile Include="duckhunt.cpp" />
     <ClCompile Include="graphics.cpp" />
+    <ClCompile Include="listener.cpp" />
     <ClCompile Include="logger.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h" />
+    <ClInclude Include="application_interface.h" />
     <ClInclude Include="configuration.h" />
     <ClInclude Include="desktop_launcher.h" />
     <ClInclude Include="duckhunt.h" />
