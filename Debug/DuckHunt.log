@@ -1,0 +1,7 @@
+﻿  application.cpp
+  desktop_launcher.cpp
+  graphics.cpp
+C:\Users\vikto\source\repos\DuckHunt\graphics.cpp(25,16): warning C4244: '=': conversion from 'float' to 'unsigned long', possible loss of data
+C:\Users\vikto\source\repos\DuckHunt\graphics.cpp(43,9): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  DuckHunt.vcxproj -> C:\Users\vikto\source\repos\DuckHunt\Debug\DuckHunt.exe
