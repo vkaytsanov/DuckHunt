@@ -20,13 +20,8 @@ public:
 	Application(Listener* listener, Configuration* config);
 	Application(Listener* listener, Configuration* config, Graphics* graphics);
 	
-
-
 	// Inherited via ApplicationInterface
-	virtual Graphics* getGraphics() override;
-
 	virtual void log(const char* tag, const char* message) override;
-
 	virtual void error(const char* tag, const char* message) override;
 
 };

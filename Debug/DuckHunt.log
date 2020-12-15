@@ -1,2 +1,6 @@
-﻿  logger.cpp
+﻿  application.cpp
+  desktop_launcher.cpp
+  duckhunt.cpp
+  input.cpp
+  Generating Code...
   DuckHunt.vcxproj -> C:\Users\vikto\source\repos\DuckHunt\Debug\DuckHunt.exe

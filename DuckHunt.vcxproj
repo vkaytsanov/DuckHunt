@@ -148,6 +148,7 @@
     <ClCompile Include="desktop_launcher.cpp" />
     <ClCompile Include="duckhunt.cpp" />
     <ClCompile Include="graphics.cpp" />
+    <ClCompile Include="input.cpp" />
     <ClCompile Include="listener.cpp" />
     <ClCompile Include="logger.cpp" />
   </ItemGroup>
@@ -158,6 +159,7 @@
     <ClInclude Include="desktop_launcher.h" />
     <ClInclude Include="duckhunt.h" />
     <ClInclude Include="graphics.h" />
+    <ClInclude Include="input.h" />
     <ClInclude Include="listener.h" />
     <ClInclude Include="logger.h" />
   </ItemGroup>

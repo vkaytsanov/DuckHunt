@@ -9,10 +9,9 @@ private:
 	SDL_Surface* screenSurface;
 	float lastTime = 0;
 	float deltaTime = 0;
-	int fps = 0;
-	int frames = 0;
-	unsigned long frameStart = 0;
-	bool quit = false;
+	uint16_t fps = 0;
+	uint16_t frames = 0;
+	uint64_t frameStart = 0;
 public:
 	Graphics(Configuration* config);
 	void  updateTime();
@@ -21,7 +20,6 @@ public:
 	float getDeltaTime();
 	float getFps();
 	void  createWindow();
-	void  handleEvents();
+	void  update();
 	void  dispose();
-	bool  shouldStop();
 };

@@ -13,13 +13,13 @@ Graphics::Graphics(Configuration* config) {
 }
 
 void Graphics::updateTime() {
-	time_point now = std::chrono::system_clock::now();
-	auto duration = now.time_since_epoch();
-	float time = nanos(duration).count();
-	deltaTime = (time - lastTime) / 1000000000.0f;
+	// calculating the delta time
+	uint64_t time = SDL_GetTicks();
+	deltaTime = (time - lastTime) / 1000.0f;
 	lastTime = time;
 
-	if (time - frameStart >= 1000000000) {
+	// calculating fps
+	if (time - frameStart >= 1000.0) {
 		fps = frames;
 		frames = 0;
 		frameStart = time;
@@ -67,15 +67,10 @@ void Graphics::createWindow() {
 	}
 }
 
-void Graphics::handleEvents() {
-	SDL_Event e;
-	while (SDL_PollEvent(&e) != 0) {
-		//User requests quit
-		if (e.type == SDL_QUIT) {
-			quit = true;
-		}
-	}
+void Graphics::update() {
+	SDL_UpdateWindowSurface(window);
 }
+
 
 void Graphics::dispose() {
 	//Destroy surface
@@ -88,6 +83,3 @@ void Graphics::dispose() {
 	SDL_Quit();
 }
 
-bool Graphics::shouldStop() {
-	return quit;
-}

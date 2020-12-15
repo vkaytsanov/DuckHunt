@@ -21,6 +21,8 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 	this->graphics = graphics;
 	// Logging, debugging and errors utillity
 	this->logger = new Logger();
+	// Receive user input
+	this->input = new Input();
 	// if we dont have declared title, we will use the name of the class
 	if (config->title == nullptr) config->title = typeid(listener).name();
 	// creating the window
@@ -35,10 +37,13 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 
 void Application::gameLoop() {
 	while (running) {
-		graphics->handleEvents();
-		if (graphics->shouldStop()) running = false;
-
+		input->update();
+		if (input->shouldQuit()) running = false;
+		graphics->updateTime();
 		listener->render();
+		
+		/* So we don't use 100% CPU */
+		SDL_Delay(1);
 	}
 	// cleaning the memory if we are no longer running the game loop
 	dispose();
@@ -58,9 +63,6 @@ void Application::dispose() {
 	delete graphics;
 }
 
-Graphics* Application::getGraphics() {
-	return graphics;
-}
 
 void Application::log(const char* tag, const char* message) {
 	logger->log(tag, message);
