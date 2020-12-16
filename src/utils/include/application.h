@@ -12,13 +12,13 @@ private:
 	Logger* logger;
 	void gameLoop();
 	void exit();
-	void dispose();
-protected:
-	Graphics* graphics;
+    Application* copy; // to send to the listener
 public:
 	Application(Listener* listener);
 	Application(Listener* listener, Configuration* config);
 	Application(Listener* listener, Configuration* config, Graphics* graphics);
+	~Application();
+
 	
 	// Inherited via ApplicationInterface
 	virtual void log(const char* tag, const char* message) override;

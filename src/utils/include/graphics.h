@@ -14,6 +14,7 @@ private:
 	uint64_t frameStart = 0;
 public:
 	Graphics(Configuration* config);
+	~Graphics();
 	void  updateTime();
 	int	  getWidth();
 	int   getHeight();
@@ -21,5 +22,4 @@ public:
 	float getFps();
 	void  createWindow();
 	void  update();
-	void  dispose();
 };

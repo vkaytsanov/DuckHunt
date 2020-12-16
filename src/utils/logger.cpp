@@ -1,5 +1,5 @@
 #include <iostream>
-#include "logger.h"
+#include "include/logger.h"
 
 #define RESETTEXT  "\x1B[0m" // Set all colors back to normal.
 #define FORERED  "\x1B[31m" // Red

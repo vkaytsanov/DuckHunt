@@ -4,8 +4,8 @@
 
 class ApplicationInterface {
 public:
-	Graphics* graphics;
-	Input* input;
+    Graphics* graphics;
+    Input* input;
 	virtual void log(const char* tag, const char* message) = 0;
 	virtual void error(const char* tag, const char* message) = 0;
 };

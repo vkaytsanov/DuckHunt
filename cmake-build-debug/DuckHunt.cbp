@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="DuckHunt"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\SDL2\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DuckHunt">
+				<Option output="C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/DuckHunt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/SDL2/include"/>
+					<Add directory="D:\Visual Studio 2019\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
+					<Add directory="D:\Visual Studio 2019\VC\Tools\MSVC\14.26.28801\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 DuckHunt"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DuckHunt/fast">
+				<Option output="C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/DuckHunt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/SDL2/include"/>
+					<Add directory="D:\Visual Studio 2019\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
+					<Add directory="D:\Visual Studio 2019\VC\Tools\MSVC\14.26.28801\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 DuckHunt/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/desktop/desktop_launcher.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/duckhunt.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/duckhunt.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/application.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/configuration.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/graphics.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/application.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/application_interface.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/configuration.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/graphics.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/input.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/listener.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/logger.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/input.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/logger.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/SDL2/sdl2-config.cmake">
+			<Option virtualFolder="CMake Files\SDL2\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

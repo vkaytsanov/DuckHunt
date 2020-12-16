@@ -1,5 +1,5 @@
-#include "application.h"
-#include "configuration.h"
+#include "include/application.h"
+#include "include/configuration.h"
 #include <typeinfo>
 
 Application::Application(Listener* listener) {
@@ -19,7 +19,7 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 	this->config = config;
 	// Our library for graphics 
 	this->graphics = graphics;
-	// Logging, debugging and errors utillity
+	// Logging, debugging and errors utility
 	this->logger = new Logger();
 	// Receive user input
 	this->input = new Input();
@@ -28,7 +28,8 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 	// creating the window
 	graphics->createWindow();
 	// creating the objects from the game
-	listener->create(this);
+	copy = this;
+	listener->create(copy);
 	
 	running = true;
 
@@ -46,21 +47,10 @@ void Application::gameLoop() {
 		SDL_Delay(1);
 	}
 	// cleaning the memory if we are no longer running the game loop
-	dispose();
 }
 
 void Application::exit() {
 	running = false;
-}
-
-void Application::dispose() {
-	listener->dispose();
-	graphics->dispose();
-
-	delete listener;
-	delete config;
-	delete logger;
-	delete graphics;
 }
 
 
@@ -70,5 +60,12 @@ void Application::log(const char* tag, const char* message) {
 
 void Application::error(const char* tag, const char* message) {
 	logger->error(tag, message);
+}
+
+Application::~Application() {
+    delete logger;
+    delete listener;
+    delete graphics;
+    delete config;
 }
 

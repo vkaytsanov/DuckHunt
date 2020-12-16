@@ -1,5 +1,5 @@
-#include "graphics.h"
-#include "configuration.h"
+#include "include/graphics.h"
+#include "include/configuration.h"
 #include <chrono>
 
 typedef std::chrono::time_point<std::chrono::system_clock> time_point;
@@ -71,15 +71,14 @@ void Graphics::update() {
 	SDL_UpdateWindowSurface(window);
 }
 
-
-void Graphics::dispose() {
-	//Destroy surface
-	SDL_FreeSurface(screenSurface);
-	screenSurface = nullptr;
-	//Destroy window
-	SDL_DestroyWindow(window);
-	window = nullptr;
-	//Quit SDL subsystems
-	SDL_Quit();
+Graphics::~Graphics() {
+    //Destroy surface
+    SDL_FreeSurface(screenSurface);
+    screenSurface = nullptr;
+    //Destroy window
+    SDL_DestroyWindow(window);
+    window = nullptr;
+    //Quit SDL subsystems
+    SDL_Quit();
 }
 
