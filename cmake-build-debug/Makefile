@@ -451,6 +451,33 @@ src\utils\input.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\input.cpp.s
 .PHONY : src\utils\input.cpp.s
 
+src\utils\lib.obj: src\utils\lib.cpp.obj
+
+.PHONY : src\utils\lib.obj
+
+# target to build an object file
+src\utils\lib.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.obj
+.PHONY : src\utils\lib.cpp.obj
+
+src\utils\lib.i: src\utils\lib.cpp.i
+
+.PHONY : src\utils\lib.i
+
+# target to preprocess a source file
+src\utils\lib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.i
+.PHONY : src\utils\lib.cpp.i
+
+src\utils\lib.s: src\utils\lib.cpp.s
+
+.PHONY : src\utils\lib.s
+
+# target to generate assembly for a file
+src\utils\lib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.s
+.PHONY : src\utils\lib.cpp.s
+
 src\utils\logger.obj: src\utils\logger.cpp.obj
 
 .PHONY : src\utils\logger.obj
@@ -523,6 +550,9 @@ help:
 	@echo ... src/utils/input.obj
 	@echo ... src/utils/input.i
 	@echo ... src/utils/input.s
+	@echo ... src/utils/lib.obj
+	@echo ... src/utils/lib.i
+	@echo ... src/utils/lib.s
 	@echo ... src/utils/logger.obj
 	@echo ... src/utils/logger.i
 	@echo ... src/utils/logger.s

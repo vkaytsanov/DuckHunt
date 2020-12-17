@@ -13,7 +13,8 @@ private:
 	uint16_t frames = 0;
 	uint64_t frameStart = 0;
 public:
-	Graphics(Configuration* config);
+	explicit Graphics(Configuration* config);
+	Graphics();
 	~Graphics();
 	void  updateTime();
 	int	  getWidth();

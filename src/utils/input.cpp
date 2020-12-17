@@ -14,7 +14,7 @@ void Input::update() {
         //User presses a key
         else if (e.type == SDL_KEYDOWN) {
             try {
-                if (e.key.keysym.sym > 122) 
+                if (e.key.keysym.sym > 122)
                     throw std::exception("key is not registered");
                 currFrameKeys[e.key.keysym.sym] = true;
                 std::cerr << e.key.keysym.sym << " is pressed\n";
@@ -31,7 +31,7 @@ bool Input::shouldQuit() {
 }
 
 bool Input::isKeyPressed(const char key) {
-    return currFrameKeys[key - '0'] || lastFrameKeys[key - '0']; 
+    return currFrameKeys[key - '0'] || lastFrameKeys[key - '0'];
 }
 
 bool Input::isKeyJustPressed(const char key){

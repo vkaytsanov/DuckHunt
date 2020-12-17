@@ -11,7 +11,7 @@
 class MenuScreen : public AbstractScreen{
 public:
     MenuScreen();
-    void render() override;
+    void render(const float& dt) override;
 };
 
 

@@ -2,6 +2,7 @@
 #include "include/configuration.h"
 #include <chrono>
 
+
 Graphics::Graphics(Configuration* config) {
 	this->config = config;
 	screenSurface = nullptr;
@@ -47,7 +48,7 @@ void Graphics::createWindow() {
 	}
 	else {
 		//Create window
-		window = SDL_CreateWindow(config->title, config->x, config->y, 
+		window = SDL_CreateWindow(config->title, config->x, config->y,
 			config->width, config->height, config->isVisible);
 		if (window == nullptr) {
 			printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
@@ -61,6 +62,7 @@ void Graphics::createWindow() {
 			SDL_UpdateWindowSurface(window);
 		}
 	}
+
 }
 
 void Graphics::update() {
@@ -76,5 +78,9 @@ Graphics::~Graphics() {
     window = nullptr;
     //Quit SDL subsystems
     SDL_Quit();
+}
+
+Graphics::Graphics() {
+    config = new Configuration();
 }
 

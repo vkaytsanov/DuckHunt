@@ -9,13 +9,15 @@ set(CMAKE_CXX_STANDARD 14)
 file(GLOB SOURCES
         "src/core/graphics/*.cpp"
         "src/core/graphics/include/*.h"
+        "src/core/logic/*.cpp"
+        "src/core/logic/include/*.h"
         "src/desktop/desktop_launcher.cpp"
-        "src/utils/include/*.h"
         "src/utils/*.cpp"
+        "src/utils/include/*.h"
         "src/core/*.cpp"
         "src/core/include/*.h"
         )
-add_executable(${PROJECT_NAME} ${SOURCES} src/core/graphics/loading_screen.cpp src/core/graphics/loading_screen.h src/core/logic/logic_system.cpp src/core/logic/include/logic_system.h)
+add_executable(${PROJECT_NAME} ${SOURCES})
 
 set(SDL2_INCLUDE_DIR D:/SDL2/include)
 set(SDL2_LIB_DIR D:/SDL2/lib)

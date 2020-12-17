@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/configuration.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/configuration.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/graphics.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/graphics.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/input.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/input.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/lib.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/lib.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/logger.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/logger.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")

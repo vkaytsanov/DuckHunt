@@ -143,9 +143,6 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/application.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/application_interface.h">
-			<Option target="DuckHunt"/>
-		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/configuration.h">
 			<Option target="DuckHunt"/>
 		</Unit>
@@ -155,6 +152,9 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/input.h">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/lib.h">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/listener.h">
 			<Option target="DuckHunt"/>
 		</Unit>
@@ -162,6 +162,9 @@
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/input.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/lib.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/logger.cpp">

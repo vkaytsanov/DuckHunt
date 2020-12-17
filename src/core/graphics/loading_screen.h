@@ -11,7 +11,7 @@
 class LoadingScreen : public AbstractScreen{
 public:
     LoadingScreen();
-    void render() override;
+    void render(const float& dt) override;
 };
 
 

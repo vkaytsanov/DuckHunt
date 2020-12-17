@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef DUCKHUNT_GAME
 #define DUCKHUNT_GAME
 
@@ -6,6 +6,7 @@
 #include "game_state_manager.h"
 #include "../graphics/include/graphics_system.h"
 #include "../logic/include/logic_system.h"
+#include "../utils/include/application.h"
 
 
 class DuckHunt : public Listener {
@@ -15,7 +16,7 @@ public:
     GameStateManager gameStateManager;
     DuckHunt();
 	// Inherited via Listener
-	void create(ApplicationInterface* Lib) override;
+	void create() override;
 	void render() override;
 	void dispose() override;
 };

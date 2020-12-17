@@ -4,10 +4,11 @@
 
 #include "include/menu_screen.h"
 
-void MenuScreen::render() {
+
+MenuScreen::MenuScreen() {
 
 }
 
-MenuScreen::MenuScreen() {
+void MenuScreen::render(const float& dt) {
 
 }

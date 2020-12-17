@@ -10,7 +10,7 @@ class AbstractScreen {
 public:
     AbstractScreen() = default;
     virtual ~AbstractScreen() = default;
-    virtual void render() = 0;
+    virtual void render(const float& dt) = 0;
 
 };
 

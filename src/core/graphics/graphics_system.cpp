@@ -10,8 +10,11 @@ GraphicsSystem::GraphicsSystem() {
     screens[Menu] = new MenuScreen();
 }
 
-void GraphicsSystem::render() {
-
+void GraphicsSystem::render(const GameState& currState, const float& dt) {
+    screens[currState]->render(dt);
 }
+
+
+
 
 
