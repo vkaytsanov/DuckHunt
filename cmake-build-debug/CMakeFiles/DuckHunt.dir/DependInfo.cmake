@@ -4,8 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/core/duckhunt.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/duckhunt.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_state_manager.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/game_state_manager.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/abstract_screen.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/graphics/abstract_screen.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/graphics_system.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/graphics/graphics_system.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/loading_screen.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/graphics/loading_screen.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/menu_screen.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/graphics/menu_screen.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/logic_system.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/logic/logic_system.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/desktop/desktop_launcher.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/desktop/desktop_launcher.cpp.obj"
-  "C:/Users/vikto/CLionProjects/DuckHunt/src/duckhunt.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/duckhunt.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/application.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/application.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/configuration.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/configuration.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/graphics.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/graphics.cpp.obj"

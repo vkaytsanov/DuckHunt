@@ -11,17 +11,17 @@ private:
 	Configuration* config;
 	Logger* logger;
 	void gameLoop();
-	void exit();
+	void exitApp();
     Application* copy; // to send to the listener
 public:
-	Application(Listener* listener);
+	explicit Application(Listener* listener);
 	Application(Listener* listener, Configuration* config);
 	Application(Listener* listener, Configuration* config, Graphics* graphics);
 	~Application();
 
 	
 	// Inherited via ApplicationInterface
-	virtual void log(const char* tag, const char* message) override;
-	virtual void error(const char* tag, const char* message) override;
+	void log(const char* tag, const char* message) override;
+	void error(const char* tag, const char* message) override;
 
 };

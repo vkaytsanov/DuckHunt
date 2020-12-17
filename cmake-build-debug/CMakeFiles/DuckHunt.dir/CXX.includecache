@@ -6,17 +6,47 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/vikto/CLionProjects/DuckHunt/src/duckhunt.cpp
-utils/include/listener.h
-C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/listener.h
-duckhunt.h
-C:/Users/vikto/CLionProjects/DuckHunt/src/duckhunt.h
-iostream
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/duckhunt.cpp
+include/duckhunt.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/duckhunt.h
+
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/abstract_screen.h
+
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/graphics_system.h
+menu_screen.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/menu_screen.h
+abstract_screen.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/abstract_screen.h
+../../include/game_state_manager.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/game_state_manager.h
+unordered_map
 -
 
-C:/Users/vikto/CLionProjects/DuckHunt/src/duckhunt.h
-utils/include/listener.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/menu_screen.h
+abstract_screen.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/abstract_screen.h
+
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/duckhunt.h
+../../utils/include/listener.h
 C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/listener.h
+game_state_manager.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/game_state_manager.h
+../graphics/include/graphics_system.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/graphics_system.h
+../logic/include/logic_system.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/include/logic_system.h
+
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/game_state_manager.h
+
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/include/logic_system.h
+
+C:/Users/vikto/CLionProjects/DuckHunt/src/desktop/desktop_launcher.cpp
+../utils/include/configuration.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/configuration.h
+../utils/include/application.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/application.h
+../core/include/duckhunt.h
+C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/duckhunt.h
 
 C:/Users/vikto/CLionProjects/DuckHunt/src/utils/application.cpp
 include/application.h

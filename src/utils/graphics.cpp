@@ -2,10 +2,6 @@
 #include "include/configuration.h"
 #include <chrono>
 
-typedef std::chrono::time_point<std::chrono::system_clock> time_point;
-typedef std::chrono::duration<float, std::nano> nanos;
-
-
 Graphics::Graphics(Configuration* config) {
 	this->config = config;
 	screenSurface = nullptr;
@@ -19,7 +15,7 @@ void Graphics::updateTime() {
 	lastTime = time;
 
 	// calculating fps
-	if (time - frameStart >= 1000.0) {
+	if (time - frameStart >= 1000) {
 		fps = frames;
 		frames = 0;
 		frameStart = time;
@@ -35,7 +31,7 @@ int Graphics::getHeight() {
 	return config->height;
 }
 
-float Graphics::getDeltaTime() {
+float Graphics::getDeltaTime() const {
 	return deltaTime;
 }
 
@@ -53,7 +49,7 @@ void Graphics::createWindow() {
 		//Create window
 		window = SDL_CreateWindow(config->title, config->x, config->y, 
 			config->width, config->height, config->isVisible);
-		if (window == NULL) {
+		if (window == nullptr) {
 			printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
 			exit(-1);
 		}

@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DuckHunt.dir/src/core/duckhunt.cpp.obj"
+  "CMakeFiles/DuckHunt.dir/src/core/game_state_manager.cpp.obj"
+  "CMakeFiles/DuckHunt.dir/src/core/graphics/abstract_screen.cpp.obj"
+  "CMakeFiles/DuckHunt.dir/src/core/graphics/graphics_system.cpp.obj"
+  "CMakeFiles/DuckHunt.dir/src/core/graphics/loading_screen.cpp.obj"
+  "CMakeFiles/DuckHunt.dir/src/core/graphics/menu_screen.cpp.obj"
+  "CMakeFiles/DuckHunt.dir/src/core/logic/logic_system.cpp.obj"
   "CMakeFiles/DuckHunt.dir/src/desktop/desktop_launcher.cpp.obj"
-  "CMakeFiles/DuckHunt.dir/src/duckhunt.cpp.obj"
   "CMakeFiles/DuckHunt.dir/src/utils/application.cpp.obj"
   "CMakeFiles/DuckHunt.dir/src/utils/configuration.cpp.obj"
   "CMakeFiles/DuckHunt.dir/src/utils/graphics.cpp.obj"

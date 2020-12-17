@@ -18,7 +18,7 @@ public:
 	void  updateTime();
 	int	  getWidth();
 	int   getHeight();
-	float getDeltaTime();
+	float getDeltaTime() const;
 	float getFps();
 	void  createWindow();
 	void  update();

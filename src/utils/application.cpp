@@ -2,14 +2,12 @@
 #include "include/configuration.h"
 #include <typeinfo>
 
-Application::Application(Listener* listener) {
-	Application(listener, new Configuration());
-}
+Application::Application(Listener* listener) :
+	Application(listener, new Configuration()){}
 
+Application::Application(Listener* listener, Configuration* config) :
+	Application(listener, config, new Graphics(config)){}
 
-Application::Application(Listener* listener, Configuration* config) {
-	Application(listener, config, new Graphics(config));
-}
 
 /* Initializing here the application */
 Application::Application(Listener* listener, Configuration* config, Graphics* graphics) {
@@ -49,7 +47,7 @@ void Application::gameLoop() {
 	// cleaning the memory if we are no longer running the game loop
 }
 
-void Application::exit() {
+void Application::exitApp() {
 	running = false;
 }
 

@@ -86,13 +86,49 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/duckhunt.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_state_manager.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/abstract_screen.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/graphics_system.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/abstract_screen.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/graphics_system.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/menu_screen.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/loading_screen.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/loading_screen.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/menu_screen.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/duckhunt.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/game_state_manager.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/include/logic_system.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/logic_system.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/desktop/desktop_launcher.cpp">
-			<Option target="DuckHunt"/>
-		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/duckhunt.cpp">
-			<Option target="DuckHunt"/>
-		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/duckhunt.h">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/application.cpp">

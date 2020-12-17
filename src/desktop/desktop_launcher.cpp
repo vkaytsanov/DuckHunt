@@ -1,6 +1,6 @@
 #include "../utils/include/configuration.h"
 #include "../utils/include/application.h"
-#include "../duckhunt.h"
+#include "../core/include/duckhunt.h"
 
 
 int main(int argc, char* args[]) {

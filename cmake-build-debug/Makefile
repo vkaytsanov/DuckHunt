@@ -127,6 +127,195 @@ DuckHunt\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\build
 .PHONY : DuckHunt\fast
 
+src\core\duckhunt.obj: src\core\duckhunt.cpp.obj
+
+.PHONY : src\core\duckhunt.obj
+
+# target to build an object file
+src\core\duckhunt.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\duckhunt.cpp.obj
+.PHONY : src\core\duckhunt.cpp.obj
+
+src\core\duckhunt.i: src\core\duckhunt.cpp.i
+
+.PHONY : src\core\duckhunt.i
+
+# target to preprocess a source file
+src\core\duckhunt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\duckhunt.cpp.i
+.PHONY : src\core\duckhunt.cpp.i
+
+src\core\duckhunt.s: src\core\duckhunt.cpp.s
+
+.PHONY : src\core\duckhunt.s
+
+# target to generate assembly for a file
+src\core\duckhunt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\duckhunt.cpp.s
+.PHONY : src\core\duckhunt.cpp.s
+
+src\core\game_state_manager.obj: src\core\game_state_manager.cpp.obj
+
+.PHONY : src\core\game_state_manager.obj
+
+# target to build an object file
+src\core\game_state_manager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\game_state_manager.cpp.obj
+.PHONY : src\core\game_state_manager.cpp.obj
+
+src\core\game_state_manager.i: src\core\game_state_manager.cpp.i
+
+.PHONY : src\core\game_state_manager.i
+
+# target to preprocess a source file
+src\core\game_state_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\game_state_manager.cpp.i
+.PHONY : src\core\game_state_manager.cpp.i
+
+src\core\game_state_manager.s: src\core\game_state_manager.cpp.s
+
+.PHONY : src\core\game_state_manager.s
+
+# target to generate assembly for a file
+src\core\game_state_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\game_state_manager.cpp.s
+.PHONY : src\core\game_state_manager.cpp.s
+
+src\core\graphics\abstract_screen.obj: src\core\graphics\abstract_screen.cpp.obj
+
+.PHONY : src\core\graphics\abstract_screen.obj
+
+# target to build an object file
+src\core\graphics\abstract_screen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\abstract_screen.cpp.obj
+.PHONY : src\core\graphics\abstract_screen.cpp.obj
+
+src\core\graphics\abstract_screen.i: src\core\graphics\abstract_screen.cpp.i
+
+.PHONY : src\core\graphics\abstract_screen.i
+
+# target to preprocess a source file
+src\core\graphics\abstract_screen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\abstract_screen.cpp.i
+.PHONY : src\core\graphics\abstract_screen.cpp.i
+
+src\core\graphics\abstract_screen.s: src\core\graphics\abstract_screen.cpp.s
+
+.PHONY : src\core\graphics\abstract_screen.s
+
+# target to generate assembly for a file
+src\core\graphics\abstract_screen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\abstract_screen.cpp.s
+.PHONY : src\core\graphics\abstract_screen.cpp.s
+
+src\core\graphics\graphics_system.obj: src\core\graphics\graphics_system.cpp.obj
+
+.PHONY : src\core\graphics\graphics_system.obj
+
+# target to build an object file
+src\core\graphics\graphics_system.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\graphics_system.cpp.obj
+.PHONY : src\core\graphics\graphics_system.cpp.obj
+
+src\core\graphics\graphics_system.i: src\core\graphics\graphics_system.cpp.i
+
+.PHONY : src\core\graphics\graphics_system.i
+
+# target to preprocess a source file
+src\core\graphics\graphics_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\graphics_system.cpp.i
+.PHONY : src\core\graphics\graphics_system.cpp.i
+
+src\core\graphics\graphics_system.s: src\core\graphics\graphics_system.cpp.s
+
+.PHONY : src\core\graphics\graphics_system.s
+
+# target to generate assembly for a file
+src\core\graphics\graphics_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\graphics_system.cpp.s
+.PHONY : src\core\graphics\graphics_system.cpp.s
+
+src\core\graphics\loading_screen.obj: src\core\graphics\loading_screen.cpp.obj
+
+.PHONY : src\core\graphics\loading_screen.obj
+
+# target to build an object file
+src\core\graphics\loading_screen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\loading_screen.cpp.obj
+.PHONY : src\core\graphics\loading_screen.cpp.obj
+
+src\core\graphics\loading_screen.i: src\core\graphics\loading_screen.cpp.i
+
+.PHONY : src\core\graphics\loading_screen.i
+
+# target to preprocess a source file
+src\core\graphics\loading_screen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\loading_screen.cpp.i
+.PHONY : src\core\graphics\loading_screen.cpp.i
+
+src\core\graphics\loading_screen.s: src\core\graphics\loading_screen.cpp.s
+
+.PHONY : src\core\graphics\loading_screen.s
+
+# target to generate assembly for a file
+src\core\graphics\loading_screen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\loading_screen.cpp.s
+.PHONY : src\core\graphics\loading_screen.cpp.s
+
+src\core\graphics\menu_screen.obj: src\core\graphics\menu_screen.cpp.obj
+
+.PHONY : src\core\graphics\menu_screen.obj
+
+# target to build an object file
+src\core\graphics\menu_screen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\menu_screen.cpp.obj
+.PHONY : src\core\graphics\menu_screen.cpp.obj
+
+src\core\graphics\menu_screen.i: src\core\graphics\menu_screen.cpp.i
+
+.PHONY : src\core\graphics\menu_screen.i
+
+# target to preprocess a source file
+src\core\graphics\menu_screen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\menu_screen.cpp.i
+.PHONY : src\core\graphics\menu_screen.cpp.i
+
+src\core\graphics\menu_screen.s: src\core\graphics\menu_screen.cpp.s
+
+.PHONY : src\core\graphics\menu_screen.s
+
+# target to generate assembly for a file
+src\core\graphics\menu_screen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\graphics\menu_screen.cpp.s
+.PHONY : src\core\graphics\menu_screen.cpp.s
+
+src\core\logic\logic_system.obj: src\core\logic\logic_system.cpp.obj
+
+.PHONY : src\core\logic\logic_system.obj
+
+# target to build an object file
+src\core\logic\logic_system.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\logic\logic_system.cpp.obj
+.PHONY : src\core\logic\logic_system.cpp.obj
+
+src\core\logic\logic_system.i: src\core\logic\logic_system.cpp.i
+
+.PHONY : src\core\logic\logic_system.i
+
+# target to preprocess a source file
+src\core\logic\logic_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\logic\logic_system.cpp.i
+.PHONY : src\core\logic\logic_system.cpp.i
+
+src\core\logic\logic_system.s: src\core\logic\logic_system.cpp.s
+
+.PHONY : src\core\logic\logic_system.s
+
+# target to generate assembly for a file
+src\core\logic\logic_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\logic\logic_system.cpp.s
+.PHONY : src\core\logic\logic_system.cpp.s
+
 src\desktop\desktop_launcher.obj: src\desktop\desktop_launcher.cpp.obj
 
 .PHONY : src\desktop\desktop_launcher.obj
@@ -153,33 +342,6 @@ src\desktop\desktop_launcher.s: src\desktop\desktop_launcher.cpp.s
 src\desktop\desktop_launcher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\desktop\desktop_launcher.cpp.s
 .PHONY : src\desktop\desktop_launcher.cpp.s
-
-src\duckhunt.obj: src\duckhunt.cpp.obj
-
-.PHONY : src\duckhunt.obj
-
-# target to build an object file
-src\duckhunt.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\duckhunt.cpp.obj
-.PHONY : src\duckhunt.cpp.obj
-
-src\duckhunt.i: src\duckhunt.cpp.i
-
-.PHONY : src\duckhunt.i
-
-# target to preprocess a source file
-src\duckhunt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\duckhunt.cpp.i
-.PHONY : src\duckhunt.cpp.i
-
-src\duckhunt.s: src\duckhunt.cpp.s
-
-.PHONY : src\duckhunt.s
-
-# target to generate assembly for a file
-src\duckhunt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\duckhunt.cpp.s
-.PHONY : src\duckhunt.cpp.s
 
 src\utils\application.obj: src\utils\application.cpp.obj
 
@@ -325,12 +487,30 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DuckHunt
+	@echo ... src/core/duckhunt.obj
+	@echo ... src/core/duckhunt.i
+	@echo ... src/core/duckhunt.s
+	@echo ... src/core/game_state_manager.obj
+	@echo ... src/core/game_state_manager.i
+	@echo ... src/core/game_state_manager.s
+	@echo ... src/core/graphics/abstract_screen.obj
+	@echo ... src/core/graphics/abstract_screen.i
+	@echo ... src/core/graphics/abstract_screen.s
+	@echo ... src/core/graphics/graphics_system.obj
+	@echo ... src/core/graphics/graphics_system.i
+	@echo ... src/core/graphics/graphics_system.s
+	@echo ... src/core/graphics/loading_screen.obj
+	@echo ... src/core/graphics/loading_screen.i
+	@echo ... src/core/graphics/loading_screen.s
+	@echo ... src/core/graphics/menu_screen.obj
+	@echo ... src/core/graphics/menu_screen.i
+	@echo ... src/core/graphics/menu_screen.s
+	@echo ... src/core/logic/logic_system.obj
+	@echo ... src/core/logic/logic_system.i
+	@echo ... src/core/logic/logic_system.s
 	@echo ... src/desktop/desktop_launcher.obj
 	@echo ... src/desktop/desktop_launcher.i
 	@echo ... src/desktop/desktop_launcher.s
-	@echo ... src/duckhunt.obj
-	@echo ... src/duckhunt.i
-	@echo ... src/duckhunt.s
 	@echo ... src/utils/application.obj
 	@echo ... src/utils/application.i
 	@echo ... src/utils/application.s
