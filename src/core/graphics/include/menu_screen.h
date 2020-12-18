@@ -5,12 +5,16 @@
 #ifndef DUCKHUNT_MENU_SCREEN_H
 #define DUCKHUNT_MENU_SCREEN_H
 
-
 #include "abstract_screen.h"
+#include "../include/game_utils.h"
+#include "SDL.h"
 
 class MenuScreen : public AbstractScreen{
+private:
+    SDL_Texture* logo;
+    GameUtils& game;
 public:
-    MenuScreen();
+    explicit MenuScreen(GameUtils& game);
     void render(const float& dt) override;
 };
 

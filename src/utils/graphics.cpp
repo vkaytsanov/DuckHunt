@@ -2,10 +2,12 @@
 #include <chrono>
 
 
+
 Graphics::Graphics(Configuration* config) {
 	this->config = config;
 	screenSurface = nullptr;
 	window = nullptr;
+	renderer = nullptr;
 }
 
 void Graphics::updateTime() {
@@ -46,6 +48,12 @@ void Graphics::createWindow() {
 		exit(-1);
 	}
 	else {
+        int imgFlags = IMG_INIT_PNG;
+        if(!(IMG_Init(imgFlags) & imgFlags)){
+            printf("SDL_image could not initialize! SDL_image Error: %s\n",
+                    IMG_GetError());
+            exit(-1);
+        }
 		//Create window
 		window = SDL_CreateWindow(config->title, config->x, config->y,
 			config->width, config->height, config->isVisible);
@@ -56,11 +64,26 @@ void Graphics::createWindow() {
 		else {
 			//Get window surface
 			screenSurface = SDL_GetWindowSurface(window);
+            if(screenSurface == nullptr){
+                printf("ScreenSurface could not be created! SDL_Error: %s\n", SDL_GetError());
+                exit(-1);
+            }
+            else {
+                //Update the surface
+                SDL_UpdateWindowSurface(window);
 
-			//Update the surface
-			SDL_UpdateWindowSurface(window);
+                //create renderer
+                renderer = SDL_CreateRenderer(window, -1, 0);
+                if (renderer == nullptr) {
+                    printf("Renderer could not be created! SDL_Error: %s\n", SDL_GetError());
+                    exit(-1);
+                }
+
+            }
 		}
+
 	}
+
 
 }
 
@@ -75,11 +98,17 @@ Graphics::~Graphics() {
     //Destroy window
     SDL_DestroyWindow(window);
     window = nullptr;
+    //Shut down SDL_Image
+    IMG_Quit();
     //Quit SDL subsystems
     SDL_Quit();
 }
 
 Graphics::Graphics() {
     config = new Configuration();
+}
+
+SDL_Renderer *Graphics::getRenderer() const {
+    return renderer;
 }
 

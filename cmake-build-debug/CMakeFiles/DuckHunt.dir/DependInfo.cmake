@@ -4,8 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/core/data/data_system.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/data/data_system.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/core/data/mod_assets.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/data/mod_assets.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/core/duckhunt.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/duckhunt.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/game_object.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/game_object/game_object.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_state_manager.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/game_state_manager.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_utils.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/game_utils.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/abstract_screen.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/graphics/abstract_screen.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/graphics_system.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/graphics/graphics_system.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/loading_screen.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/graphics/loading_screen.cpp.obj"

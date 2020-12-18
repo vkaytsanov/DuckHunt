@@ -18,6 +18,7 @@ Application::Application(Listener* listener, Configuration* config) :
 
 /* Initializing here the application */
 Application::Application(Listener* listener, Configuration* config, Graphics* graphics) {
+
 	// Our game
 	this->listener = listener;
 	// Our configuration file for the game

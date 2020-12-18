@@ -3,12 +3,16 @@
 //
 
 #include "include/menu_screen.h"
+#include "../../utils/include/lib.h"
 
 
-MenuScreen::MenuScreen() {
-
+MenuScreen::MenuScreen(GameUtils& game) : game(game){
+//    logo = game.dataSystem.assets.getSprite("logo");
 }
+
 
 void MenuScreen::render(const float& dt) {
 
 }
+
+

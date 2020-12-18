@@ -6,11 +6,15 @@
 #define DUCKHUNT_LOADING_SCREEN_H
 
 
-#include "include/abstract_screen.h"
+#include "abstract_screen.h"
+#include "../include/game_utils.h"
 
 class LoadingScreen : public AbstractScreen{
+private:
+    GameUtils& game;
+    bool isReady;
 public:
-    LoadingScreen();
+    explicit LoadingScreen(GameUtils& game);
     void render(const float& dt) override;
 };
 

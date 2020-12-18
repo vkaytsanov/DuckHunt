@@ -250,6 +250,12 @@ SDL2_image_DIR:PATH=SDL2_image_DIR-NOTFOUND
 //Path to a library.
 SDL2_main_LIBRARY:FILEPATH=SDL2_main_LIBRARY-NOTFOUND
 
+//Path to a library.
+SDLMAIN_LIBRARY:FILEPATH=SDLMAIN_LIBRARY-NOTFOUND
+
+//Path to a file.
+SDL_INCLUDE_DIR:PATH=SDL_INCLUDE_DIR-NOTFOUND
+
 //Value Computed by CMake
 basic-c-sdl-game_BINARY_DIR:STATIC=C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug
 
@@ -450,6 +456,8 @@ SDL2_STATIC_LIBS_PATHS:INTERNAL=
 SDL2_VERSION:INTERNAL=
 //ADVANCED property for variable: SDL2_main_LIBRARY
 SDL2_main_LIBRARY-ADVANCED:INTERNAL=1
+//Path to a library.
+SDL_LIBRARY_TEMP:INTERNAL=SDL_LIBRARY_TEMP-NOTFOUND
 __pkg_config_checked_SDL2:INTERNAL=1
 __pkg_config_checked_SDL2IMAGE:INTERNAL=1
 

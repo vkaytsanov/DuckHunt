@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DuckHunt.dir/src/core/data/data_system.cpp.obj"
+  "CMakeFiles/DuckHunt.dir/src/core/data/mod_assets.cpp.obj"
   "CMakeFiles/DuckHunt.dir/src/core/duckhunt.cpp.obj"
+  "CMakeFiles/DuckHunt.dir/src/core/game_object/game_object.cpp.obj"
   "CMakeFiles/DuckHunt.dir/src/core/game_state_manager.cpp.obj"
+  "CMakeFiles/DuckHunt.dir/src/core/game_utils.cpp.obj"
   "CMakeFiles/DuckHunt.dir/src/core/graphics/abstract_screen.cpp.obj"
   "CMakeFiles/DuckHunt.dir/src/core/graphics/graphics_system.cpp.obj"
   "CMakeFiles/DuckHunt.dir/src/core/graphics/loading_screen.cpp.obj"

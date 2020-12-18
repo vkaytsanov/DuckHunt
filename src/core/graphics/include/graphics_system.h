@@ -8,15 +8,16 @@
 #include <unordered_map>
 #include "menu_screen.h"
 #include "abstract_screen.h"
-#include "../../include/game_state_manager.h"
+#include "../../include/game_utils.h"
 
 
 class GraphicsSystem {
 private:
     std::unordered_map<GameState, AbstractScreen*> screens;
+    GameUtils& game;
 public:
-    GraphicsSystem();
-    void render(const GameState& currState, const float& dt);
+    explicit GraphicsSystem(GameUtils &game);
+    void render(const float& dt);
 
 };
 

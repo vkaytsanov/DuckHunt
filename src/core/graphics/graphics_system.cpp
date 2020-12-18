@@ -2,19 +2,20 @@
 // Created by Viktor on 17.12.2020 г..
 //
 
+#include <iostream>
 #include "include/graphics_system.h"
-#include "loading_screen.h"
+#include "include/loading_screen.h"
+#include "../../utils/include/lib.h"
 
-GraphicsSystem::GraphicsSystem() {
-    screens[Loading] = new LoadingScreen();
-    screens[Menu] = new MenuScreen();
+
+GraphicsSystem::GraphicsSystem(GameUtils &game) : game(game) {
+    screens[Loading] = new LoadingScreen(game);
+    screens[Menu] = new MenuScreen(game);
 }
 
-void GraphicsSystem::render(const GameState& currState, const float& dt) {
-    screens[currState]->render(dt);
+void GraphicsSystem::render(const float& dt) {
+    screens[game.gameStateManager.getCurrentState()]->render(dt);
 }
-
-
 
 
 

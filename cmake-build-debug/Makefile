@@ -127,6 +127,60 @@ DuckHunt\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\build
 .PHONY : DuckHunt\fast
 
+src\core\data\data_system.obj: src\core\data\data_system.cpp.obj
+
+.PHONY : src\core\data\data_system.obj
+
+# target to build an object file
+src\core\data\data_system.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\data\data_system.cpp.obj
+.PHONY : src\core\data\data_system.cpp.obj
+
+src\core\data\data_system.i: src\core\data\data_system.cpp.i
+
+.PHONY : src\core\data\data_system.i
+
+# target to preprocess a source file
+src\core\data\data_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\data\data_system.cpp.i
+.PHONY : src\core\data\data_system.cpp.i
+
+src\core\data\data_system.s: src\core\data\data_system.cpp.s
+
+.PHONY : src\core\data\data_system.s
+
+# target to generate assembly for a file
+src\core\data\data_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\data\data_system.cpp.s
+.PHONY : src\core\data\data_system.cpp.s
+
+src\core\data\mod_assets.obj: src\core\data\mod_assets.cpp.obj
+
+.PHONY : src\core\data\mod_assets.obj
+
+# target to build an object file
+src\core\data\mod_assets.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\data\mod_assets.cpp.obj
+.PHONY : src\core\data\mod_assets.cpp.obj
+
+src\core\data\mod_assets.i: src\core\data\mod_assets.cpp.i
+
+.PHONY : src\core\data\mod_assets.i
+
+# target to preprocess a source file
+src\core\data\mod_assets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\data\mod_assets.cpp.i
+.PHONY : src\core\data\mod_assets.cpp.i
+
+src\core\data\mod_assets.s: src\core\data\mod_assets.cpp.s
+
+.PHONY : src\core\data\mod_assets.s
+
+# target to generate assembly for a file
+src\core\data\mod_assets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\data\mod_assets.cpp.s
+.PHONY : src\core\data\mod_assets.cpp.s
+
 src\core\duckhunt.obj: src\core\duckhunt.cpp.obj
 
 .PHONY : src\core\duckhunt.obj
@@ -154,6 +208,33 @@ src\core\duckhunt.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\duckhunt.cpp.s
 .PHONY : src\core\duckhunt.cpp.s
 
+src\core\game_object\game_object.obj: src\core\game_object\game_object.cpp.obj
+
+.PHONY : src\core\game_object\game_object.obj
+
+# target to build an object file
+src\core\game_object\game_object.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\game_object\game_object.cpp.obj
+.PHONY : src\core\game_object\game_object.cpp.obj
+
+src\core\game_object\game_object.i: src\core\game_object\game_object.cpp.i
+
+.PHONY : src\core\game_object\game_object.i
+
+# target to preprocess a source file
+src\core\game_object\game_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\game_object\game_object.cpp.i
+.PHONY : src\core\game_object\game_object.cpp.i
+
+src\core\game_object\game_object.s: src\core\game_object\game_object.cpp.s
+
+.PHONY : src\core\game_object\game_object.s
+
+# target to generate assembly for a file
+src\core\game_object\game_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\game_object\game_object.cpp.s
+.PHONY : src\core\game_object\game_object.cpp.s
+
 src\core\game_state_manager.obj: src\core\game_state_manager.cpp.obj
 
 .PHONY : src\core\game_state_manager.obj
@@ -180,6 +261,33 @@ src\core\game_state_manager.s: src\core\game_state_manager.cpp.s
 src\core\game_state_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\game_state_manager.cpp.s
 .PHONY : src\core\game_state_manager.cpp.s
+
+src\core\game_utils.obj: src\core\game_utils.cpp.obj
+
+.PHONY : src\core\game_utils.obj
+
+# target to build an object file
+src\core\game_utils.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\game_utils.cpp.obj
+.PHONY : src\core\game_utils.cpp.obj
+
+src\core\game_utils.i: src\core\game_utils.cpp.i
+
+.PHONY : src\core\game_utils.i
+
+# target to preprocess a source file
+src\core\game_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\game_utils.cpp.i
+.PHONY : src\core\game_utils.cpp.i
+
+src\core\game_utils.s: src\core\game_utils.cpp.s
+
+.PHONY : src\core\game_utils.s
+
+# target to generate assembly for a file
+src\core\game_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\core\game_utils.cpp.s
+.PHONY : src\core\game_utils.cpp.s
 
 src\core\graphics\abstract_screen.obj: src\core\graphics\abstract_screen.cpp.obj
 
@@ -514,12 +622,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DuckHunt
+	@echo ... src/core/data/data_system.obj
+	@echo ... src/core/data/data_system.i
+	@echo ... src/core/data/data_system.s
+	@echo ... src/core/data/mod_assets.obj
+	@echo ... src/core/data/mod_assets.i
+	@echo ... src/core/data/mod_assets.s
 	@echo ... src/core/duckhunt.obj
 	@echo ... src/core/duckhunt.i
 	@echo ... src/core/duckhunt.s
+	@echo ... src/core/game_object/game_object.obj
+	@echo ... src/core/game_object/game_object.i
+	@echo ... src/core/game_object/game_object.s
 	@echo ... src/core/game_state_manager.obj
 	@echo ... src/core/game_state_manager.i
 	@echo ... src/core/game_state_manager.s
+	@echo ... src/core/game_utils.obj
+	@echo ... src/core/game_utils.i
+	@echo ... src/core/game_utils.s
 	@echo ... src/core/graphics/abstract_screen.obj
 	@echo ... src/core/graphics/abstract_screen.i
 	@echo ... src/core/graphics/abstract_screen.s

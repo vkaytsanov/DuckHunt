@@ -18,6 +18,6 @@ void Logger::debug(const char* tag, const char* message) {
 }
 
 void Logger::error(const char* tag, const char* message) {
-	std::cout << RED("[") << RED(tag) << RED("] ") << RED(message) << RESETTEXT << std::endl;
+	std::cerr << "[" << tag << "] " << message << std::endl;
 
 }
