@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INPUT
+#define INPUT
+
 #include "SDL.h"
 #include <memory>
 
@@ -16,3 +18,5 @@ public:
 	bool isKeyPressed(const char key);
 	bool isKeyJustPressed(const char key);
 };
+
+#endif

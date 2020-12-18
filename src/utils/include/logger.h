@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef LOGGER
+#define LOGGER
 class Logger {
 public:
     Logger() = default;
@@ -7,3 +7,4 @@ public:
 	void debug(const char* tag, const char* message);
 	void error(const char* tag, const char* message);
 };
+#endif

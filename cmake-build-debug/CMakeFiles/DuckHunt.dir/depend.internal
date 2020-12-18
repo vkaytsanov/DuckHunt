@@ -9,7 +9,59 @@ CMakeFiles/DuckHunt.dir/src/core/duckhunt.cpp.obj
  C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/duckhunt.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/game_state_manager.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/include/logic_system.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/application.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/configuration.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/graphics.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/input.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/lib.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/listener.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/logger.h
+ D:/SDL2/include/SDL.h
+ D:/SDL2/include/SDL_assert.h
+ D:/SDL2/include/SDL_atomic.h
+ D:/SDL2/include/SDL_audio.h
+ D:/SDL2/include/SDL_blendmode.h
+ D:/SDL2/include/SDL_clipboard.h
+ D:/SDL2/include/SDL_config.h
+ D:/SDL2/include/SDL_cpuinfo.h
+ D:/SDL2/include/SDL_endian.h
+ D:/SDL2/include/SDL_error.h
+ D:/SDL2/include/SDL_events.h
+ D:/SDL2/include/SDL_filesystem.h
+ D:/SDL2/include/SDL_gamecontroller.h
+ D:/SDL2/include/SDL_gesture.h
+ D:/SDL2/include/SDL_haptic.h
+ D:/SDL2/include/SDL_hints.h
+ D:/SDL2/include/SDL_joystick.h
+ D:/SDL2/include/SDL_keyboard.h
+ D:/SDL2/include/SDL_keycode.h
+ D:/SDL2/include/SDL_loadso.h
+ D:/SDL2/include/SDL_log.h
+ D:/SDL2/include/SDL_main.h
+ D:/SDL2/include/SDL_messagebox.h
+ D:/SDL2/include/SDL_metal.h
+ D:/SDL2/include/SDL_mouse.h
+ D:/SDL2/include/SDL_mutex.h
+ D:/SDL2/include/SDL_pixels.h
+ D:/SDL2/include/SDL_platform.h
+ D:/SDL2/include/SDL_power.h
+ D:/SDL2/include/SDL_quit.h
+ D:/SDL2/include/SDL_rect.h
+ D:/SDL2/include/SDL_render.h
+ D:/SDL2/include/SDL_rwops.h
+ D:/SDL2/include/SDL_scancode.h
+ D:/SDL2/include/SDL_sensor.h
+ D:/SDL2/include/SDL_shape.h
+ D:/SDL2/include/SDL_stdinc.h
+ D:/SDL2/include/SDL_surface.h
+ D:/SDL2/include/SDL_system.h
+ D:/SDL2/include/SDL_thread.h
+ D:/SDL2/include/SDL_timer.h
+ D:/SDL2/include/SDL_touch.h
+ D:/SDL2/include/SDL_version.h
+ D:/SDL2/include/SDL_video.h
+ D:/SDL2/include/begin_code.h
+ D:/SDL2/include/close_code.h
 CMakeFiles/DuckHunt.dir/src/core/game_state_manager.cpp.obj
  C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_state_manager.cpp
  C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/game_state_manager.h
@@ -100,6 +152,7 @@ CMakeFiles/DuckHunt.dir/src/utils/application.cpp.obj
  C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/configuration.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/graphics.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/input.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/lib.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/listener.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/logger.h
  D:/SDL2/include/SDL.h

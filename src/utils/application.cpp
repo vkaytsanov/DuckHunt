@@ -3,8 +3,11 @@
 //
 
 #include "include/application.h"
+#include "include/lib.h"
+
 
 #include <typeinfo>
+
 
 
 Application::Application(Listener* listener) :
@@ -30,7 +33,8 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 	// creating the window
 	graphics->createWindow();
 	// creating the environment utils
-//    Lib::initialize(this, graphics);
+	Lib::app = this;
+	Lib::graphics = graphics;
     // creating the objects from the game
 	listener->create();
 

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CONFIGURATION
+#define CONFIGURATION
 #include "SDL.h"
 
 /* Class for application configuration */
@@ -16,3 +17,5 @@ public:
 	Configuration(const char* title, const int width, const int height);
 	Configuration(const int width, const int height);
 };
+
+#endif

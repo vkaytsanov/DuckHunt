@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef LISTENER
+#define LISTENER
 /* Main class should extend this */
 class Listener {
 public:
@@ -9,3 +9,5 @@ public:
 	virtual void render() = 0;
 	virtual void dispose() = 0;
 };
+
+#endif

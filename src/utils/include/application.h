@@ -1,4 +1,6 @@
-#pragma once
+#ifndef APPLICATION
+#define APPLICATION
+
 #include "listener.h"
 #include "logger.h"
 #include "graphics.h"
@@ -11,7 +13,6 @@ private:
 	Listener* listener;
     Input* input;
 	Configuration* config;
-
 	void gameLoop();
 	void exitApp();
 public:
@@ -25,3 +26,6 @@ public:
     void error(const char* tag, const char* message);
 
 };
+
+
+#endif

@@ -1,4 +1,6 @@
-#pragma once
+#ifndef GRAPHICS
+#define GRAPHICS
+
 #include "configuration.h"
 #include "SDL.h"
 
@@ -24,3 +26,5 @@ public:
 	void  createWindow();
 	void  update();
 };
+
+#endif

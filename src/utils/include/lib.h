@@ -9,12 +9,9 @@
 #include "graphics.h"
 #include "application.h"
 
-namespace Lib{
-    Application *app;
-    Graphics *graphics;
-
+namespace Lib {
+    extern Application *app;
+    extern Graphics *graphics;
 }
-
-
 
 #endif //DUCKHUNT_LIB_H

@@ -1,7 +1,6 @@
 //
 // Created by Viktor on 17.12.2020 г..
 //
-#pragma once
 #ifndef DUCKHUNT_GAME_STATE_MANAGER_H
 #define DUCKHUNT_GAME_STATE_MANAGER_H
 
