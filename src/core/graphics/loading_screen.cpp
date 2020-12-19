@@ -11,7 +11,7 @@ LoadingScreen::LoadingScreen(GameUtils &game) : game(game) {
 
 void LoadingScreen::render(const float& dt) {
     if(isReady){
-        game.gameStateManager.changeState(Menu);
+        game.gameStateManager->changeState(Menu);
     }
 }
 

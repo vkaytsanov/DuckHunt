@@ -4,20 +4,22 @@
 
 #include "include/game_state_manager.h"
 
-GameStateManager::GameStateManager() :
-    currentState(Loading){}
+GameStateManager::GameStateManager(){
+    currentState = new GameState(Loading);
+}
+
 
 GameState GameStateManager::getCurrentState() const {
-    return currentState;
+    return *currentState;
 }
 
 
 void GameStateManager::changeState(const GameState nextState) {
-    currentState = nextState;
+    *currentState = nextState;
 }
 
 const char *GameStateManager::getCurrentStateName() const {
-    switch ((currentState)) {
+    switch ((*currentState)) {
         case Loading:
             return "Loading";
         case Menu:
@@ -25,6 +27,10 @@ const char *GameStateManager::getCurrentStateName() const {
         default:
             return nullptr;
     }
+}
+
+GameStateManager::~GameStateManager() {
+    delete currentState;
 }
 
 

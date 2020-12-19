@@ -13,9 +13,10 @@ enum GameState {
 
 class GameStateManager {
 private:
-    GameState currentState;
+    GameState* currentState;
 public:
     GameStateManager();
+    ~GameStateManager();
     GameState getCurrentState() const;
     const char* getCurrentStateName() const;
     void changeState(GameState nextState);

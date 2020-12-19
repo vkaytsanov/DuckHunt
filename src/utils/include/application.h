@@ -22,8 +22,9 @@ public:
 	Application(Listener* listener, Configuration* config);
 	Application(Listener* listener, Configuration* config, Graphics* graphics);
 	~Application();
-    void log(const char* tag, const char* message);
-    void error(const char* tag, const char* message);
+    void log(const char* tag, const char* message) const;
+    void log(const char* tag, int message) const;
+    void error(const char* tag, const char* message) const;
 
 };
 

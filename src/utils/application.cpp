@@ -4,7 +4,7 @@
 
 #include "include/application.h"
 #include "include/lib.h"
-
+#include <string>
 
 #include <typeinfo>
 
@@ -68,12 +68,16 @@ Application::~Application() {
     delete config;
 }
 
-void Application::log(const char *tag, const char *message) {
+void Application::log(const char *tag, const char *message) const {
     logger->log(tag, message);
 }
 
-void Application::error(const char *tag, const char *message) {
+void Application::error(const char *tag, const char *message) const {
     logger->error(tag, message);
+}
+
+void Application::log(const char *tag, int message) const {
+    logger->log(tag, std::to_string(message).c_str());
 }
 
 

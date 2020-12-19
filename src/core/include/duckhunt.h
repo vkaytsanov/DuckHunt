@@ -11,13 +11,13 @@
 
 class DuckHunt : public Listener, public GameUtils {
 public:
-    LogicSystem logicSystem;
-    GraphicsSystem graphicsSystem;
-    DuckHunt();
+    LogicSystem* logicSystem;
+    GraphicsSystem* graphicsSystem;
+    DuckHunt() = default;
+    ~DuckHunt() override;
 	// Inherited via Listener
 	void create() override;
 	void render() override;
-	void dispose() override;
 };
 
 #endif

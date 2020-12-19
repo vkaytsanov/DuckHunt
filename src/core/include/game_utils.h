@@ -11,9 +11,11 @@
 
 class GameUtils {
 public:
-    GameStateManager gameStateManager;
-    DataSystem dataSystem;
-    GameUtils();
+    GameStateManager* gameStateManager;
+    DataSystem* dataSystem;
+
+    void create();
+    ~GameUtils();
     GameUtils& operator=(const GameUtils& game);
 };
 

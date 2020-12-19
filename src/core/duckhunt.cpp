@@ -3,23 +3,25 @@
 #include "../utils/include/lib.h"
 
 
-
-DuckHunt::DuckHunt() : graphicsSystem(*this), logicSystem(){}
-
 void DuckHunt::create() {
-    Lib::app->log("Current State", gameStateManager.getCurrentStateName());
-    Lib::app->error("Current State", gameStateManager.getCurrentStateName());
-    std::cout << Lib::graphics->getDeltaTime() << std::endl;
+    GameUtils::create();
+    graphicsSystem = new GraphicsSystem(*this);
+    logicSystem = new LogicSystem();
+
 }
 
 void DuckHunt::render() {
     const float dt = Lib::graphics->getDeltaTime();
-    logicSystem.update();
-    graphicsSystem.render(dt);
+    logicSystem->update();
+    graphicsSystem->render(dt);
 }
 
-void DuckHunt::dispose() {
+DuckHunt::~DuckHunt() {
+    delete graphicsSystem;
+    delete logicSystem;
 }
+
+
 
 
 

@@ -14,7 +14,7 @@ GraphicsSystem::GraphicsSystem(GameUtils &game) : game(game) {
 }
 
 void GraphicsSystem::render(const float& dt) {
-    screens[game.gameStateManager.getCurrentState()]->render(dt);
+    screens[game.gameStateManager->getCurrentState()]->render(dt);
 }
 
 
