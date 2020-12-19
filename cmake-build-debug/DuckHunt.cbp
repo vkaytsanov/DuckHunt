@@ -185,6 +185,12 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/logger.h">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/sprite_batch.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/texture.h">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/input.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
@@ -192,6 +198,12 @@
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/logger.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/sprite_batch.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/texture.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/CMakeLists.txt">

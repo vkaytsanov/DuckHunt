@@ -7,8 +7,13 @@
 #include "include/loading_screen.h"
 #include "../../utils/include/lib.h"
 
+int GRAPHICS_WIDTH;
+int GRAPHICS_HEIGHT;
 
 GraphicsSystem::GraphicsSystem(GameUtils &game) : game(game) {
+    GRAPHICS_WIDTH = Lib::graphics->getWidth();
+    GRAPHICS_HEIGHT = Lib::graphics->getHeight();
+
     screens[Loading] = new LoadingScreen(game);
     screens[Menu] = new MenuScreen(game);
 }

@@ -7,11 +7,10 @@
 
 #include "abstract_screen.h"
 #include "../include/game_utils.h"
-#include "SDL.h"
 
 class MenuScreen : public AbstractScreen{
 private:
-    SDL_Texture* logo;
+    Texture* logo;
     GameUtils& game;
 public:
     explicit MenuScreen(GameUtils& game);

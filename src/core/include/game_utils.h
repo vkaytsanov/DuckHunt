@@ -10,13 +10,16 @@
 #include "../data/include/data_system.h"
 
 class GameUtils {
+private:
+    GameUtils& operator=(const GameUtils& game);
+protected:
+    void create();
 public:
     GameStateManager* gameStateManager;
     DataSystem* dataSystem;
 
-    void create();
     ~GameUtils();
-    GameUtils& operator=(const GameUtils& game);
+
 };
 
 

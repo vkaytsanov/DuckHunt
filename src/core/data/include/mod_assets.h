@@ -8,15 +8,17 @@
 #include <unordered_map>
 #include "SDL.h"
 #include "SDL_image.h"
+#include "../../../utils/include/texture.h"
 
 
 class Mod_Assets {
 private:
-    const char* sprites_location = "assets/sprites/";
-    std::unordered_map<const char*, SDL_Texture*> mapped_sprites;
+    std::unordered_map<std::string, Texture*> mapped_sprites;
+    static std::string stripName(std::string& name);
 public:
     Mod_Assets();
-    SDL_Texture* getSprite(const char* name);
+    ~Mod_Assets();
+    Texture* getSprite(std::string name);
 };
 
 

@@ -613,6 +613,60 @@ src\utils\logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\logger.cpp.s
 .PHONY : src\utils\logger.cpp.s
 
+src\utils\sprite_batch.obj: src\utils\sprite_batch.cpp.obj
+
+.PHONY : src\utils\sprite_batch.obj
+
+# target to build an object file
+src\utils\sprite_batch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.obj
+.PHONY : src\utils\sprite_batch.cpp.obj
+
+src\utils\sprite_batch.i: src\utils\sprite_batch.cpp.i
+
+.PHONY : src\utils\sprite_batch.i
+
+# target to preprocess a source file
+src\utils\sprite_batch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.i
+.PHONY : src\utils\sprite_batch.cpp.i
+
+src\utils\sprite_batch.s: src\utils\sprite_batch.cpp.s
+
+.PHONY : src\utils\sprite_batch.s
+
+# target to generate assembly for a file
+src\utils\sprite_batch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.s
+.PHONY : src\utils\sprite_batch.cpp.s
+
+src\utils\texture.obj: src\utils\texture.cpp.obj
+
+.PHONY : src\utils\texture.obj
+
+# target to build an object file
+src\utils\texture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.obj
+.PHONY : src\utils\texture.cpp.obj
+
+src\utils\texture.i: src\utils\texture.cpp.i
+
+.PHONY : src\utils\texture.i
+
+# target to preprocess a source file
+src\utils\texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.i
+.PHONY : src\utils\texture.cpp.i
+
+src\utils\texture.s: src\utils\texture.cpp.s
+
+.PHONY : src\utils\texture.s
+
+# target to generate assembly for a file
+src\utils\texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.s
+.PHONY : src\utils\texture.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -676,6 +730,12 @@ help:
 	@echo ... src/utils/logger.obj
 	@echo ... src/utils/logger.i
 	@echo ... src/utils/logger.s
+	@echo ... src/utils/sprite_batch.obj
+	@echo ... src/utils/sprite_batch.i
+	@echo ... src/utils/sprite_batch.s
+	@echo ... src/utils/texture.obj
+	@echo ... src/utils/texture.i
+	@echo ... src/utils/texture.s
 .PHONY : help
 
 

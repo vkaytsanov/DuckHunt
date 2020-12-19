@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DuckHunt.dir/src/utils/input.cpp.obj"
   "CMakeFiles/DuckHunt.dir/src/utils/lib.cpp.obj"
   "CMakeFiles/DuckHunt.dir/src/utils/logger.cpp.obj"
+  "CMakeFiles/DuckHunt.dir/src/utils/sprite_batch.cpp.obj"
+  "CMakeFiles/DuckHunt.dir/src/utils/texture.cpp.obj"
   "DuckHunt.exe"
   "DuckHunt.exe.manifest"
   "DuckHunt.lib"

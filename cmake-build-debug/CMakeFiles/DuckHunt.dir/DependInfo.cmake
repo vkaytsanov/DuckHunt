@@ -22,6 +22,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/input.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/input.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/lib.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/lib.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/logger.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/logger.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/sprite_batch.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/sprite_batch.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/texture.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/texture.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
