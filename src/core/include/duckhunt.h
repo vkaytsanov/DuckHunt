@@ -2,14 +2,14 @@
 #ifndef DUCKHUNT_GAME
 #define DUCKHUNT_GAME
 
-#include "../../utils/include/listener.h"
+#include "../../lib/include/listener.h"
 #include "../graphics/include/graphics_system.h"
 #include "../logic/include/logic_system.h"
-#include "../utils/include/application.h"
+#include "../lib/include/application.h"
 #include "game_utils.h"
 
 
-class DuckHunt : public Listener, public GameUtils {
+class DuckHunt : public Listener, public Gamelib {
 public:
     LogicSystem* logicSystem;
     GraphicsSystem* graphicsSystem;

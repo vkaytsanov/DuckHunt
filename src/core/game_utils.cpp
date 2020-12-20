@@ -4,17 +4,17 @@
 
 #include "include/game_utils.h"
 
-void GameUtils::create() {
+void Gamelib::create() {
     gameStateManager = new GameStateManager();
     dataSystem = new DataSystem();
 }
 
-GameUtils::~GameUtils() {
+Gamelib::~Gamelib() {
     delete gameStateManager;
     delete dataSystem;
 }
 
-GameUtils& GameUtils::operator=(const GameUtils &game)= default;
+Gamelib& Gamelib::operator=(const Gamelib &game)= default;
 
 
 

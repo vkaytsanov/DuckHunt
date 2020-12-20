@@ -289,156 +289,156 @@ CMakeFiles\DuckHunt.dir\src\desktop\desktop_launcher.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\desktop\desktop_launcher.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\desktop\desktop_launcher.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\application.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
-CMakeFiles\DuckHunt.dir\src\utils\application.cpp.obj: ..\src\utils\application.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/DuckHunt.dir/src/utils/application.cpp.obj"
+CMakeFiles\DuckHunt.dir\src\lib\application.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
+CMakeFiles\DuckHunt.dir\src\lib\application.cpp.obj: ..\src\lib\application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/DuckHunt.dir/src/lib/application.cpp.obj"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\utils\application.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\application.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\lib\application.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\application.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\application.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/utils/application.cpp.i"
-	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\utils\application.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\utils\application.cpp
+CMakeFiles\DuckHunt.dir\src\lib\application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/lib/application.cpp.i"
+	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\lib\application.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\lib\application.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\application.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/utils/application.cpp.s"
+CMakeFiles\DuckHunt.dir\src\lib\application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/lib/application.cpp.s"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\utils\application.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\application.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\lib\application.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\application.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
-CMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.obj: ..\src\utils\configuration.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/DuckHunt.dir/src/utils/configuration.cpp.obj"
+CMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
+CMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.obj: ..\src\lib\configuration.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/DuckHunt.dir/src/lib/configuration.cpp.obj"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\configuration.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\configuration.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/utils/configuration.cpp.i"
-	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\utils\configuration.cpp
+CMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/lib/configuration.cpp.i"
+	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\lib\configuration.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/utils/configuration.cpp.s"
+CMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/lib/configuration.cpp.s"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\configuration.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\configuration.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
-CMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.obj: ..\src\utils\graphics.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/DuckHunt.dir/src/utils/graphics.cpp.obj"
+CMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
+CMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.obj: ..\src\lib\graphics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/DuckHunt.dir/src/lib/graphics.cpp.obj"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\graphics.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\graphics.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/utils/graphics.cpp.i"
-	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\utils\graphics.cpp
+CMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/lib/graphics.cpp.i"
+	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\lib\graphics.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/utils/graphics.cpp.s"
+CMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/lib/graphics.cpp.s"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\graphics.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\graphics.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\input.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
-CMakeFiles\DuckHunt.dir\src\utils\input.cpp.obj: ..\src\utils\input.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/DuckHunt.dir/src/utils/input.cpp.obj"
+CMakeFiles\DuckHunt.dir\src\lib\input.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
+CMakeFiles\DuckHunt.dir\src\lib\input.cpp.obj: ..\src\lib\input.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/DuckHunt.dir/src/lib/input.cpp.obj"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\utils\input.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\input.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\lib\input.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\input.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\input.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/utils/input.cpp.i"
-	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\utils\input.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\utils\input.cpp
+CMakeFiles\DuckHunt.dir\src\lib\input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/lib/input.cpp.i"
+	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\lib\input.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\lib\input.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\input.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/utils/input.cpp.s"
+CMakeFiles\DuckHunt.dir\src\lib\input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/lib/input.cpp.s"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\utils\input.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\input.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\lib\input.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\input.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
-CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.obj: ..\src\utils\lib.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/DuckHunt.dir/src/utils/lib.cpp.obj"
+CMakeFiles\DuckHunt.dir\src\lib\lib.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
+CMakeFiles\DuckHunt.dir\src\lib\lib.cpp.obj: ..\src\lib\lib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/DuckHunt.dir/src/lib/lib.cpp.obj"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\utils\lib.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\lib.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\lib\lib.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\lib.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/utils/lib.cpp.i"
-	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\utils\lib.cpp
+CMakeFiles\DuckHunt.dir\src\lib\lib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/lib/lib.cpp.i"
+	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\lib\lib.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\lib\lib.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/utils/lib.cpp.s"
+CMakeFiles\DuckHunt.dir\src\lib\lib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/lib/lib.cpp.s"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\utils\lib.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\lib.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\lib\lib.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\lib.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\logger.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
-CMakeFiles\DuckHunt.dir\src\utils\logger.cpp.obj: ..\src\utils\logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/DuckHunt.dir/src/utils/logger.cpp.obj"
+CMakeFiles\DuckHunt.dir\src\lib\logger.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
+CMakeFiles\DuckHunt.dir\src\lib\logger.cpp.obj: ..\src\lib\logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/DuckHunt.dir/src/lib/logger.cpp.obj"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\utils\logger.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\logger.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\lib\logger.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\logger.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\logger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/utils/logger.cpp.i"
-	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\utils\logger.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\utils\logger.cpp
+CMakeFiles\DuckHunt.dir\src\lib\logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/lib/logger.cpp.i"
+	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\lib\logger.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\lib\logger.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\logger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/utils/logger.cpp.s"
+CMakeFiles\DuckHunt.dir\src\lib\logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/lib/logger.cpp.s"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\utils\logger.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\logger.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\lib\logger.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\logger.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
-CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.obj: ..\src\utils\sprite_batch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/DuckHunt.dir/src/utils/sprite_batch.cpp.obj"
+CMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
+CMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.obj: ..\src\lib\utils\sprite_batch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/DuckHunt.dir/src/lib/utils/sprite_batch.cpp.obj"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\sprite_batch.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\sprite_batch.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/utils/sprite_batch.cpp.i"
-	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\utils\sprite_batch.cpp
+CMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/lib/utils/sprite_batch.cpp.i"
+	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\sprite_batch.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/utils/sprite_batch.cpp.s"
+CMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/lib/utils/sprite_batch.cpp.s"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\sprite_batch.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\sprite_batch.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
-CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.obj: ..\src\utils\texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/DuckHunt.dir/src/utils/texture.cpp.obj"
+CMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.obj: CMakeFiles\DuckHunt.dir\flags.make
+CMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.obj: ..\src\lib\utils\texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\vikto\CLionProjects\DuckHunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/DuckHunt.dir/src/lib/utils/texture.cpp.obj"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\utils\texture.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\texture.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.obj /FdCMakeFiles\DuckHunt.dir\ /FS -c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\texture.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/utils/texture.cpp.i"
-	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\utils\texture.cpp
+CMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuckHunt.dir/src/lib/utils/texture.cpp.i"
+	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\texture.cpp
 <<
 
-CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/utils/texture.cpp.s"
+CMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuckHunt.dir/src/lib/utils/texture.cpp.s"
 	D:\VISUAL~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\utils\texture.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\utils\texture.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.s /c C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\texture.cpp
 <<
 
 # Object files for target DuckHunt
@@ -455,14 +455,14 @@ DuckHunt_OBJECTS = \
 "CMakeFiles\DuckHunt.dir\src\core\graphics\menu_screen.cpp.obj" \
 "CMakeFiles\DuckHunt.dir\src\core\logic\logic_system.cpp.obj" \
 "CMakeFiles\DuckHunt.dir\src\desktop\desktop_launcher.cpp.obj" \
-"CMakeFiles\DuckHunt.dir\src\utils\application.cpp.obj" \
-"CMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.obj" \
-"CMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.obj" \
-"CMakeFiles\DuckHunt.dir\src\utils\input.cpp.obj" \
-"CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.obj" \
-"CMakeFiles\DuckHunt.dir\src\utils\logger.cpp.obj" \
-"CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.obj" \
-"CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.obj"
+"CMakeFiles\DuckHunt.dir\src\lib\application.cpp.obj" \
+"CMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.obj" \
+"CMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.obj" \
+"CMakeFiles\DuckHunt.dir\src\lib\input.cpp.obj" \
+"CMakeFiles\DuckHunt.dir\src\lib\lib.cpp.obj" \
+"CMakeFiles\DuckHunt.dir\src\lib\logger.cpp.obj" \
+"CMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.obj" \
+"CMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.obj"
 
 # External object files for target DuckHunt
 DuckHunt_EXTERNAL_OBJECTS =
@@ -479,14 +479,14 @@ DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\core\graphics\loading_screen.cpp.obj
 DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\core\graphics\menu_screen.cpp.obj
 DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\core\logic\logic_system.cpp.obj
 DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\desktop\desktop_launcher.cpp.obj
-DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\utils\application.cpp.obj
-DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.obj
-DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.obj
-DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\utils\input.cpp.obj
-DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.obj
-DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\utils\logger.cpp.obj
-DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.obj
-DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.obj
+DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\lib\application.cpp.obj
+DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.obj
+DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.obj
+DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\lib\input.cpp.obj
+DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\lib\lib.cpp.obj
+DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\lib\logger.cpp.obj
+DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.obj
+DuckHunt.exe: CMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.obj
 DuckHunt.exe: CMakeFiles\DuckHunt.dir\build.make
 DuckHunt.exe: D:\SDL2\lib\x86\SDL2.lib
 DuckHunt.exe: D:\SDL2\lib\x86\SDL2main.lib

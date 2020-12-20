@@ -16,10 +16,10 @@ extern int GRAPHICS_HEIGHT;
 class GraphicsSystem {
 private:
     std::unordered_map<GameState, AbstractScreen*> screens;
-    GameUtils& game;
+    Gamelib& game;
 public:
 
-    explicit GraphicsSystem(GameUtils &game);
+    explicit GraphicsSystem(Gamelib &game);
     void render(const float& dt);
 
 };

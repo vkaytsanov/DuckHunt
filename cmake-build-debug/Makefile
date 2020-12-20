@@ -451,221 +451,221 @@ src\desktop\desktop_launcher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\desktop\desktop_launcher.cpp.s
 .PHONY : src\desktop\desktop_launcher.cpp.s
 
-src\utils\application.obj: src\utils\application.cpp.obj
+src\lib\application.obj: src\lib\application.cpp.obj
 
-.PHONY : src\utils\application.obj
-
-# target to build an object file
-src\utils\application.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\application.cpp.obj
-.PHONY : src\utils\application.cpp.obj
-
-src\utils\application.i: src\utils\application.cpp.i
-
-.PHONY : src\utils\application.i
-
-# target to preprocess a source file
-src\utils\application.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\application.cpp.i
-.PHONY : src\utils\application.cpp.i
-
-src\utils\application.s: src\utils\application.cpp.s
-
-.PHONY : src\utils\application.s
-
-# target to generate assembly for a file
-src\utils\application.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\application.cpp.s
-.PHONY : src\utils\application.cpp.s
-
-src\utils\configuration.obj: src\utils\configuration.cpp.obj
-
-.PHONY : src\utils\configuration.obj
+.PHONY : src\lib\application.obj
 
 # target to build an object file
-src\utils\configuration.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.obj
-.PHONY : src\utils\configuration.cpp.obj
+src\lib\application.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\application.cpp.obj
+.PHONY : src\lib\application.cpp.obj
 
-src\utils\configuration.i: src\utils\configuration.cpp.i
+src\lib\application.i: src\lib\application.cpp.i
 
-.PHONY : src\utils\configuration.i
+.PHONY : src\lib\application.i
 
 # target to preprocess a source file
-src\utils\configuration.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.i
-.PHONY : src\utils\configuration.cpp.i
+src\lib\application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\application.cpp.i
+.PHONY : src\lib\application.cpp.i
 
-src\utils\configuration.s: src\utils\configuration.cpp.s
+src\lib\application.s: src\lib\application.cpp.s
 
-.PHONY : src\utils\configuration.s
+.PHONY : src\lib\application.s
 
 # target to generate assembly for a file
-src\utils\configuration.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\configuration.cpp.s
-.PHONY : src\utils\configuration.cpp.s
+src\lib\application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\application.cpp.s
+.PHONY : src\lib\application.cpp.s
 
-src\utils\graphics.obj: src\utils\graphics.cpp.obj
+src\lib\configuration.obj: src\lib\configuration.cpp.obj
 
-.PHONY : src\utils\graphics.obj
+.PHONY : src\lib\configuration.obj
 
 # target to build an object file
-src\utils\graphics.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.obj
-.PHONY : src\utils\graphics.cpp.obj
+src\lib\configuration.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.obj
+.PHONY : src\lib\configuration.cpp.obj
 
-src\utils\graphics.i: src\utils\graphics.cpp.i
+src\lib\configuration.i: src\lib\configuration.cpp.i
 
-.PHONY : src\utils\graphics.i
+.PHONY : src\lib\configuration.i
 
 # target to preprocess a source file
-src\utils\graphics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.i
-.PHONY : src\utils\graphics.cpp.i
+src\lib\configuration.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.i
+.PHONY : src\lib\configuration.cpp.i
 
-src\utils\graphics.s: src\utils\graphics.cpp.s
+src\lib\configuration.s: src\lib\configuration.cpp.s
 
-.PHONY : src\utils\graphics.s
+.PHONY : src\lib\configuration.s
 
 # target to generate assembly for a file
-src\utils\graphics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\graphics.cpp.s
-.PHONY : src\utils\graphics.cpp.s
+src\lib\configuration.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\configuration.cpp.s
+.PHONY : src\lib\configuration.cpp.s
 
-src\utils\input.obj: src\utils\input.cpp.obj
+src\lib\graphics.obj: src\lib\graphics.cpp.obj
 
-.PHONY : src\utils\input.obj
+.PHONY : src\lib\graphics.obj
 
 # target to build an object file
-src\utils\input.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\input.cpp.obj
-.PHONY : src\utils\input.cpp.obj
+src\lib\graphics.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.obj
+.PHONY : src\lib\graphics.cpp.obj
 
-src\utils\input.i: src\utils\input.cpp.i
+src\lib\graphics.i: src\lib\graphics.cpp.i
 
-.PHONY : src\utils\input.i
+.PHONY : src\lib\graphics.i
 
 # target to preprocess a source file
-src\utils\input.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\input.cpp.i
-.PHONY : src\utils\input.cpp.i
+src\lib\graphics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.i
+.PHONY : src\lib\graphics.cpp.i
 
-src\utils\input.s: src\utils\input.cpp.s
+src\lib\graphics.s: src\lib\graphics.cpp.s
 
-.PHONY : src\utils\input.s
+.PHONY : src\lib\graphics.s
 
 # target to generate assembly for a file
-src\utils\input.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\input.cpp.s
-.PHONY : src\utils\input.cpp.s
+src\lib\graphics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\graphics.cpp.s
+.PHONY : src\lib\graphics.cpp.s
 
-src\utils\lib.obj: src\utils\lib.cpp.obj
+src\lib\input.obj: src\lib\input.cpp.obj
 
-.PHONY : src\utils\lib.obj
+.PHONY : src\lib\input.obj
 
 # target to build an object file
-src\utils\lib.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.obj
-.PHONY : src\utils\lib.cpp.obj
+src\lib\input.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\input.cpp.obj
+.PHONY : src\lib\input.cpp.obj
 
-src\utils\lib.i: src\utils\lib.cpp.i
+src\lib\input.i: src\lib\input.cpp.i
 
-.PHONY : src\utils\lib.i
+.PHONY : src\lib\input.i
 
 # target to preprocess a source file
-src\utils\lib.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.i
-.PHONY : src\utils\lib.cpp.i
+src\lib\input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\input.cpp.i
+.PHONY : src\lib\input.cpp.i
 
-src\utils\lib.s: src\utils\lib.cpp.s
+src\lib\input.s: src\lib\input.cpp.s
 
-.PHONY : src\utils\lib.s
+.PHONY : src\lib\input.s
 
 # target to generate assembly for a file
-src\utils\lib.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\lib.cpp.s
-.PHONY : src\utils\lib.cpp.s
+src\lib\input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\input.cpp.s
+.PHONY : src\lib\input.cpp.s
 
-src\utils\logger.obj: src\utils\logger.cpp.obj
+src\lib\lib.obj: src\lib\lib.cpp.obj
 
-.PHONY : src\utils\logger.obj
+.PHONY : src\lib\lib.obj
 
 # target to build an object file
-src\utils\logger.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\logger.cpp.obj
-.PHONY : src\utils\logger.cpp.obj
+src\lib\lib.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\lib.cpp.obj
+.PHONY : src\lib\lib.cpp.obj
 
-src\utils\logger.i: src\utils\logger.cpp.i
+src\lib\lib.i: src\lib\lib.cpp.i
 
-.PHONY : src\utils\logger.i
+.PHONY : src\lib\lib.i
 
 # target to preprocess a source file
-src\utils\logger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\logger.cpp.i
-.PHONY : src\utils\logger.cpp.i
+src\lib\lib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\lib.cpp.i
+.PHONY : src\lib\lib.cpp.i
 
-src\utils\logger.s: src\utils\logger.cpp.s
+src\lib\lib.s: src\lib\lib.cpp.s
 
-.PHONY : src\utils\logger.s
+.PHONY : src\lib\lib.s
 
 # target to generate assembly for a file
-src\utils\logger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\logger.cpp.s
-.PHONY : src\utils\logger.cpp.s
+src\lib\lib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\lib.cpp.s
+.PHONY : src\lib\lib.cpp.s
 
-src\utils\sprite_batch.obj: src\utils\sprite_batch.cpp.obj
+src\lib\logger.obj: src\lib\logger.cpp.obj
 
-.PHONY : src\utils\sprite_batch.obj
+.PHONY : src\lib\logger.obj
 
 # target to build an object file
-src\utils\sprite_batch.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.obj
-.PHONY : src\utils\sprite_batch.cpp.obj
+src\lib\logger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\logger.cpp.obj
+.PHONY : src\lib\logger.cpp.obj
 
-src\utils\sprite_batch.i: src\utils\sprite_batch.cpp.i
+src\lib\logger.i: src\lib\logger.cpp.i
 
-.PHONY : src\utils\sprite_batch.i
+.PHONY : src\lib\logger.i
 
 # target to preprocess a source file
-src\utils\sprite_batch.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.i
-.PHONY : src\utils\sprite_batch.cpp.i
+src\lib\logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\logger.cpp.i
+.PHONY : src\lib\logger.cpp.i
 
-src\utils\sprite_batch.s: src\utils\sprite_batch.cpp.s
+src\lib\logger.s: src\lib\logger.cpp.s
 
-.PHONY : src\utils\sprite_batch.s
+.PHONY : src\lib\logger.s
 
 # target to generate assembly for a file
-src\utils\sprite_batch.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\sprite_batch.cpp.s
-.PHONY : src\utils\sprite_batch.cpp.s
+src\lib\logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\logger.cpp.s
+.PHONY : src\lib\logger.cpp.s
 
-src\utils\texture.obj: src\utils\texture.cpp.obj
+src\lib\utils\sprite_batch.obj: src\lib\utils\sprite_batch.cpp.obj
 
-.PHONY : src\utils\texture.obj
+.PHONY : src\lib\utils\sprite_batch.obj
 
 # target to build an object file
-src\utils\texture.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.obj
-.PHONY : src\utils\texture.cpp.obj
+src\lib\utils\sprite_batch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.obj
+.PHONY : src\lib\utils\sprite_batch.cpp.obj
 
-src\utils\texture.i: src\utils\texture.cpp.i
+src\lib\utils\sprite_batch.i: src\lib\utils\sprite_batch.cpp.i
 
-.PHONY : src\utils\texture.i
+.PHONY : src\lib\utils\sprite_batch.i
 
 # target to preprocess a source file
-src\utils\texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.i
-.PHONY : src\utils\texture.cpp.i
+src\lib\utils\sprite_batch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.i
+.PHONY : src\lib\utils\sprite_batch.cpp.i
 
-src\utils\texture.s: src\utils\texture.cpp.s
+src\lib\utils\sprite_batch.s: src\lib\utils\sprite_batch.cpp.s
 
-.PHONY : src\utils\texture.s
+.PHONY : src\lib\utils\sprite_batch.s
 
 # target to generate assembly for a file
-src\utils\texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\utils\texture.cpp.s
-.PHONY : src\utils\texture.cpp.s
+src\lib\utils\sprite_batch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\sprite_batch.cpp.s
+.PHONY : src\lib\utils\sprite_batch.cpp.s
+
+src\lib\utils\texture.obj: src\lib\utils\texture.cpp.obj
+
+.PHONY : src\lib\utils\texture.obj
+
+# target to build an object file
+src\lib\utils\texture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.obj
+.PHONY : src\lib\utils\texture.cpp.obj
+
+src\lib\utils\texture.i: src\lib\utils\texture.cpp.i
+
+.PHONY : src\lib\utils\texture.i
+
+# target to preprocess a source file
+src\lib\utils\texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.i
+.PHONY : src\lib\utils\texture.cpp.i
+
+src\lib\utils\texture.s: src\lib\utils\texture.cpp.s
+
+.PHONY : src\lib\utils\texture.s
+
+# target to generate assembly for a file
+src\lib\utils\texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.s
+.PHONY : src\lib\utils\texture.cpp.s
 
 # Help Target
 help:
@@ -712,30 +712,30 @@ help:
 	@echo ... src/desktop/desktop_launcher.obj
 	@echo ... src/desktop/desktop_launcher.i
 	@echo ... src/desktop/desktop_launcher.s
-	@echo ... src/utils/application.obj
-	@echo ... src/utils/application.i
-	@echo ... src/utils/application.s
-	@echo ... src/utils/configuration.obj
-	@echo ... src/utils/configuration.i
-	@echo ... src/utils/configuration.s
-	@echo ... src/utils/graphics.obj
-	@echo ... src/utils/graphics.i
-	@echo ... src/utils/graphics.s
-	@echo ... src/utils/input.obj
-	@echo ... src/utils/input.i
-	@echo ... src/utils/input.s
-	@echo ... src/utils/lib.obj
-	@echo ... src/utils/lib.i
-	@echo ... src/utils/lib.s
-	@echo ... src/utils/logger.obj
-	@echo ... src/utils/logger.i
-	@echo ... src/utils/logger.s
-	@echo ... src/utils/sprite_batch.obj
-	@echo ... src/utils/sprite_batch.i
-	@echo ... src/utils/sprite_batch.s
-	@echo ... src/utils/texture.obj
-	@echo ... src/utils/texture.i
-	@echo ... src/utils/texture.s
+	@echo ... src/lib/application.obj
+	@echo ... src/lib/application.i
+	@echo ... src/lib/application.s
+	@echo ... src/lib/configuration.obj
+	@echo ... src/lib/configuration.i
+	@echo ... src/lib/configuration.s
+	@echo ... src/lib/graphics.obj
+	@echo ... src/lib/graphics.i
+	@echo ... src/lib/graphics.s
+	@echo ... src/lib/input.obj
+	@echo ... src/lib/input.i
+	@echo ... src/lib/input.s
+	@echo ... src/lib/lib.obj
+	@echo ... src/lib/lib.i
+	@echo ... src/lib/lib.s
+	@echo ... src/lib/logger.obj
+	@echo ... src/lib/logger.i
+	@echo ... src/lib/logger.s
+	@echo ... src/lib/utils/sprite_batch.obj
+	@echo ... src/lib/utils/sprite_batch.i
+	@echo ... src/lib/utils/sprite_batch.s
+	@echo ... src/lib/utils/texture.obj
+	@echo ... src/lib/utils/texture.i
+	@echo ... src/lib/utils/texture.s
 .PHONY : help
 
 

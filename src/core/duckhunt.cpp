@@ -1,13 +1,12 @@
 #include <iostream>
 #include "include/duckhunt.h"
-#include "../utils/include/lib.h"
+#include "../lib/include/lib.h"
 
 
 void DuckHunt::create() {
-    GameUtils::create();
+    Gamelib::create();
     graphicsSystem = new GraphicsSystem(*this);
     logicSystem = new LogicSystem();
-
 }
 
 void DuckHunt::render() {

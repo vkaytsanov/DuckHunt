@@ -5,7 +5,7 @@
 #include "include/loading_screen.h"
 
 
-LoadingScreen::LoadingScreen(GameUtils &game) : game(game) {
+LoadingScreen::LoadingScreen(Gamelib &game) : game(game) {
     isReady = true;
 }
 

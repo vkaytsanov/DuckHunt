@@ -33,9 +33,10 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 	if (config->title == nullptr) config->title = typeid(listener).name();
 	// creating the window
 	graphics->createWindow();
-	// creating the environment utils
+	// creating the environment lib
 	Lib::app = this;
 	Lib::graphics = graphics;
+	Lib::input = input;
     // creating the objects from the game
 	listener->create();
 
@@ -47,7 +48,7 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 void Application::gameLoop() {
 	while (running) {
 		input->update();
-		if (input->shouldQuit()) running = false;
+		if (input->shouldQuit()) break;
 		graphics->updateTime();
 		listener->render();
 

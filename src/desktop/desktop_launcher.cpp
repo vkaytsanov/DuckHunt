@@ -1,6 +1,6 @@
 
-#include "../utils/include/configuration.h"
-#include "../utils/include/application.h"
+#include "../lib/include/configuration.h"
+#include "../lib/include/application.h"
 #include "../core/include/duckhunt.h"
 
 

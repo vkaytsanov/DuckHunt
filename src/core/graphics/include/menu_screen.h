@@ -11,9 +11,9 @@
 class MenuScreen : public AbstractScreen{
 private:
     Texture* logo;
-    GameUtils& game;
+    Gamelib& game;
 public:
-    explicit MenuScreen(GameUtils& game);
+    explicit MenuScreen(Gamelib& game);
     void render(const float& dt) override;
 };
 

@@ -4,6 +4,7 @@
 #include "include/lib.h"
 
 namespace Lib {
-    Application *app;
-    Graphics *graphics;
+    Application* app;
+    Graphics* graphics;
+    Input* input;
 }

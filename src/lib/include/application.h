@@ -13,11 +13,11 @@ private:
 	Listener* listener;
     Input* input;
 	Configuration* config;
+    Graphics* graphics;
+    Logger* logger;
 	void gameLoop();
 	void exitApp();
 public:
-    Graphics* graphics;
-    Logger* logger;
 	explicit Application(Listener* listener);
 	Application(Listener* listener, Configuration* config);
 	Application(Listener* listener, Configuration* config, Graphics* graphics);

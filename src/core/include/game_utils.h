@@ -2,25 +2,25 @@
 // Created by Viktor on 18.12.2020 г..
 //
 
-#ifndef DUCKHUNT_GAME_UTILS_H
-#define DUCKHUNT_GAME_UTILS_H
+#ifndef DUCKHUNT_game_utils_H
+#define DUCKHUNT_game_utils_H
 
 
 #include "game_state_manager.h"
 #include "../data/include/data_system.h"
 
-class GameUtils {
+class Gamelib {
 private:
-    GameUtils& operator=(const GameUtils& game);
+    Gamelib& operator=(const Gamelib& game);
 protected:
     void create();
 public:
     GameStateManager* gameStateManager;
     DataSystem* dataSystem;
 
-    ~GameUtils();
+    ~Gamelib();
 
 };
 
 
-#endif //DUCKHUNT_GAME_UTILS_H
+#endif //DUCKHUNT_game_utils_H

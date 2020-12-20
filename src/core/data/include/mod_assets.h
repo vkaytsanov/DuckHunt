@@ -8,7 +8,7 @@
 #include <unordered_map>
 #include "SDL.h"
 #include "SDL_image.h"
-#include "../../../utils/include/texture.h"
+#include "../../../lib/utils/include/texture.h"
 
 
 class Mod_Assets {

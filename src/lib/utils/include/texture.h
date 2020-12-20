@@ -13,7 +13,7 @@
 class Texture {
 private:
     SDL_Texture* rawTexture;
-    SDL_Rect* rect;
+    SDL_Rect rect;
     int width;
     int height;
 public:
@@ -22,8 +22,8 @@ public:
     int getWidth() const;
     int getHeight() const;
     void draw() const;
-    void draw(int x, int y) const;
-    void draw(int x, int y, int width, int height) const;
+    void draw(const int x, const int y);
+    void draw(const int x, const int y, const int width, const int height);
 };
 
 

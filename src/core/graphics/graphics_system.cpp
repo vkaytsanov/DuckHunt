@@ -5,12 +5,12 @@
 #include <iostream>
 #include "include/graphics_system.h"
 #include "include/loading_screen.h"
-#include "../../utils/include/lib.h"
+#include "../../lib/include/lib.h"
 
 int GRAPHICS_WIDTH;
 int GRAPHICS_HEIGHT;
 
-GraphicsSystem::GraphicsSystem(GameUtils &game) : game(game) {
+GraphicsSystem::GraphicsSystem(Gamelib &game) : game(game) {
     GRAPHICS_WIDTH = Lib::graphics->getWidth();
     GRAPHICS_HEIGHT = Lib::graphics->getHeight();
 

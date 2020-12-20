@@ -10,8 +10,9 @@
 #include "application.h"
 
 namespace Lib {
-    extern Application *app;
-    extern Graphics *graphics;
+    extern Application* app;
+    extern Graphics* graphics;
+    extern Input* input;
 }
 
 #endif //DUCKHUNT_LIB_H

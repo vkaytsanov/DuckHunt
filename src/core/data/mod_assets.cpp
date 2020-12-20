@@ -4,7 +4,7 @@
 
 #include <stdexcept>
 #include "include/mod_assets.h"
-#include "../../utils/include/lib.h"
+#include "../../lib/include/lib.h"
 
 
 Mod_Assets::Mod_Assets() {

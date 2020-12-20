@@ -155,55 +155,55 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/desktop/desktop_launcher.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/application.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/application.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/configuration.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/configuration.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/graphics.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/graphics.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/application.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/application.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/configuration.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/configuration.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/graphics.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/graphics.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/input.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/input.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/lib.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/lib.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/listener.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/listener.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/logger.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/logger.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/sprite_batch.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/input.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/include/texture.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/lib.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/input.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/logger.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/lib.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/sprite_batch.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/logger.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/texture.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/sprite_batch.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/sprite_batch.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/utils/texture.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/texture.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/CMakeLists.txt">

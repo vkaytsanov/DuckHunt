@@ -16,14 +16,14 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/menu_screen.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/graphics/menu_screen.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/logic_system.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/core/logic/logic_system.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/desktop/desktop_launcher.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/desktop/desktop_launcher.cpp.obj"
-  "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/application.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/application.cpp.obj"
-  "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/configuration.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/configuration.cpp.obj"
-  "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/graphics.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/graphics.cpp.obj"
-  "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/input.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/input.cpp.obj"
-  "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/lib.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/lib.cpp.obj"
-  "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/logger.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/logger.cpp.obj"
-  "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/sprite_batch.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/sprite_batch.cpp.obj"
-  "C:/Users/vikto/CLionProjects/DuckHunt/src/utils/texture.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/utils/texture.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/application.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/application.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/configuration.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/configuration.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/graphics.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/graphics.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/input.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/input.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/lib.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/lib.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/logger.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/logger.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/sprite_batch.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/utils/sprite_batch.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/texture.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/utils/texture.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

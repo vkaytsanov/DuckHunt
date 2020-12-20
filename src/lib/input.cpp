@@ -26,7 +26,7 @@ void Input::update() {
     }
 }
 
-bool Input::shouldQuit() {
+bool Input::shouldQuit() const {
     return quit;
 }
 

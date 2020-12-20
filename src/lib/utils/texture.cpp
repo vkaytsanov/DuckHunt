@@ -3,7 +3,7 @@
 //
 
 #include "include/texture.h"
-#include "include/lib.h"
+#include "../include/lib.h"
 
 
 Texture::Texture(const std::string& file_path) {
@@ -20,9 +20,10 @@ Texture::Texture(const std::string& file_path) {
         //Getting the width and height of the texture
         SDL_QueryTexture(rawTexture, nullptr, nullptr, &width, &height);
         //Create drawing rectangle
-        rect = new SDL_Rect();
-        rect->w = width;
-        rect->h = height;
+        rect.x = 0;
+        rect.y = 0;
+        rect.w = width;
+        rect.h = height;
     }
     else{
         Lib::app->error("Texture", "Couldn't find the image");
@@ -42,23 +43,23 @@ int Texture::getHeight() const {
 }
 
 void Texture::draw() const {
-    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, nullptr, nullptr);
+    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, nullptr, &rect);
     SDL_RenderPresent(Lib::graphics->getRenderer());
 }
 
-void Texture::draw(const int x, const int y) const {
-    rect->x = x;
-    rect->y = y;
-    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, nullptr, rect);
+void Texture::draw(const int x, const int y) {
+    rect.x = x;
+    rect.y = y;
+    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, nullptr, &rect);
     SDL_RenderPresent(Lib::graphics->getRenderer());
 }
 
-void Texture::draw(const int x, const int y, const int width, const int height) const {
-    rect->x = x;
-    rect->y = y;
-    rect->w = width;
-    rect->h = height;
-    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, nullptr, rect);
+void Texture::draw(const int x, const int y, const int width, const int height) {
+    rect.x = x;
+    rect.y = y;
+    rect.w = width;
+    rect.h = height;
+    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, nullptr, &rect);
     SDL_RenderPresent(Lib::graphics->getRenderer());
 }
 

@@ -13,8 +13,8 @@ private:
 	bool currFrameKeys[123];
 	bool lastFrameKeys[123];
 public:
-	void update();
-	bool shouldQuit();
+    void update();
+    bool shouldQuit() const;
 	bool isKeyPressed(const char key);
 	bool isKeyJustPressed(const char key);
 };
