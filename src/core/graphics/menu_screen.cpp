@@ -13,9 +13,16 @@ MenuScreen::MenuScreen(Gamelib& game) : game(game){
 
 
 void MenuScreen::render(const float& dt) {
-    SDL_SetRenderDrawColor(Lib::graphics->getRenderer(), 0, 0, 0, 255);
-    SDL_RenderClear(Lib::graphics->getRenderer());
-    logo->draw(GRAPHICS_WIDTH/2 - logo->getWidth()/2, 0, logo->getWidth(), logo->getHeight());
+//    SDL_SetRenderDrawColor(Lib::graphics->getRenderer(), 255, 0, 0, 255);
+//    SDL_Rect rect;
+//    rect.x = 0;
+//    rect.y = 0;
+//    rect.w = GRAPHICS_WIDTH;
+//    rect.y = GRAPHICS_HEIGHT;
+//    SDL_RenderFillRect(Lib::graphics->getRenderer(), &rect);
+//    SDL_RenderPresent(Lib::graphics->getRenderer());
+
+    logo->draw(0, 0, (int) WORLD_WIDTH, (int) WORLD_HEIGHT);
 }
 
 

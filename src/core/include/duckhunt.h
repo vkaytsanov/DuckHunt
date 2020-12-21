@@ -18,6 +18,9 @@ public:
 	// Inherited via Listener
 	void create() override;
 	void render() override;
+    void pause() override;
+    void resume() override;
+    void resize(const int& width, const int& height) override;
 };
 
 #endif

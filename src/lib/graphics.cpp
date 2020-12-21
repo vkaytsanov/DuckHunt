@@ -56,13 +56,23 @@ void Graphics::createWindow() {
             exit(-1);
         }
 		//Create window
-		window = SDL_CreateWindow(config->title, config->x, config->y,
-			config->width, config->height, config->isVisible);
+		window = SDL_CreateWindow(config->title,
+                            config->x,
+                            config->y,
+			                config->width,
+			                config->height,
+			                config->isVisible | SDL_WINDOW_RESIZABLE | SDL_WINDOW_OPENGL);
 		if (window == nullptr) {
 			printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
 			exit(-1);
 		}
 		else {
+		    // Add OpenGL
+            SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+            SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
+            SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+            SDL_GL_CreateContext(window);
+
 			//Get window surface
 			screenSurface = SDL_GetWindowSurface(window);
             if(screenSurface == nullptr){
@@ -106,4 +116,31 @@ Graphics::~Graphics() {
 SDL_Renderer *Graphics::getRenderer() const {
     return renderer;
 }
+
+void Graphics::setWidth(const int &width) {
+    config->width = width;
+}
+
+void Graphics::setHeight(const int &height) {
+    config->height = height;
+}
+
+bool Graphics::isBackground() const {
+    return background;
+}
+
+void Graphics::setBackground(bool background) {
+    Graphics::background = background;
+}
+
+bool Graphics::isVisible() const {
+    return visible;
+}
+
+void Graphics::setVisible(bool visible) {
+    Graphics::visible = visible;
+}
+
+
+
 

@@ -613,6 +613,60 @@ src\lib\logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\logger.cpp.s
 .PHONY : src\lib\logger.cpp.s
 
+src\lib\utils\camera.obj: src\lib\utils\camera.cpp.obj
+
+.PHONY : src\lib\utils\camera.obj
+
+# target to build an object file
+src\lib\utils\camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\camera.cpp.obj
+.PHONY : src\lib\utils\camera.cpp.obj
+
+src\lib\utils\camera.i: src\lib\utils\camera.cpp.i
+
+.PHONY : src\lib\utils\camera.i
+
+# target to preprocess a source file
+src\lib\utils\camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\camera.cpp.i
+.PHONY : src\lib\utils\camera.cpp.i
+
+src\lib\utils\camera.s: src\lib\utils\camera.cpp.s
+
+.PHONY : src\lib\utils\camera.s
+
+# target to generate assembly for a file
+src\lib\utils\camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\camera.cpp.s
+.PHONY : src\lib\utils\camera.cpp.s
+
+src\lib\utils\orthographic_camera.obj: src\lib\utils\orthographic_camera.cpp.obj
+
+.PHONY : src\lib\utils\orthographic_camera.obj
+
+# target to build an object file
+src\lib\utils\orthographic_camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\orthographic_camera.cpp.obj
+.PHONY : src\lib\utils\orthographic_camera.cpp.obj
+
+src\lib\utils\orthographic_camera.i: src\lib\utils\orthographic_camera.cpp.i
+
+.PHONY : src\lib\utils\orthographic_camera.i
+
+# target to preprocess a source file
+src\lib\utils\orthographic_camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\orthographic_camera.cpp.i
+.PHONY : src\lib\utils\orthographic_camera.cpp.i
+
+src\lib\utils\orthographic_camera.s: src\lib\utils\orthographic_camera.cpp.s
+
+.PHONY : src\lib\utils\orthographic_camera.s
+
+# target to generate assembly for a file
+src\lib\utils\orthographic_camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\orthographic_camera.cpp.s
+.PHONY : src\lib\utils\orthographic_camera.cpp.s
+
 src\lib\utils\sprite_batch.obj: src\lib\utils\sprite_batch.cpp.obj
 
 .PHONY : src\lib\utils\sprite_batch.obj
@@ -666,6 +720,60 @@ src\lib\utils\texture.s: src\lib\utils\texture.cpp.s
 src\lib\utils\texture.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\texture.cpp.s
 .PHONY : src\lib\utils\texture.cpp.s
+
+src\lib\utils\universal_viewport.obj: src\lib\utils\universal_viewport.cpp.obj
+
+.PHONY : src\lib\utils\universal_viewport.obj
+
+# target to build an object file
+src\lib\utils\universal_viewport.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\universal_viewport.cpp.obj
+.PHONY : src\lib\utils\universal_viewport.cpp.obj
+
+src\lib\utils\universal_viewport.i: src\lib\utils\universal_viewport.cpp.i
+
+.PHONY : src\lib\utils\universal_viewport.i
+
+# target to preprocess a source file
+src\lib\utils\universal_viewport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\universal_viewport.cpp.i
+.PHONY : src\lib\utils\universal_viewport.cpp.i
+
+src\lib\utils\universal_viewport.s: src\lib\utils\universal_viewport.cpp.s
+
+.PHONY : src\lib\utils\universal_viewport.s
+
+# target to generate assembly for a file
+src\lib\utils\universal_viewport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\universal_viewport.cpp.s
+.PHONY : src\lib\utils\universal_viewport.cpp.s
+
+src\lib\utils\viewport.obj: src\lib\utils\viewport.cpp.obj
+
+.PHONY : src\lib\utils\viewport.obj
+
+# target to build an object file
+src\lib\utils\viewport.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\viewport.cpp.obj
+.PHONY : src\lib\utils\viewport.cpp.obj
+
+src\lib\utils\viewport.i: src\lib\utils\viewport.cpp.i
+
+.PHONY : src\lib\utils\viewport.i
+
+# target to preprocess a source file
+src\lib\utils\viewport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\viewport.cpp.i
+.PHONY : src\lib\utils\viewport.cpp.i
+
+src\lib\utils\viewport.s: src\lib\utils\viewport.cpp.s
+
+.PHONY : src\lib\utils\viewport.s
+
+# target to generate assembly for a file
+src\lib\utils\viewport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DuckHunt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DuckHunt.dir\src\lib\utils\viewport.cpp.s
+.PHONY : src\lib\utils\viewport.cpp.s
 
 # Help Target
 help:
@@ -730,12 +838,24 @@ help:
 	@echo ... src/lib/logger.obj
 	@echo ... src/lib/logger.i
 	@echo ... src/lib/logger.s
+	@echo ... src/lib/utils/camera.obj
+	@echo ... src/lib/utils/camera.i
+	@echo ... src/lib/utils/camera.s
+	@echo ... src/lib/utils/orthographic_camera.obj
+	@echo ... src/lib/utils/orthographic_camera.i
+	@echo ... src/lib/utils/orthographic_camera.s
 	@echo ... src/lib/utils/sprite_batch.obj
 	@echo ... src/lib/utils/sprite_batch.i
 	@echo ... src/lib/utils/sprite_batch.s
 	@echo ... src/lib/utils/texture.obj
 	@echo ... src/lib/utils/texture.i
 	@echo ... src/lib/utils/texture.s
+	@echo ... src/lib/utils/universal_viewport.obj
+	@echo ... src/lib/utils/universal_viewport.i
+	@echo ... src/lib/utils/universal_viewport.s
+	@echo ... src/lib/utils/viewport.obj
+	@echo ... src/lib/utils/viewport.i
+	@echo ... src/lib/utils/viewport.s
 .PHONY : help
 
 

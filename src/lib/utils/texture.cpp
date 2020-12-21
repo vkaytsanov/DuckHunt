@@ -43,23 +43,23 @@ int Texture::getHeight() const {
 }
 
 void Texture::draw() const {
-    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, nullptr, &rect);
+    SDL_Rect srcRect = {0,0, width, height};
+    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, &srcRect, &rect);
     SDL_RenderPresent(Lib::graphics->getRenderer());
 }
 
 void Texture::draw(const int x, const int y) {
+    SDL_Rect srcRect = {0,0, width, height};
     rect.x = x;
     rect.y = y;
-    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, nullptr, &rect);
+    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, &srcRect, &rect);
     SDL_RenderPresent(Lib::graphics->getRenderer());
 }
 
 void Texture::draw(const int x, const int y, const int width, const int height) {
-    rect.x = x;
-    rect.y = y;
-    rect.w = width;
-    rect.h = height;
-    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, nullptr, &rect);
+    SDL_Rect srcRect = {0,0, width, height};
+    rect = {x, y, width, height};
+    SDL_RenderCopy(Lib::graphics->getRenderer(), rawTexture, &srcRect, &rect);
     SDL_RenderPresent(Lib::graphics->getRenderer());
 }
 

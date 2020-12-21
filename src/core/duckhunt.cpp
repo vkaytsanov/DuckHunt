@@ -15,9 +15,21 @@ void DuckHunt::render() {
     graphicsSystem->render(dt);
 }
 
+void DuckHunt::resize(const int &width, const int &height) {
+    graphicsSystem->resizeViewport(width, height);
+}
+
 DuckHunt::~DuckHunt() {
     delete graphicsSystem;
     delete logicSystem;
+}
+
+void DuckHunt::pause() {
+
+}
+
+void DuckHunt::resume() {
+
 }
 
 

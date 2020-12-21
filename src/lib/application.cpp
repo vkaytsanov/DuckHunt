@@ -46,16 +46,52 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 }
 
 void Application::gameLoop() {
-	while (running) {
-		input->update();
-		if (input->shouldQuit()) break;
-		graphics->updateTime();
-		listener->render();
+    int lastWidth = graphics->getWidth();
+    int lastHeight = graphics->getHeight();
+    bool wasPaused = false;
 
-		/* So we don't use 100% CPU */
-		SDL_Delay(1);
+	while (running) {
+	    // fetching all the user input
+		input->update();
+		// user has clicked the top right "X" quit button
+		if (input->shouldQuit()) break;
+        bool isMinimized = !graphics->isVisible();
+        bool isBackground = graphics->isBackground();
+        bool isPaused = isMinimized || isBackground;
+        if(!wasPaused && isPaused){
+            // the game window just became not active on the user's end
+            wasPaused = true;
+            listener->pause();
+        }
+        if(wasPaused && !isPaused){
+            // the game window just became active on the user's end
+            wasPaused = false;
+            listener->resume();
+        }
+
+        const int width = graphics->getWidth();
+        const int height = graphics->getHeight();
+        if(lastWidth != width || lastHeight != height){
+            // we should have received any changes in the input->update()
+            lastWidth = width;
+            lastHeight = height;
+            // sending to the listener that the user has resized
+            // it should update the viewport if there is one
+            listener->resize(width, height);
+        }
+
+        if(!isPaused) {
+            graphics->updateTime();
+            listener->render();
+
+
+            /* So we don't use 100% CPU */
+            SDL_Delay(1);
+        }
+        else{
+            SDL_Delay(1000);
+        }
 	}
-	// cleaning the memory if we are no longer running the game loop
 }
 
 void Application::exitApp() {

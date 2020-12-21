@@ -194,16 +194,49 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/logger.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/camera.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/geometry/include/matrix4.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/geometry/include/vector.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/geometry/include/vector3.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/camera.h">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/sprite_batch.h">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/texture.h">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/universal_viewport.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/viewport.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/orthographic_camera.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/orthographic_camera.h">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/sprite_batch.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/texture.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/universal_viewport.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/viewport.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/CMakeLists.txt">

@@ -130,6 +130,8 @@ CMakeFiles/DuckHunt.dir/src/core/duckhunt.cpp.obj
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/listener.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/logger.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/texture.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/universal_viewport.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/viewport.h
  D:/SDL2/include/SDL.h
  D:/SDL2/include/SDL_assert.h
  D:/SDL2/include/SDL_atomic.h
@@ -304,6 +306,8 @@ CMakeFiles/DuckHunt.dir/src/core/graphics/graphics_system.cpp.obj
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/listener.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/logger.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/texture.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/universal_viewport.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/viewport.h
  D:/SDL2/include/SDL.h
  D:/SDL2/include/SDL_assert.h
  D:/SDL2/include/SDL_atomic.h
@@ -372,6 +376,8 @@ CMakeFiles/DuckHunt.dir/src/core/graphics/menu_screen.cpp.obj
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/listener.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/logger.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/texture.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/universal_viewport.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/viewport.h
  D:/SDL2/include/SDL.h
  D:/SDL2/include/SDL_assert.h
  D:/SDL2/include/SDL_atomic.h
@@ -440,6 +446,8 @@ CMakeFiles/DuckHunt.dir/src/desktop/desktop_launcher.cpp.obj
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/listener.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/logger.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/texture.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/universal_viewport.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/viewport.h
  D:/SDL2/include/SDL.h
  D:/SDL2/include/SDL_assert.h
  D:/SDL2/include/SDL_atomic.h
@@ -644,7 +652,13 @@ CMakeFiles/DuckHunt.dir/src/lib/graphics.cpp.obj
  D:/SDL2/include/begin_code.h
  D:/SDL2/include/close_code.h
 CMakeFiles/DuckHunt.dir/src/lib/input.cpp.obj
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/application.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/configuration.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/graphics.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/input.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/lib.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/listener.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/logger.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/input.cpp
  D:/SDL2/include/SDL.h
  D:/SDL2/include/SDL_assert.h
@@ -662,6 +676,7 @@ CMakeFiles/DuckHunt.dir/src/lib/input.cpp.obj
  D:/SDL2/include/SDL_gesture.h
  D:/SDL2/include/SDL_haptic.h
  D:/SDL2/include/SDL_hints.h
+ D:/SDL2/include/SDL_image.h
  D:/SDL2/include/SDL_joystick.h
  D:/SDL2/include/SDL_keyboard.h
  D:/SDL2/include/SDL_keycode.h
@@ -751,6 +766,18 @@ CMakeFiles/DuckHunt.dir/src/lib/lib.cpp.obj
 CMakeFiles/DuckHunt.dir/src/lib/logger.cpp.obj
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/include/logger.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/logger.cpp
+CMakeFiles/DuckHunt.dir/src/lib/utils/camera.cpp.obj
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/camera.cpp
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/geometry/include/matrix4.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/geometry/include/vector.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/geometry/include/vector3.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/camera.h
+CMakeFiles/DuckHunt.dir/src/lib/utils/orthographic_camera.cpp.obj
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/geometry/include/matrix4.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/geometry/include/vector.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/camera.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/orthographic_camera.cpp
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/orthographic_camera.h
 CMakeFiles/DuckHunt.dir/src/lib/utils/sprite_batch.cpp.obj
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/sprite_batch.h
  C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/sprite_batch.cpp
@@ -781,6 +808,105 @@ CMakeFiles/DuckHunt.dir/src/lib/utils/texture.cpp.obj
  D:/SDL2/include/SDL_haptic.h
  D:/SDL2/include/SDL_hints.h
  D:/SDL2/include/SDL_image.h
+ D:/SDL2/include/SDL_joystick.h
+ D:/SDL2/include/SDL_keyboard.h
+ D:/SDL2/include/SDL_keycode.h
+ D:/SDL2/include/SDL_loadso.h
+ D:/SDL2/include/SDL_log.h
+ D:/SDL2/include/SDL_main.h
+ D:/SDL2/include/SDL_messagebox.h
+ D:/SDL2/include/SDL_metal.h
+ D:/SDL2/include/SDL_mouse.h
+ D:/SDL2/include/SDL_mutex.h
+ D:/SDL2/include/SDL_pixels.h
+ D:/SDL2/include/SDL_platform.h
+ D:/SDL2/include/SDL_power.h
+ D:/SDL2/include/SDL_quit.h
+ D:/SDL2/include/SDL_rect.h
+ D:/SDL2/include/SDL_render.h
+ D:/SDL2/include/SDL_rwops.h
+ D:/SDL2/include/SDL_scancode.h
+ D:/SDL2/include/SDL_sensor.h
+ D:/SDL2/include/SDL_shape.h
+ D:/SDL2/include/SDL_stdinc.h
+ D:/SDL2/include/SDL_surface.h
+ D:/SDL2/include/SDL_system.h
+ D:/SDL2/include/SDL_thread.h
+ D:/SDL2/include/SDL_timer.h
+ D:/SDL2/include/SDL_touch.h
+ D:/SDL2/include/SDL_version.h
+ D:/SDL2/include/SDL_video.h
+ D:/SDL2/include/begin_code.h
+ D:/SDL2/include/close_code.h
+CMakeFiles/DuckHunt.dir/src/lib/utils/universal_viewport.cpp.obj
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/universal_viewport.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/viewport.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/universal_viewport.cpp
+ D:/SDL2/include/SDL.h
+ D:/SDL2/include/SDL_assert.h
+ D:/SDL2/include/SDL_atomic.h
+ D:/SDL2/include/SDL_audio.h
+ D:/SDL2/include/SDL_blendmode.h
+ D:/SDL2/include/SDL_clipboard.h
+ D:/SDL2/include/SDL_config.h
+ D:/SDL2/include/SDL_cpuinfo.h
+ D:/SDL2/include/SDL_endian.h
+ D:/SDL2/include/SDL_error.h
+ D:/SDL2/include/SDL_events.h
+ D:/SDL2/include/SDL_filesystem.h
+ D:/SDL2/include/SDL_gamecontroller.h
+ D:/SDL2/include/SDL_gesture.h
+ D:/SDL2/include/SDL_haptic.h
+ D:/SDL2/include/SDL_hints.h
+ D:/SDL2/include/SDL_joystick.h
+ D:/SDL2/include/SDL_keyboard.h
+ D:/SDL2/include/SDL_keycode.h
+ D:/SDL2/include/SDL_loadso.h
+ D:/SDL2/include/SDL_log.h
+ D:/SDL2/include/SDL_main.h
+ D:/SDL2/include/SDL_messagebox.h
+ D:/SDL2/include/SDL_metal.h
+ D:/SDL2/include/SDL_mouse.h
+ D:/SDL2/include/SDL_mutex.h
+ D:/SDL2/include/SDL_pixels.h
+ D:/SDL2/include/SDL_platform.h
+ D:/SDL2/include/SDL_power.h
+ D:/SDL2/include/SDL_quit.h
+ D:/SDL2/include/SDL_rect.h
+ D:/SDL2/include/SDL_render.h
+ D:/SDL2/include/SDL_rwops.h
+ D:/SDL2/include/SDL_scancode.h
+ D:/SDL2/include/SDL_sensor.h
+ D:/SDL2/include/SDL_shape.h
+ D:/SDL2/include/SDL_stdinc.h
+ D:/SDL2/include/SDL_surface.h
+ D:/SDL2/include/SDL_system.h
+ D:/SDL2/include/SDL_thread.h
+ D:/SDL2/include/SDL_timer.h
+ D:/SDL2/include/SDL_touch.h
+ D:/SDL2/include/SDL_version.h
+ D:/SDL2/include/SDL_video.h
+ D:/SDL2/include/begin_code.h
+ D:/SDL2/include/close_code.h
+CMakeFiles/DuckHunt.dir/src/lib/utils/viewport.cpp.obj
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/viewport.h
+ C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/viewport.cpp
+ D:/SDL2/include/SDL.h
+ D:/SDL2/include/SDL_assert.h
+ D:/SDL2/include/SDL_atomic.h
+ D:/SDL2/include/SDL_audio.h
+ D:/SDL2/include/SDL_blendmode.h
+ D:/SDL2/include/SDL_clipboard.h
+ D:/SDL2/include/SDL_config.h
+ D:/SDL2/include/SDL_cpuinfo.h
+ D:/SDL2/include/SDL_endian.h
+ D:/SDL2/include/SDL_error.h
+ D:/SDL2/include/SDL_events.h
+ D:/SDL2/include/SDL_filesystem.h
+ D:/SDL2/include/SDL_gamecontroller.h
+ D:/SDL2/include/SDL_gesture.h
+ D:/SDL2/include/SDL_haptic.h
+ D:/SDL2/include/SDL_hints.h
  D:/SDL2/include/SDL_joystick.h
  D:/SDL2/include/SDL_keyboard.h
  D:/SDL2/include/SDL_keycode.h

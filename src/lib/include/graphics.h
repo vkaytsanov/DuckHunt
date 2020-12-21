@@ -16,11 +16,19 @@ private:
 	uint16_t fps = 0;
 	uint16_t frames = 0;
 	uint64_t frameStart = 0;
+    bool background;
+    bool visible;
 public:
 	explicit Graphics(Configuration* config);
 	Graphics();
 	~Graphics();
-	void  updateTime();
+    bool  isBackground() const;
+    void  setBackground(bool background);
+    bool  isVisible() const;
+    void  setVisible(bool visible);
+    void  updateTime();
+	void  setWidth(const int& width);
+	void  setHeight(const int& height);
 	int	  getWidth();
 	int   getHeight();
 	float getDeltaTime() const;

@@ -22,8 +22,12 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/input.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/input.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/lib.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/lib.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/logger.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/logger.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/camera.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/utils/camera.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/orthographic_camera.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/utils/orthographic_camera.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/sprite_batch.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/utils/sprite_batch.cpp.obj"
   "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/texture.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/utils/texture.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/universal_viewport.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/utils/universal_viewport.cpp.obj"
+  "C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/viewport.cpp" "C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir/src/lib/utils/viewport.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

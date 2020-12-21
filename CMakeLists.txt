@@ -16,6 +16,8 @@ file(GLOB SOURCES
         "src/desktop/desktop_launcher.cpp"
         "src/lib/*.cpp"
         "src/lib/include/*.h"
+        "src/lib/utils/geometry/*.cpp"
+        "src/lib/utils/geometry/include/*.h"
         "src/lib/utils/*.cpp"
         "src/lib/utils/include/*.h"
         "src/core/game_object/*.cpp"
@@ -32,4 +34,6 @@ set(SDL2_LIB_DIR D:/SDL2/lib)
 include_directories(${SDL2_INCLUDE_DIR})
 link_directories(${SDL2_LIB_DIR})
 find_package(SDL2 REQUIRED)
+find_package(OpenGL REQUIRED)
 target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES} ${SDL2IMAGE_LIBRARIES})
+
