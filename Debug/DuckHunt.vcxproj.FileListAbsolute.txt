@@ -1,2 +1,0 @@
-C:\Users\vikto\source\repos\DuckHunt\Debug\DuckHunt.exe
-C:\Users\vikto\source\repos\DuckHunt\Debug\DuckHunt.pdb

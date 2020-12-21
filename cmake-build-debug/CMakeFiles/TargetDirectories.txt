@@ -1,3 +1,0 @@
-C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/DuckHunt.dir
-C:/Users/vikto/CLionProjects/DuckHunt/cmake-build-debug/CMakeFiles/edit_cache.dir

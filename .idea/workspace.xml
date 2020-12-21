@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="DuckHunt" targetName="DuckHunt" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cce279b2-e5e5-4a25-af0a-334e17d17fb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/camera.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/geometry/include/matrix4.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/geometry/include/vector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/geometry/include/vector3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/include/camera.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/include/universal_viewport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/include/viewport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/orthographic_camera.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/orthographic_camera.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/universal_viewport.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/viewport.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DuckHunt.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/duckhunt.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/duckhunt.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/graphics/graphics_system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/graphics_system.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/graphics/include/graphics_system.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/include/graphics_system.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/graphics/menu_screen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/menu_screen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/include/duckhunt.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/include/duckhunt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/desktop/desktop_launcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/desktop/desktop_launcher.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/application.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/graphics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/graphics.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/include/graphics.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/include/graphics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/include/listener.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/include/listener.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/input.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils/texture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/texture.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CMakeLists.txt" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1lkXRSMJSSrI6ZPabyR2olCs4k4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt" />
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\core" />
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\geometry\include" />
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\geometry" />
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\include" />
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils" />
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\utils\include" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DuckHunt" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DuckHunt" TARGET_NAME="DuckHunt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DuckHunt" RUN_TARGET_NAME="DuckHunt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cce279b2-e5e5-4a25-af0a-334e17d17fb9" name="Default Changelist" comment="" />
+      <created>1608142072011</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608142072011</updated>
+      <workItem from="1608142078820" duration="6982000" />
+      <workItem from="1608149628715" duration="14000" />
+      <workItem from="1608149701322" duration="13000" />
+      <workItem from="1608150019762" duration="29376000" />
+      <workItem from="1608246786155" duration="50997000" />
+      <workItem from="1608482590790" duration="34256000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
