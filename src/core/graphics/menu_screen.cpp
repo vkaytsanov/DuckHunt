@@ -7,22 +7,44 @@
 #include "../../lib/include/lib.h"
 
 
-MenuScreen::MenuScreen(Gamelib& game) : game(game){
+
+MenuScreen::MenuScreen(Gamelib& game) : game(game), playLabel(){
     logo = game.dataSystem->assets.getSprite("logo");
+    LabelStyle style("arial.ttf", 20);
+    std::string gameModes[2] = {"GAME A      1 DUCK",
+                                "GAME B      2 DUCKS"};
+
+    EventListener e;
+    e.update = [&]{
+        Lib::app->log("Lambda", "I'm in lambda");
+        game.gameStateManager->changeState(Playing);
+    };
+    playLabel->addListener(e);
+    for(int i = 0; i < 2; i++) {
+        playLabel[i].setText(gameModes[i]);
+        style.color = {0xCC, 0x55, 0x00};
+        playLabel[i].setStyle(style);
+        playLabel[i].setX((float) GRAPHICS_WIDTH * 0.2f);
+        playLabel[i].setY((float) GRAPHICS_WIDTH * 0.4f + 60 * i);
+        playLabel[i].setWidth((float) GRAPHICS_WIDTH * 0.6f + 40 * i);
+        playLabel[i].setHeight((float) 60);
+
+        userInterface.add(playLabel[i]);
+    }
+
+    userInterface.debug = true;
+
 }
 
 
 void MenuScreen::render(const float& dt) {
-//    SDL_SetRenderDrawColor(Lib::graphics->getRenderer(), 255, 0, 0, 255);
-//    SDL_Rect rect;
-//    rect.x = 0;
-//    rect.y = 0;
-//    rect.w = GRAPHICS_WIDTH;
-//    rect.y = GRAPHICS_HEIGHT;
-//    SDL_RenderFillRect(Lib::graphics->getRenderer(), &rect);
-//    SDL_RenderPresent(Lib::graphics->getRenderer());
+    SDL_SetRenderDrawColor(Lib::graphics->getRenderer(), 0, 0, 0, 255);
+    SDL_RenderClear(Lib::graphics->getRenderer());
 
-    logo->draw(0, 0, (int) WORLD_WIDTH, (int) WORLD_HEIGHT);
+    logo->draw(GRAPHICS_WIDTH * 0.2f,-100, GRAPHICS_WIDTH * 0.6f, GRAPHICS_WIDTH * 0.6f);
+
+    userInterface.act(dt);
+    userInterface.draw();
 }
 
 

@@ -7,10 +7,12 @@
 
 #include "abstract_screen.h"
 #include "../include/game_utils.h"
+#include "../../../lib/utils/ui/include/label.h"
 
 class MenuScreen : public AbstractScreen{
 private:
     Texture* logo;
+    Label playLabel[2];
     Gamelib& game;
 public:
     explicit MenuScreen(Gamelib& game);

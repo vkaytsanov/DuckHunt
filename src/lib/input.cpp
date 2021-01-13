@@ -2,12 +2,18 @@
 #include <iostream>
 #include <exception>
 #include "include/lib.h"
+#include "utils/ui/include/user_interface.h"
 
+Input::Input(const float& width, const float& height) {
+    std::memset(keys, false, sizeof keys);
+    lastMousePosX = currMousePosX = width / 2;
+    lastMousePosY = currMousePosY = height / 2;
+}
 
 void Input::update() {
-    // TODO need optimization here
-    std::memcpy(lastFrameKeys, currFrameKeys, sizeof currFrameKeys);
-    std::memset(currFrameKeys, false, sizeof currFrameKeys);
+    mouseMoved = false;
+    mouseLeftClick = false;
+    mouseRightClick = false;
     while (SDL_PollEvent(&e) != 0) {
         //User requests quit
         if (e.type == SDL_QUIT) {
@@ -16,13 +22,37 @@ void Input::update() {
         //User presses a key
         else if (e.type == SDL_KEYDOWN) {
             try {
-                if (e.key.keysym.sym > 122)
+                if (e.key.keysym.sym > 322)
                     throw std::exception("key is not registered");
-                currFrameKeys[e.key.keysym.sym] = true;
-                std::cerr << e.key.keysym.sym << " is pressed\n";
+                keys[e.key.keysym.sym] = true;
             }
             catch (std::exception& e) {
                 std::cout << e.what() << std::endl;
+            }
+        }
+        //User releases a key
+        else if(e.type == SDL_KEYUP){
+            try {
+                if (e.key.keysym.sym > 322)
+                    throw std::exception("key is not registered");
+                keys[e.key.keysym.sym] = false;
+            }
+            catch (std::exception& e) {
+                std::cout << e.what() << std::endl;
+            }
+        }
+        //User does action with the mouse
+        else if(e.type == SDL_MOUSEMOTION){
+            mouseMoved = true;
+            lastMousePosX = currMousePosX;
+            lastMousePosY = currMousePosY;
+            currMousePosX = e.motion.x;
+            currMousePosY = e.motion.y;
+            if(e.button.button == SDL_BUTTON_LEFT){
+                mouseLeftClick = true;
+            }
+            if(e.button.button == SDL_BUTTON(SDL_BUTTON_RIGHT)){
+                mouseRightClick = true;
             }
         }
         else if(e.type == SDL_WINDOWEVENT){
@@ -50,34 +80,6 @@ void Input::update() {
                     Lib::graphics->setVisible(true);
                     SDL_Log("Window %d restored", e.window.windowID);
                     break;
-//                case SDL_WINDOWEVENT_SIZE_CHANGED:
-//                    Lib::graphics->setWidth(e.window.data1);
-//                    Lib::graphics->setHeight(e.window.data2);
-//                    SDL_Log("Window %d size changed to %dx%d",
-//                            e.window.windowID, e.window.data1,
-//                            e.window.data2);
-//                    break;
-//                case SDL_WINDOWEVENT_MAXIMIZED:
-//                    SDL_Log("Window %d maximized", e.window.windowID);
-//                    break;
-//                case SDL_WINDOWEVENT_ENTER:
-//                    SDL_Log("Mouse entered window %d",
-//                            e.window.windowID);
-//                    break;
-//                case SDL_WINDOWEVENT_LEAVE:
-//                    SDL_Log("Mouse left window %d", e.window.windowID);
-//                    break;
-//                case SDL_WINDOWEVENT_FOCUS_GAINED:
-//                    SDL_Log("Window %d gained keyboard focus",
-//                            e.window.windowID);
-//                    break;
-//                case SDL_WINDOWEVENT_FOCUS_LOST:
-//                    SDL_Log("Window %d lost keyboard focus",
-//                            e.window.windowID);
-//                    break;
-//                case SDL_WINDOWEVENT_CLOSE:
-//                    SDL_Log("Window %d closed", e.window.windowID);
-//                    break;
             }
         }
     }
@@ -88,9 +90,57 @@ bool Input::shouldQuit() const {
 }
 
 bool Input::isKeyPressed(const char key) {
-    return currFrameKeys[key - '0'] || lastFrameKeys[key - '0'];
+    return keys[key];
 }
 
-bool Input::isKeyJustPressed(const char key){
-    return currFrameKeys[key - '0'];
+bool Input::isMouseMoved() const {
+    return mouseMoved;
 }
+
+float Input::getLastMousePosX() const {
+    return lastMousePosX;
+}
+
+float Input::getLastMousePosY() const {
+    return lastMousePosY;
+}
+
+float Input::getCurrMousePosX() const {
+    return currMousePosX;
+}
+
+float Input::getCurrMousePosY() const {
+    return currMousePosY;
+}
+
+
+float Input::getMouseMoveX() const {
+    return currMousePosX - lastMousePosX;
+}
+
+float Input::getMouseMoveY() const {
+    return lastMousePosY - currMousePosY;
+}
+
+bool Input::isMouseLeftClick() const {
+    return mouseLeftClick;
+}
+
+bool Input::isMouseRightClick() const {
+    return mouseRightClick;
+}
+
+void Input::resetMouse() {
+    SDL_WarpMouseInWindow(Lib::graphics->getWindow(), Lib::graphics->getWidth()/2, Lib::graphics->getHeight()/2);
+
+}
+
+
+float Input::getMouseDeltaX() const {
+    return  0.5f * (currMousePosX - (float) Lib::graphics->getWidth()/2);
+}
+
+float Input::getMouseDeltaY() const {
+    return -0.5f * (currMousePosY - (float) Lib::graphics->getHeight()/2);
+}
+

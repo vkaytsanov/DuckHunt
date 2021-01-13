@@ -2,19 +2,21 @@
 // Created by Viktor on 20.12.2020 г..
 //
 
-#ifndef DUCKHUNT_UNIVERSAL_VIEWPORT_H
-#define DUCKHUNT_UNIVERSAL_VIEWPORT_H
+#ifndef UNIVERSAL_VIEWPORT_H
+#define UNIVERSAL_VIEWPORT_H
 
 
 #include "viewport.h"
 #include <cmath>
 
+/** Viewport that remains the aspect ratio and its dimensions can't be
+ * lesser than the specified in @param minWorldWidth and @param minWorldHeight */
 class UniversalViewport : public Viewport{
 private:
     float minWorldWidth;
     float minWorldHeight;
 public:
-    UniversalViewport(float minWorldWidth, float minWorldHeight, SDL_Renderer* renderer);
+    UniversalViewport(float minWorldWidth, float minWorldHeight);
     void update(int screenWidth, int screenHeight, bool centerCamera) override;
     float getMinWorldWidth() const;
     void setMinWorldWidth(float minWorldWidth);
@@ -23,4 +25,4 @@ public:
 };
 
 
-#endif //DUCKHUNT_UNIVERSAL_VIEWPORT_H
+#endif //UNIVERSAL_VIEWPORT_H

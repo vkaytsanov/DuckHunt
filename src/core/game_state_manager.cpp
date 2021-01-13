@@ -24,6 +24,8 @@ const char *GameStateManager::getCurrentStateName() const {
             return "Loading";
         case Menu:
             return "Menu";
+        case Playing:
+            return "Playing";
         default:
             return nullptr;
     }

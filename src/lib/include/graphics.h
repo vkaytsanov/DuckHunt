@@ -4,6 +4,8 @@
 #include "configuration.h"
 #include "SDL.h"
 #include "SDL_image.h"
+#include <SDL_ttf.h>
+
 
 class Graphics {
 private:
@@ -37,6 +39,10 @@ public:
 	void  update();
 
     SDL_Renderer *getRenderer() const;
+
+    SDL_Window *getWindow();
+
+    SDL_Surface *getScreenSurface() const;
 };
 
 #endif

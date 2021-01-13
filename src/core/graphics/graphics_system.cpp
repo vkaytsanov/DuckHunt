@@ -6,6 +6,7 @@
 #include "include/graphics_system.h"
 #include "include/loading_screen.h"
 #include "../../lib/include/lib.h"
+#include "include/playing_screen.h"
 
 int GRAPHICS_WIDTH;
 int GRAPHICS_HEIGHT;
@@ -13,12 +14,13 @@ float WORLD_WIDTH = 240;
 float WORLD_HEIGHT = 120;
 
 GraphicsSystem::GraphicsSystem(Gamelib &game) : game(game),
-        viewport(WORLD_WIDTH, WORLD_HEIGHT, Lib::graphics->getRenderer()) {
+        viewport(WORLD_WIDTH, WORLD_HEIGHT) {
     GRAPHICS_WIDTH = Lib::graphics->getWidth();
     GRAPHICS_HEIGHT = Lib::graphics->getHeight();
-    viewport.update(GRAPHICS_WIDTH, GRAPHICS_HEIGHT, true);
+    viewport.update(GRAPHICS_WIDTH, GRAPHICS_HEIGHT, false);
     screens[Loading] = new LoadingScreen(game);
     screens[Menu] = new MenuScreen(game);
+    screens[Playing] = new PlayingScreen(game);
 }
 
 void GraphicsSystem::render(const float& dt) {
@@ -26,7 +28,7 @@ void GraphicsSystem::render(const float& dt) {
 }
 
 void GraphicsSystem::resizeViewport(const int &width, const int &height) {
-    viewport.update(width, height, true);
+    viewport.update(width, height, false);
 }
 
 

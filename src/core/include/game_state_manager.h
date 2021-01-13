@@ -8,6 +8,7 @@
 enum GameState {
     Loading,
     Menu,
+    Playing,
 };
 
 

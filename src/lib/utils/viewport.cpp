@@ -1,32 +1,13 @@
 //
 // Created by Viktor on 20.12.2020 г..
 //
-
+#include "SDL.h"
+#include "SDL_opengl.h"
+#include <cmath>
 #include "include/viewport.h"
 
-void Viewport::apply(bool centerRenderer) {
-    SDL_Rect viewportRect;
-    viewportRect.w = (int) worldWidth;
-    viewportRect.h = (int) worldHeight;
-    if(centerRenderer){
-        viewportRect.x = (int) worldWidth / 2;
-        viewportRect.y = (int) worldHeight / 2;
-    }
-    else{
-        viewportRect.x = 0;
-        viewportRect.y = 0;
-    }
-    // this function is commented because it doesnt set a viewport, but clips the window to the
-    // viewportRect dimensions
-//    SDL_RenderSetViewport(renderer, &viewportRect);
-}
-
-SDL_Renderer *Viewport::getRenderer() const {
-    return renderer;
-}
-
-void Viewport::setRenderer(SDL_Renderer *renderer) {
-    Viewport::renderer = renderer;
+void Viewport::apply(bool centerCamera) const {
+    glViewport(screenX, screenY, screenWidth, screenHeight);
 }
 
 float Viewport::getWorldWidth() const {
@@ -56,5 +37,9 @@ void Viewport::setScreenBounds(const int x, const int y, const int& width, const
     screenWidth = width;
     screenHeight = height;
 }
+
+
+
+
 
 

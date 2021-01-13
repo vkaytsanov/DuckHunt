@@ -28,7 +28,7 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 	// Logging, debugging and errors utility
 	this->logger = new Logger();
 	// Receive user input
-	this->input = new Input();
+	this->input = new Input(config->width, config->height);
 	// if we dont have declared title, we will use the name of the class
 	if (config->title == nullptr) config->title = typeid(listener).name();
 	// creating the window
@@ -83,7 +83,7 @@ void Application::gameLoop() {
         if(!isPaused) {
             graphics->updateTime();
             listener->render();
-
+            SDL_RenderPresent(graphics->getRenderer());
 
             /* So we don't use 100% CPU */
             SDL_Delay(1);

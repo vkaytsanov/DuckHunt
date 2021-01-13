@@ -2,13 +2,16 @@
 // Created by Viktor on 20.12.2020 г..
 //
 
+#include <iostream>
+#include "../include/lib.h"
 #include "include/universal_viewport.h"
 
-UniversalViewport::UniversalViewport(const float minWorldWidth, const float minWorldHeight, SDL_Renderer* renderer) {
+
+UniversalViewport::UniversalViewport(const float minWorldWidth, const float minWorldHeight){
     this->minWorldWidth = minWorldWidth;
     this->minWorldHeight = minWorldHeight;
-    setRenderer(renderer);
 }
+
 
 float UniversalViewport::getMinWorldWidth() const {
     return minWorldWidth;
@@ -35,8 +38,8 @@ void UniversalViewport::update(int screenWidth, int screenHeight, bool centerCam
     const float worldRatio = worldHeight / worldWidth;
     const float scale = screenRatio > worldRatio ? (float) screenWidth / minWorldWidth : (float) screenHeight / minWorldHeight;
 
-    int viewportWidth  = (int)(worldWidth * scale);
-    int viewportHeight = (int)(worldHeight * scale);
+    int viewportWidth  = (int)std::round(worldWidth * scale);
+    int viewportHeight = (int)std::round(worldHeight * scale);
 
     // Enlarging the viewport by its short side
     if(viewportWidth < screenWidth){
@@ -53,8 +56,11 @@ void UniversalViewport::update(int screenWidth, int screenHeight, bool centerCam
         worldHeight += lengthen;
         viewportHeight += (int)(lengthen * toViewportSpace);
     }
-
+    std::cout << worldWidth << "\n";
+    std::cout << worldHeight << "\n";
     setWorldSize(worldWidth, worldHeight);
     setScreenBounds( (screenWidth - viewportWidth) / 2, (screenHeight - viewportHeight) / 2, viewportWidth, viewportHeight);
-    apply(centerCamera);
+    //apply(centerCamera);
 }
+
+

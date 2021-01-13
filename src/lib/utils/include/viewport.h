@@ -9,7 +9,6 @@
 
 class Viewport {
 private:
-    SDL_Renderer* renderer;
     float worldWidth;
     float worldHeight;
     int screenX;
@@ -20,12 +19,10 @@ protected:
     void setScreenBounds(int x, int y, const int& width, const int& height);
 public:
     virtual void update(int screenWidth, int screenHeight, bool centerCamera) = 0;
-    void apply(bool centerRenderer);
-    void setRenderer(SDL_Renderer *renderer);
+    void apply(bool centerCamera) const;
     void setWorldWidth(float worldWidth);
     void setWorldHeight(float worldHeight);
     void setWorldSize(float& worldWidth, float& worldHeight);
-    SDL_Renderer *getRenderer() const;
     float getWorldWidth() const;
     float getWorldHeight() const;
 };

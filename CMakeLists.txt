@@ -18,6 +18,8 @@ file(GLOB SOURCES
         "src/lib/include/*.h"
         "src/lib/utils/geometry/*.cpp"
         "src/lib/utils/geometry/include/*.h"
+        "src/lib/utils/ui/*.cpp"
+        "src/lib/utils/ui/include/*.h"
         "src/lib/utils/*.cpp"
         "src/lib/utils/include/*.h"
         "src/core/game_object/*.cpp"
@@ -27,13 +29,20 @@ file(GLOB SOURCES
         )
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-set(SDL2_INCLUDE_DIR D:/SDL2/include)
-set(SDL2_LIB_DIR D:/SDL2/lib)
+#in case CMake doesn't find the libraries
+list(APPEND CMAKE_PREFIX_PATH "D:/SDL2")
 
-
-include_directories(${SDL2_INCLUDE_DIR})
-link_directories(${SDL2_LIB_DIR})
-find_package(SDL2 REQUIRED)
+find_package(sdl2 REQUIRED)
 find_package(OpenGL REQUIRED)
-target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES} ${SDL2IMAGE_LIBRARIES})
+#find_package(SDL2_ttf REQUIRED)
+
+message(STATUS "SDL2_INCLUDE_DIRS=${SDL2_INCLUDE_DIRS}")
+message(STATUS "SDL2_LIBRARIES=${SDL2_LIBRARIES}")
+message(STATUS "SDL2IMAGE_LIBRARIES=${SDL2IMAGE_LIBRARIES}")
+message(STATUS "SDL2TTF_LIBRARIES=${SDL2TTF_LIBRARIES}")
+
+
+
+include_directories(${SDL2_INCLUDE_DIRS})
+target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES} ${SDL2IMAGE_LIBRARIES} ${SDL2TTF_LIBRARIES} ${OPENGL_LIBRARIES})
 

@@ -19,5 +19,5 @@ void Logger::debug(const char* tag, const char* message) {
 
 void Logger::error(const char* tag, const char* message) {
 	std::cerr << "[" << tag << "] " << message << std::endl;
-
 }
+

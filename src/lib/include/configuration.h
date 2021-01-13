@@ -13,9 +13,9 @@ public:
 	SDL_WindowFlags isVisible	= SDL_WINDOW_SHOWN;
 
 	Configuration();
-	Configuration(const char* title);
-	Configuration(const char* title, const int width, const int height);
-	Configuration(const int width, const int height);
+	explicit Configuration(const char* title);
+	Configuration(const char* title, int width, int height);
+	Configuration(int width, int height);
 };
 
 #endif

@@ -6,7 +6,11 @@
 #define DUCKHUNT_ABSTRACT_SCREEN_H
 
 
+#include "../../../lib/utils/ui/include/user_interface.h"
+
 class AbstractScreen {
+protected:
+    UserInterface userInterface;
 public:
     AbstractScreen() = default;
     virtual ~AbstractScreen() = default;
