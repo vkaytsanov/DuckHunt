@@ -12,8 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce279b2-e5e5-4a25-af0a-334e17d17fb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SDL2_ttf.dll" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/SDL_ttf.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/libfreetype-6.dll" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/libjpeg-9.dll" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/libtiff-5.dll" afterDir="false" />
@@ -144,7 +149,7 @@
       <workItem from="1608816256099" duration="740000" />
       <workItem from="1609013168900" duration="427000" />
       <workItem from="1610448558592" duration="14920000" />
-      <workItem from="1610466183630" duration="19872000" />
+      <workItem from="1610466183630" duration="20597000" />
     </task>
     <servers />
   </component>
