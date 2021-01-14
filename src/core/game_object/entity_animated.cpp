@@ -1,0 +1,33 @@
+//
+// Created by Viktor on 14.1.2021 г..
+//
+
+#include "include/entity_animated.h"
+
+bool EntityAnimated::isVisible() const {
+	return visible;
+}
+
+void EntityAnimated::setVisible(bool visible) {
+	EntityAnimated::visible = visible;
+}
+
+bool EntityAnimated::isFacingLeft() const {
+	return facingLeft;
+}
+
+void EntityAnimated::setFacingLeft(bool facingLeft) {
+	EntityAnimated::facingLeft = facingLeft;
+}
+
+Texture* EntityAnimated::getCurrentFrame() const {
+	return currentFrame;
+}
+
+void EntityAnimated::setCurrentFrame(Texture* currentFrame) {
+	EntityAnimated::currentFrame = currentFrame;
+}
+
+void EntityAnimated::processAnimation() {
+
+}

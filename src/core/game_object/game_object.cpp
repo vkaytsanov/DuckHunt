@@ -50,6 +50,14 @@ void GameObject::setHeight(const float height) {
     rect.h = height;
 }
 
+void GameObject::setX(float x) {
+    this->x = x;
+}
+
+void GameObject::setY(float y) {
+    this->y = y;
+}
+
 
 
 

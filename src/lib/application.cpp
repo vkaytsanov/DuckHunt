@@ -53,6 +53,8 @@ void Application::gameLoop() {
 	while (running) {
 	    // fetching all the user input
 		input->update();
+		// processing the input by giving it to the processors
+		input->processEvents();
 		// user has clicked the top right "X" quit button
 		if (input->shouldQuit()) break;
         bool isMinimized = !graphics->isVisible();
@@ -115,6 +117,10 @@ void Application::error(const char *tag, const char *message) const {
 
 void Application::log(const char *tag, int message) const {
     logger->log(tag, std::to_string(message).c_str());
+}
+
+void Application::debug(const char *tag, const char * message) const {
+    logger->debug(tag, message);
 }
 
 

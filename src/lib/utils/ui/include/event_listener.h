@@ -5,10 +5,12 @@
 #ifndef EVENT_LISTENER_H
 #define EVENT_LISTENER_H
 #include <functional>
+#include <SDL.h>
 
 class EventListener {
 public:
-    std::function<void()> update;
+    virtual void handle(SDL_Event& event);
+    ~EventListener();
 };
 
 

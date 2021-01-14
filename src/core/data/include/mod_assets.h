@@ -10,6 +10,8 @@
 #include "SDL_image.h"
 #include "../../../lib/utils/include/texture.h"
 
+// TODO Don't know how to use project path
+static std::string ASSETS_LOCATION = __FILE__ "/../../../../assets/sprites/";
 
 class Mod_Assets {
 private:

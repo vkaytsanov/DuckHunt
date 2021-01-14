@@ -10,10 +10,19 @@ Input::Input(const float& width, const float& height) {
     lastMousePosY = currMousePosY = height / 2;
 }
 
+void Input::updateKeyboard() {
+
+}
+
+void Input::updateMouse() {
+
+}
+
 void Input::update() {
     mouseMoved = false;
     mouseLeftClick = false;
     mouseRightClick = false;
+
     while (SDL_PollEvent(&e) != 0) {
         //User requests quit
         if (e.type == SDL_QUIT) {
@@ -25,6 +34,7 @@ void Input::update() {
                 if (e.key.keysym.sym > 322)
                     throw std::exception("key is not registered");
                 keys[e.key.keysym.sym] = true;
+                keyEvents.push(e);
             }
             catch (std::exception& e) {
                 std::cout << e.what() << std::endl;
@@ -36,6 +46,7 @@ void Input::update() {
                 if (e.key.keysym.sym > 322)
                     throw std::exception("key is not registered");
                 keys[e.key.keysym.sym] = false;
+                keyEvents.push(e);
             }
             catch (std::exception& e) {
                 std::cout << e.what() << std::endl;
@@ -48,12 +59,42 @@ void Input::update() {
             lastMousePosY = currMousePosY;
             currMousePosX = e.motion.x;
             currMousePosY = e.motion.y;
+            touchEvents.push(e);
+        }
+        else if(e.type == SDL_MOUSEBUTTONDOWN){
             if(e.button.button == SDL_BUTTON_LEFT){
                 mouseLeftClick = true;
+                lastMousePosX = currMousePosX;
+                lastMousePosY = currMousePosY;
+                currMousePosX = e.motion.x;
+                currMousePosY = e.motion.y;
             }
-            if(e.button.button == SDL_BUTTON(SDL_BUTTON_RIGHT)){
+            else if(e.button.button == SDL_BUTTON(SDL_BUTTON_RIGHT)){
                 mouseRightClick = true;
+                lastMousePosX = currMousePosX;
+                lastMousePosY = currMousePosY;
+                currMousePosX = e.motion.x;
+                currMousePosY = e.motion.y;
             }
+            //Lib::app->log("MouseEvent", "pushed");
+            touchEvents.push(e);
+        }
+        else if(e.type == SDL_MOUSEBUTTONUP){
+            if(e.button.button == SDL_BUTTON_LEFT){
+                mouseLeftClick = false;
+                lastMousePosX = currMousePosX;
+                lastMousePosY = currMousePosY;
+                currMousePosX = e.motion.x;
+                currMousePosY = e.motion.y;
+            }
+            else if(e.button.button == SDL_BUTTON(SDL_BUTTON_RIGHT)){
+                mouseRightClick = false;
+                lastMousePosX = currMousePosX;
+                lastMousePosY = currMousePosY;
+                currMousePosX = e.motion.x;
+                currMousePosY = e.motion.y;
+            }
+            touchEvents.push(e);
         }
         else if(e.type == SDL_WINDOWEVENT){
             switch(e.window.event){
@@ -84,6 +125,41 @@ void Input::update() {
         }
     }
 }
+
+void Input::processEvents() {
+    if(!processor) return;
+    while(!keyEvents.empty()){
+        SDL_Event event = keyEvents.front();
+        keyEvents.pop();
+        switch (event.type) {
+            case SDL_KEYDOWN:
+                processor->keyDown(event, event.key.keysym.sym);
+                break;
+            case SDL_KEYUP:
+                processor->keyUp(event, event.key.keysym.sym);
+                break;
+
+        }
+    }
+    while(!touchEvents.empty()){
+        SDL_Event event = touchEvents.front();
+        touchEvents.pop();
+        //Lib::app->log("MouseEvent", "popped");
+        switch (event.type) {
+            case SDL_MOUSEBUTTONDOWN:
+                processor->touchDown(event, event.motion.x, event.motion.y);
+                break;
+            case SDL_MOUSEBUTTONUP:
+                processor->touchUp(event, event.motion.x, event.motion.y);
+                break;
+            case SDL_MOUSEMOTION:
+                break;
+            default:
+                Lib::app->debug("Input", "MouseEvent not registered.");
+        }
+    }
+}
+
 
 bool Input::shouldQuit() const {
     return quit;
@@ -135,7 +211,6 @@ void Input::resetMouse() {
 
 }
 
-
 float Input::getMouseDeltaX() const {
     return  0.5f * (currMousePosX - (float) Lib::graphics->getWidth()/2);
 }
@@ -143,4 +218,10 @@ float Input::getMouseDeltaX() const {
 float Input::getMouseDeltaY() const {
     return -0.5f * (currMousePosY - (float) Lib::graphics->getHeight()/2);
 }
+
+void Input::setProcessor(InputProcessor* processor) {
+    this->processor = processor;
+}
+
+
 

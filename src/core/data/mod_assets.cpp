@@ -8,14 +8,19 @@
 
 
 Mod_Assets::Mod_Assets() {
-    // TODO make it use not absolute paths, but project path
-    std::string sprites_names[] = {
-            "C:/Users/vikto/CLionProjects/DuckHunt/src/assets/sprites/logo.png"
+    std::string spritePaths[] = {
+            "logo.png",
+            "dog.png",
+            "bullet.png",
+            "ducks.png",
+            "ducks-ui.png",
+            "fly-away.png",
+            "playing-screen-background.png"
     };
-    // TODO get the sprites here
+
     int c = 0;
-    for (std::string& sprite : sprites_names) {
-        mapped_sprites[stripName(sprite)] = new Texture(sprite);
+    for (std::string& path : spritePaths) {
+        mapped_sprites[stripName(path)] = new Texture(ASSETS_LOCATION + path);
         c++;
     }
 
@@ -37,16 +42,6 @@ Mod_Assets::~Mod_Assets() {
 }
 
 std::string Mod_Assets::stripName(std::string& name) {
-    for(int i = name.length(); i >= 0; i--){
-        if(name[i] == '.'){
-            const int endPos = i;
-            for(int j = i; j >= 0; j--){
-                if(name[j - 1] == '/'){
-                    return name.substr(j, endPos - j);
-                }
-            }
-        }
-    }
-    return nullptr;
+    return name.substr(0, name.find('.'));
 }
 

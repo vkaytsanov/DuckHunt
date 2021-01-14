@@ -19,8 +19,8 @@ GraphicsSystem::GraphicsSystem(Gamelib &game) : game(game),
     GRAPHICS_HEIGHT = Lib::graphics->getHeight();
     viewport.update(GRAPHICS_WIDTH, GRAPHICS_HEIGHT, false);
     screens[Loading] = new LoadingScreen(game);
-    screens[Menu] = new MenuScreen(game);
     screens[Playing] = new PlayingScreen(game);
+    screens[Menu] = new MenuScreen(game);
 }
 
 void GraphicsSystem::render(const float& dt) {

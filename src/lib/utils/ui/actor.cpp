@@ -4,11 +4,11 @@
 
 #include "include/actor.h"
 
-const std::vector<EventListener> &Actor::getListeners() const {
+const std::vector<EventListener*> &Actor::getListeners() {
     return listeners;
 }
 
-void Actor::setListeners(const std::vector<EventListener> &listeners) {
+void Actor::setListeners(const std::vector<EventListener*> &listeners) {
     Actor::listeners = listeners;
 }
 
@@ -28,7 +28,7 @@ void Actor::setY(float y) {
     Actor::y = y;
 }
 
-void Actor::addListener(const EventListener &e) {
+void Actor::addListener(EventListener *e) {
     listeners.emplace_back(e);
 }
 
@@ -71,7 +71,13 @@ void Actor::setVisible(bool visible) {
     Actor::visible = visible;
 }
 
-bool Actor::isInMouseBounds(const float& mouseX, const float& mouseY) {
+bool Actor::hit(const float& mouseX, const float& mouseY) {
     return  x < mouseX && mouseX < (x + width) &&
             y < mouseY && mouseY < (y + height);
+}
+
+Actor::~Actor() {
+    for(EventListener* listener : listeners){
+        delete listener;
+    }
 }

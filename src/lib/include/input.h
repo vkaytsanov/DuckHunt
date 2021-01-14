@@ -2,8 +2,9 @@
 #define INPUT
 
 #include "SDL.h"
+#include "../utils/include/input_processor.h"
 #include <memory>
-
+#include <queue>
 
 class Input {
 private:
@@ -18,11 +19,18 @@ private:
 	float lastMousePosY = 0;
 	float currMousePosX = 0;
 	float currMousePosY = 0;
+	InputProcessor* processor;
+	void updateKeyboard();
+	void updateMouse();
 public:
+    std::queue<SDL_Event> keyEvents;
+    std::queue<SDL_Event> touchEvents;
     Input(const float& width, const float& height);
     void update();
+    void processEvents();
     void resetMouse();
     bool shouldQuit() const;
+    void setProcessor(InputProcessor* processor);
 	bool isKeyPressed(char key);
     bool isMouseMoved() const;
     float getLastMousePosX() const;

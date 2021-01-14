@@ -8,17 +8,23 @@
 
 #include <vector>
 #include "actor.h"
+#include "../../include/input_processor.h"
 
-class UserInterface {
+class UserInterface : public InputProcessor{
 private:
     // TODO Use KD/BVH Tree
     // Using pointers so we can use runtime polymorphism
     std::vector<Actor*> actors;
 public:
+    ~UserInterface();
     bool debug;
-    void add(Actor& actor);
+    void addActor(Actor* actor);
     void act(float dt);
     void draw();
+    void keyDown(SDL_Event &e, int key) override;
+    void touchDown(SDL_Event &e, float x, float y) override;
+    void touchUp(SDL_Event &e, float x, float y) override;
+    void keyUp(SDL_Event &e, int key) override;
 };
 
 

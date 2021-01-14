@@ -12,14 +12,16 @@ static const float DEFAULT_MOVE_SPEED = 150.0f;
 
 class GameObject {
 private:
+    float dx;
+    float dy;
+    SDL_FRect rect;
+protected:
     float x;
     float y;
     float width;
     float height;
-    float dx;
-    float dy;
-    SDL_FRect rect;
 public:
+    GameObject() = default;
     GameObject(float x, float y);
     float getX() const;
     float getY() const;
@@ -29,6 +31,8 @@ public:
     float getDy() const;
     const SDL_FRect &getRect() const;
 
+    void setX(float x);
+    void setY(float y);
     void setWidth(float width);
     void setHeight(float height);
 };

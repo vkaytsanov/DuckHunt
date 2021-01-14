@@ -12,59 +12,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce279b2-e5e5-4a25-af0a-334e17d17fb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SDL2_ttf.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SDL_ttf.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libfreetype-6.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libjpeg-9.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libtiff-5.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libwebp-7.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/arial.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/uni-icon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/graphics/include/playing_screen.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/graphics/playing_screen.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/actor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/event_listener.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/include/actor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/include/event_listener.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/include/label.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/include/label_style.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/include/user_interface.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/label.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/label_style.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/user_interface.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/sprites/dog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/sprites/playing-screen-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/game_object/entity.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/game_object/entity_animated.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/game_object/include/entity.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/game_object/include/entity_animated.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/include/input_processor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/input_processor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/click_listener.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/include/click_listener.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/include/input_listener.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/ui/input_listener.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/FindSDL2.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/FindSDL2_image.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/sprites/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sprites/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/game_state_manager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/game_state_manager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DuckHunt.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DuckHunt.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DuckHunt.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DuckHunt.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/sprites/sprites.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sprites/sprites.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/data/include/mod_assets.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/data/include/mod_assets.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/data/mod_assets.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/data/mod_assets.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/game_object/game_object.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/game_object/game_object.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/game_object/include/game_object.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/game_object/include/game_object.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/graphics/graphics_system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/graphics_system.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/include/abstract_screen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/include/abstract_screen.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/include/menu_screen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/include/menu_screen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/graphics/include/playing_screen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/include/playing_screen.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/graphics/menu_screen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/menu_screen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/include/game_state_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/include/game_state_manager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/graphics/playing_screen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/playing_screen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/desktop/desktop_launcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/desktop/desktop_launcher.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/configuration.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/configuration.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/graphics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/graphics.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/include/configuration.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/include/configuration.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/include/graphics.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/include/graphics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/include/application.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/include/application.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/include/input.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/include/input.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/input.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/logger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/logger.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/camera.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/include/camera.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/include/universal_viewport.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/include/universal_viewport.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/include/viewport.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/include/viewport.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/orthographic_camera.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/orthographic_camera.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/texture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/texture.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/universal_viewport.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/universal_viewport.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/viewport.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/viewport.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils/ui/actor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/ui/actor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils/ui/event_listener.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/ui/event_listener.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils/ui/include/actor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/ui/include/actor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils/ui/include/event_listener.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/ui/include/event_listener.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils/ui/include/user_interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/ui/include/user_interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils/ui/user_interface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/ui/user_interface.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,33 +81,33 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/sprites" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\assets\sprites" />
       <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\assets\fonts" />
       <recent name="C:\Users\vikto\CLionProjects\DuckHunt" />
       <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\include" />
       <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils" />
-      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\include" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\core\graphics\include" />
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\core\game_object\include" />
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\ui" />
       <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\ui\include" />
-      <recent name="C:\Users\vikto\CLionProjects\DuckHunt" />
-      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\geometry\include" />
-      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\geometry" />
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\lib\utils\include" />
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\core\graphics\include" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="DuckHunt" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DuckHunt" TARGET_NAME="DuckHunt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DuckHunt" RUN_TARGET_NAME="DuckHunt">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="DuckHunt" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DuckHunt" TARGET_NAME="DuckHunt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DuckHunt" RUN_TARGET_NAME="DuckHunt">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -149,7 +136,8 @@
       <workItem from="1608816256099" duration="740000" />
       <workItem from="1609013168900" duration="427000" />
       <workItem from="1610448558592" duration="14920000" />
-      <workItem from="1610466183630" duration="20597000" />
+      <workItem from="1610466183630" duration="34091000" />
+      <workItem from="1610638500999" duration="6748000" />
     </task>
     <servers />
   </component>
@@ -172,9 +160,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/lib/utils/ui/user_interface.cpp</url>
-          <line>19</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/src/lib/utils/ui/event_listener.cpp</url>
+          <line>13</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/core/data/mod_assets.cpp</url>
+          <line>44</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

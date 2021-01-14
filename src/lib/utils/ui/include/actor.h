@@ -11,7 +11,7 @@
 
 class Actor {
 protected:
-    std::vector<EventListener> listeners;
+    std::vector<EventListener*> listeners;
     int ID;
     float x;
     float y;
@@ -21,7 +21,8 @@ protected:
 public:
     Actor() = default;
     explicit Actor(int ID);
-    const std::vector<EventListener> &getListeners() const;
+    ~Actor();
+    const std::vector<EventListener*> &getListeners();
     float getX() const;
     float getY() const;
     float getWidth() const;
@@ -32,14 +33,14 @@ public:
 
     virtual void draw(){}
     int getId() const;
-    void setListeners(const std::vector<EventListener> &listeners);
-    void addListener(const EventListener& e);
+    void setListeners(const std::vector<EventListener*> &listeners);
+    void addListener(EventListener *e);
     void setId(int id);
     void setWidth(float width);
     void setHeight(float height);
     bool isVisible() const;
     void setVisible(bool visible);
-    bool isInMouseBounds(const float& mouseX, const float& mouseY);
+    bool hit(const float& mouseX, const float& mouseY);
 };
 
 

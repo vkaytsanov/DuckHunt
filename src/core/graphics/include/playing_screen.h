@@ -8,10 +8,12 @@
 
 #include "abstract_screen.h"
 #include "graphics_system.h"
+#include "../../game_object/include/entity.h"
 
 class PlayingScreen : public AbstractScreen{
 private:
     Gamelib& game;
+    Entity background;
 public:
     explicit PlayingScreen(Gamelib& game);
     void render(const float& dt) override;

@@ -5,30 +5,16 @@
 #include <iostream>
 #include "include/user_interface.h"
 #include "../../include/lib.h"
+#include "include/input_listener.h"
 
-void UserInterface::add(Actor& actor) {
-    actor.setId(actors.size());
-    actors.emplace_back(&actor);
+
+void UserInterface::addActor(Actor* actor) {
+    actor->setId(actors.size());
+    actors.emplace_back(actor);
 }
 
+/** Function to apply animations or actions with the actors */
 void UserInterface::act(float dt) {
-    // TODO
-    if(Lib::input->isMouseLeftClick()) {
-        Lib::app->log("UI", "Checking if hit something");
-        for (Actor *actor : actors) {
-            if (actor->isInMouseBounds(Lib::input->getCurrMousePosX(), Lib::input->getCurrMousePosY())) {
-                Lib::app->log("UI", "Actor is clicked");
-                if (actor->isVisible()) {
-                    const std::vector<EventListener> &listeners = actor->getListeners();
-                    for (const EventListener& listener : listeners) {
-//                        Lib::app->log("UI", "Actor function updated");
-                        listener.update();
-                    }
-                }
-            }
-        }
-    }
-
     for(Actor* actor : actors){
         if(actor->isVisible()) actor->act(dt);
     }
@@ -48,3 +34,39 @@ void UserInterface::draw() {
         }
     }
 }
+
+UserInterface::~UserInterface() {
+}
+
+
+void UserInterface::keyDown(SDL_Event &e, int key) {
+    Lib::app->log("InputProcessor", "keyDown");
+}
+
+void UserInterface::keyUp(SDL_Event &e, int key) {
+    Lib::app->log("InputProcessor", "keyUp");
+}
+
+void UserInterface::touchDown(SDL_Event &e, float x, float y) {
+    Lib::app->log("InputProcessor", "touchDown");
+    for(Actor *actor : actors) {
+        if(actor->hit(x, y)) {
+            for (EventListener *listener : actor->getListeners()) {
+                listener->handle(e);
+            }
+        }
+    }
+}
+
+void UserInterface::touchUp(SDL_Event &e, float x, float y) {
+    Lib::app->log("InputProcessor", "touchUp");
+    for(Actor *actor : actors) {
+        if(actor->hit(x, y)) {
+            for (EventListener *listener : actor->getListeners()) {
+                listener->handle(e);
+            }
+        }
+    }
+}
+
+

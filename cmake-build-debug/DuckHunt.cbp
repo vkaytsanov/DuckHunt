@@ -101,7 +101,19 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/duckhunt.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/entity.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/entity_animated.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/game_object.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/include/entity.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/include/entity_animated.h">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/include/game_object.h">
@@ -209,6 +221,9 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/geometry/include/vector3.h">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/input_processor.h">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/sprite_batch.h">
 			<Option target="DuckHunt"/>
 		</Unit>
@@ -221,6 +236,9 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/viewport.h">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/input_processor.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/sprite_batch.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
@@ -230,13 +248,22 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/actor.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/click_listener.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/event_listener.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/include/actor.h">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/include/click_listener.h">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/include/event_listener.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/include/input_listener.h">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/include/label.h">
@@ -246,6 +273,9 @@
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/include/user_interface.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/input_listener.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/label.cpp">
