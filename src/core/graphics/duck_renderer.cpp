@@ -17,12 +17,12 @@ void DuckRenderer::draw(const float& dt) {
 
 void DuckRenderer::drawDuck(Duck& d, const float& dt) {
 	d.processAnimation(dt);
-	d.getCurrentFrame().draw(d.getX(), d.getY(), d.getWidth(), d.getHeight());
-//	if(d.isFacingLeft()){
-//	}
-//	else{
-//		d.getCurrentFrame().draw(d.getX(), d.getY(), d.getWidth(), d.getHeight());
-//	}
+	if(d.isFacingLeft()){
+		d.getCurrentFrame().draw(d.getX(), d.getY(), d.getWidth(), d.getHeight(), SDL_FLIP_HORIZONTAL);
+	}
+	else{
+		d.getCurrentFrame().draw(d.getX(), d.getY(), d.getWidth(), d.getHeight());
+	}
 }
 
 

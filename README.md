@@ -1,6 +1,5 @@
 **TODO:**
 
-- Create all the ducks and assign all the animations
 - Create spawner 
 - Create their movement AI
 

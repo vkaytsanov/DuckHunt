@@ -22,7 +22,6 @@ public:
 	EntityAnimated() = default;
 	EntityAnimated(float x, float y);
     virtual void loadEntity(Assets& assets) = 0;
-    virtual void parseAnimationFile() = 0;
     virtual void processAnimation(float dt);
 	bool isVisible() const;
 	void setVisible(bool visible);

@@ -19,9 +19,11 @@ public:
 	TextureRegion() = default;
 	TextureRegion(Texture* texture, int width, int height);
 	TextureRegion(Texture* texture, int x, int y, int width, int height);
+	void set(Texture* texture, int x, int y, int width, int height);
 	void draw() const;
 	void draw(const int x, const int y);
 	void draw(const int x, const int y, const int width, const int height);
+	void draw(const int x, const int y, const int width, const int height, SDL_RendererFlip flip);
 
 
 };

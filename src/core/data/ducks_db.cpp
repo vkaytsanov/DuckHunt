@@ -9,7 +9,7 @@ DucksDB::DucksDB() {
 }
 
 void DucksDB::addDuck(const Duck& duck) {
-	ducks.emplace_back(duck);
+	ducks.push_back(duck);
 }
 
 std::vector<Duck>& DucksDB::getDucks() {

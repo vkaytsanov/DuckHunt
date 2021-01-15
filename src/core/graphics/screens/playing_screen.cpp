@@ -5,6 +5,8 @@
 #include "include/playing_screen.h"
 #include "../../../lib/include/lib.h"
 #include "../../game_object/include/black_duck.h"
+#include "../../game_object/include/red_duck.h"
+#include "../../game_object/include/blue_duck.h"
 
 PlayingScreen::PlayingScreen(Gamelib &game) : game(game), duckRenderer(game){
     background.setTexture(game.dataSystem->assets.getSprite("playing-screen-background"));
@@ -17,10 +19,9 @@ PlayingScreen::PlayingScreen(Gamelib &game) : game(game), duckRenderer(game){
     BlackDuck duck;
     duck.setX(GRAPHICS_WIDTH / 2);
     duck.setY(GRAPHICS_HEIGHT / 2);
-    duck.setWidth(60);
-    duck.setHeight(30);
 	duck.loadEntity(game.dataSystem->assets);
 	duck.setVisible(true);
+	duck.setFacingLeft(true);
 	game.dataSystem->ducksDb.addDuck(duck);
 }
 

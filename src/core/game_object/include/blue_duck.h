@@ -2,17 +2,16 @@
 // Created by Viktor on 15.1.2021 г..
 //
 
-#ifndef BLACK_DUCK_H
-#define BLACK_DUCK_H
-
+#ifndef BLUE_DUCK_H
+#define BLUE_DUCK_H
 
 #include "duck.h"
 
-class BlackDuck : public Duck{
+class BlueDuck : public Duck{
 public:
 	void loadEntity(Assets& assets) override;
 
 };
 
 
-#endif //BLACK_DUCK_H
+#endif //BLUE_DUCK_H

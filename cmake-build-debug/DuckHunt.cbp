@@ -110,6 +110,9 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/black_duck.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/blue_duck.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/duck.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
@@ -125,6 +128,9 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/include/black_duck.h">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/include/blue_duck.h">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/include/duck.h">
 			<Option target="DuckHunt"/>
 		</Unit>
@@ -135,6 +141,12 @@
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/include/game_object.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/include/red_duck.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/red_duck.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_state_manager.cpp">
@@ -191,6 +203,9 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/include/logic_system.h">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/include/mod_duck_create.h">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/include/mod_duck_spawner.h">
 			<Option target="DuckHunt"/>
 		</Unit>
@@ -201,6 +216,9 @@
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/logic_system.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/mod_duck_create.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/mod_duck_spawner.cpp">

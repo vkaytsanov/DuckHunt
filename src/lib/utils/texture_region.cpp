@@ -35,5 +35,19 @@ void TextureRegion::draw(const int x, const int y, const int width, const int he
 	SDL_Rect srcRect = {this->x, this->y, regionWidth, regionHeight};
 	SDL_Rect dstRect = {x, y, width, height};
 	SDL_RenderCopy(Lib::graphics->getRenderer(), texture->getRawTexture(), &srcRect, &dstRect);
+}
 
+void TextureRegion::draw(const int x, const int y, const int width, const int height, SDL_RendererFlip flip) {
+	SDL_Rect srcRect = {this->x, this->y, regionWidth, regionHeight};
+	SDL_Rect dstRect = {x, y, width, height};
+	SDL_RenderCopyEx(Lib::graphics->getRenderer(), texture->getRawTexture(), &srcRect, &dstRect, 0, nullptr, flip);
+
+}
+
+void TextureRegion::set(Texture* texture, int x, int y, int width, int height) {
+	this->texture = texture;
+	this->x = x;
+	this->y = y;
+	this->regionWidth = width;
+	this->regionHeight = height;
 }
