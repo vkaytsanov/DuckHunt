@@ -6,10 +6,15 @@
 #define DUCKHUNT_LOGIC_SYSTEM_H
 
 
-class LogicSystem {
+#include "mod_logic.h"
+
+class LogicSystem : public ModLogic{
 public:
     LogicSystem();
-    void update();
+	void init() override;
+	void update() override;
+	void post() override;
+	void reinit() override;
 };
 
 

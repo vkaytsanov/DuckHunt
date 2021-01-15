@@ -60,5 +60,13 @@ void Texture::draw(const int x, const int y, const int w, const int h) {
 
 }
 
+SDL_Texture* Texture::getRawTexture() const {
+	return rawTexture;
+}
+
+const SDL_Rect& Texture::getRect() const {
+	return rect;
+}
+
 
 

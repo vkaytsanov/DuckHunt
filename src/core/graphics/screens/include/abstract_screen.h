@@ -6,7 +6,8 @@
 #define DUCKHUNT_ABSTRACT_SCREEN_H
 
 
-#include "../../../lib/utils/ui/include/user_interface.h"
+#include "../../../../lib/utils/ui/include/user_interface.h"
+#include "../../include/game_utils.h"
 
 class AbstractScreen {
 protected:

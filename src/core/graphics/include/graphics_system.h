@@ -6,8 +6,8 @@
 
 
 #include <unordered_map>
-#include "menu_screen.h"
-#include "abstract_screen.h"
+#include "../screens/include/menu_screen.h"
+#include "../screens/include/abstract_screen.h"
 #include "../../include/game_utils.h"
 #include "../../../lib/utils/include/universal_viewport.h"
 

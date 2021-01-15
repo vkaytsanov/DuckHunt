@@ -6,11 +6,13 @@
 #define DUCKHUNT_DATA_SYSTEM_H
 
 
-#include "mod_assets.h"
+#include "assets.h"
+#include "ducks_db.h"
 
 class DataSystem {
 public:
-    Mod_Assets assets;
+    Assets assets;
+    DucksDB ducksDb;
     DataSystem();
 };
 

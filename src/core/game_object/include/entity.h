@@ -7,7 +7,7 @@
 
 
 #include "game_object.h"
-#include "../../lib/utils/include/texture.h"
+#include "../../../lib/utils/include/texture.h"
 
 class Entity : public GameObject{
     Texture* m_texture;

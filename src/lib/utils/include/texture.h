@@ -21,7 +21,9 @@ public:
     ~Texture();
     int getWidth() const;
     int getHeight() const;
-    void draw() const;
+	SDL_Texture* getRawTexture() const;
+	const SDL_Rect& getRect() const;
+	void draw() const;
     void draw(const int x, const int y);
     void draw(const int x, const int y, const int width, const int height);
 };

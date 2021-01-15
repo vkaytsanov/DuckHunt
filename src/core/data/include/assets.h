@@ -13,13 +13,13 @@
 // TODO Don't know how to use project path
 static std::string ASSETS_LOCATION = __FILE__ "/../../../../assets/sprites/";
 
-class Mod_Assets {
+class Assets {
 private:
     std::unordered_map<std::string, Texture*> mapped_sprites;
     static std::string stripName(std::string& name);
 public:
-    Mod_Assets();
-    ~Mod_Assets();
+    Assets();
+    ~Assets();
     Texture* getSprite(std::string name);
 };
 

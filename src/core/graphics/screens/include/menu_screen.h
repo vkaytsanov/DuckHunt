@@ -6,8 +6,7 @@
 #define DUCKHUNT_MENU_SCREEN_H
 
 #include "abstract_screen.h"
-#include "../include/game_utils.h"
-#include "../../../lib/utils/ui/include/label.h"
+#include "../../../../lib/utils/ui/include/label.h"
 
 class MenuScreen : public AbstractScreen{
 private:

@@ -3,11 +3,11 @@
 //
 
 #include <stdexcept>
-#include "include/mod_assets.h"
+#include "include/assets.h"
 #include "../../lib/include/lib.h"
 
 
-Mod_Assets::Mod_Assets() {
+Assets::Assets() {
     std::string spritePaths[] = {
             "logo.png",
             "dog.png",
@@ -28,20 +28,20 @@ Mod_Assets::Mod_Assets() {
 
 }
 
-Texture *Mod_Assets::getSprite(const std::string name) {
+Texture *Assets::getSprite(const std::string name) {
     if(mapped_sprites.find(name) == mapped_sprites.end()){
         throw std::runtime_error("Sprite " + name + " doesn't exists");
     }
     return mapped_sprites[name];
 }
 
-Mod_Assets::~Mod_Assets() {
+Assets::~Assets() {
     for(const auto& it : mapped_sprites){
         delete it.second;
     }
 }
 
-std::string Mod_Assets::stripName(std::string& name) {
+std::string Assets::stripName(std::string& name) {
     return name.substr(0, name.find('.'));
 }
 

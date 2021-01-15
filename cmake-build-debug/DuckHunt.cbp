@@ -86,19 +86,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/data/assets.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/data/data_system.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/data/ducks_db.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/data/include/assets.h">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/data/include/data_system.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/data/include/mod_assets.h">
-			<Option target="DuckHunt"/>
-		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/data/mod_assets.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/data/include/ducks_db.h">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/duckhunt.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/black_duck.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/duck.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/entity.cpp">
@@ -108,6 +120,12 @@
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/game_object.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/include/black_duck.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/include/duck.h">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_object/include/entity.h">
@@ -125,34 +143,40 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/game_utils.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/abstract_screen.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/duck_renderer.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/graphics_system.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/abstract_screen.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/duck_renderer.h">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/graphics_system.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/loading_screen.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/screens/abstract_screen.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/menu_screen.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/screens/include/abstract_screen.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/include/playing_screen.h">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/screens/include/loading_screen.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/loading_screen.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/screens/include/menu_screen.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/menu_screen.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/screens/include/playing_screen.h">
 			<Option target="DuckHunt"/>
 		</Unit>
-		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/playing_screen.cpp">
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/screens/loading_screen.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/screens/menu_screen.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/graphics/screens/playing_screen.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/include/duckhunt.h">
@@ -167,7 +191,25 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/include/logic_system.h">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/include/mod_duck_spawner.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/include/mod_input_handler.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/include/mod_logic.h">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/logic_system.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/mod_duck_spawner.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/mod_input_handler.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/core/logic/mod_logic.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/desktop/desktop_launcher.cpp">
@@ -212,6 +254,9 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/logger.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/animation.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/geometry/include/matrix4.h">
 			<Option target="DuckHunt"/>
 		</Unit>
@@ -221,6 +266,9 @@
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/geometry/include/vector3.h">
 			<Option target="DuckHunt"/>
 		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/animation.h">
+			<Option target="DuckHunt"/>
+		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/input_processor.h">
 			<Option target="DuckHunt"/>
 		</Unit>
@@ -228,6 +276,9 @@
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/texture.h">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/texture_region.h">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/include/universal_viewport.h">
@@ -243,6 +294,9 @@
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/texture.cpp">
+			<Option target="DuckHunt"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/texture_region.cpp">
 			<Option target="DuckHunt"/>
 		</Unit>
 		<Unit filename="C:/Users/vikto/CLionProjects/DuckHunt/src/lib/utils/ui/actor.cpp">

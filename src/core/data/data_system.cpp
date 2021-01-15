@@ -4,4 +4,4 @@
 
 #include "include/data_system.h"
 
-DataSystem::DataSystem() : assets(){}
+DataSystem::DataSystem() : assets(), ducksDb(){}

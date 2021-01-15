@@ -20,14 +20,18 @@ void EntityAnimated::setFacingLeft(bool facingLeft) {
 	EntityAnimated::facingLeft = facingLeft;
 }
 
-Texture* EntityAnimated::getCurrentFrame() const {
+TextureRegion EntityAnimated::getCurrentFrame() const {
 	return currentFrame;
 }
 
-void EntityAnimated::setCurrentFrame(Texture* currentFrame) {
+void EntityAnimated::setCurrentFrame(TextureRegion currentFrame) {
 	EntityAnimated::currentFrame = currentFrame;
 }
 
-void EntityAnimated::processAnimation() {
+void EntityAnimated::processAnimation(const float dt) {
+
+}
+
+EntityAnimated::EntityAnimated(float x, float y) : GameObject(x, y) {
 
 }

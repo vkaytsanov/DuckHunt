@@ -8,24 +8,28 @@
 
 #include "game_object.h"
 #include "../../lib/utils/include/texture.h"
-#include "../../data/include/mod_assets.h"
+#include "../../data/include/assets.h"
+#include "../../../lib/utils/include/animation.h"
 
 // TODO Animation Class
 class EntityAnimated : public GameObject{
 private:
     bool visible;
     bool facingLeft;
-    Texture* currentFrame;
+protected:
+	TextureRegion currentFrame;
 public:
-    virtual void loadEntity(Mod_Assets assets, float xPos, float yPos) = 0;
+	EntityAnimated() = default;
+	EntityAnimated(float x, float y);
+    virtual void loadEntity(Assets& assets) = 0;
     virtual void parseAnimationFile() = 0;
-    void processAnimation();
+    virtual void processAnimation(float dt);
 	bool isVisible() const;
 	void setVisible(bool visible);
 	bool isFacingLeft() const;
 	void setFacingLeft(bool facingLeft);
-	Texture* getCurrentFrame() const;
-	void setCurrentFrame(Texture* currentFrame);
+	TextureRegion getCurrentFrame() const;
+	void setCurrentFrame(TextureRegion currentFrame);
 };
 
 

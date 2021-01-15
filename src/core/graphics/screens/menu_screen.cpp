@@ -3,9 +3,9 @@
 //
 
 #include "include/menu_screen.h"
-#include "include/graphics_system.h"
-#include "../../lib/include/lib.h"
-#include "../../lib/utils/ui/include/click_listener.h"
+#include "../include/graphics_system.h"
+#include "../../../lib/include/lib.h"
+#include "../../../lib/utils/ui/include/click_listener.h"
 
 
 MenuScreen::MenuScreen(Gamelib& game) : game(game), playLabel(){

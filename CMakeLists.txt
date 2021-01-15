@@ -11,6 +11,8 @@ file(GLOB SOURCES
         "src/core/data/include/*.h"
         "src/core/graphics/*.cpp"
         "src/core/graphics/include/*.h"
+        "src/core/graphics/screens/*.cpp"
+        "src/core/graphics/screens/include/*.h"
         "src/core/logic/*.cpp"
         "src/core/logic/include/*.h"
         "src/desktop/desktop_launcher.cpp"

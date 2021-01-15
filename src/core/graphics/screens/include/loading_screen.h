@@ -7,7 +7,7 @@
 
 
 #include "abstract_screen.h"
-#include "../include/game_utils.h"
+
 
 class LoadingScreen : public AbstractScreen{
 private:

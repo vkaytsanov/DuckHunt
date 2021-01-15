@@ -8,6 +8,20 @@ LogicSystem::LogicSystem() {
 
 }
 
+void LogicSystem::init() {
+
+}
+
 void LogicSystem::update() {
 
 }
+
+void LogicSystem::post() {
+
+}
+
+void LogicSystem::reinit() {
+
+}
+
+

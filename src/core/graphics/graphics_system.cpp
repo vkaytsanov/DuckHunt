@@ -4,9 +4,9 @@
 
 #include <iostream>
 #include "include/graphics_system.h"
-#include "include/loading_screen.h"
+#include "screens/include/loading_screen.h"
 #include "../../lib/include/lib.h"
-#include "include/playing_screen.h"
+#include "screens/include/playing_screen.h"
 
 int GRAPHICS_WIDTH;
 int GRAPHICS_HEIGHT;
