@@ -30,8 +30,10 @@
       <change afterPath="$PROJECT_DIR$/src/lib/utils/include/animation.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/lib/utils/include/texture_region.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/lib/utils/texture_region.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DuckHunt.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/data/data_system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/data/data_system.cpp" afterDir="false" />
@@ -141,7 +143,7 @@
       <workItem from="1610448558592" duration="14920000" />
       <workItem from="1610466183630" duration="34091000" />
       <workItem from="1610638500999" duration="6748000" />
-      <workItem from="1610646298912" duration="17177000" />
+      <workItem from="1610646298912" duration="18055000" />
     </task>
     <servers />
   </component>
