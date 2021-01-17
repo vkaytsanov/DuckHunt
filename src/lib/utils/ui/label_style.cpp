@@ -24,3 +24,8 @@ LabelStyle::~LabelStyle() {
         font = nullptr;
     }
 }
+
+LabelStyle::LabelStyle(TTF_Font* font, const SDL_Color& color) {
+	this->font = font;
+	this->color = color;
+}

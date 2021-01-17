@@ -17,7 +17,7 @@ private:
     std::vector<Actor*> actors;
 public:
     ~UserInterface();
-    bool debug;
+    bool debug = false;
     void addActor(Actor* actor);
     void act(float dt);
     void draw();

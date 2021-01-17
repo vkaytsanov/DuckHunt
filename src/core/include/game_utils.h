@@ -8,8 +8,9 @@
 
 #include "game_state_manager.h"
 #include "../data/include/data_system.h"
+#include "../logic/events/include/event.h"
 
-class Gamelib {
+class Gamelib{
 private:
     Gamelib& operator=(const Gamelib& game);
 protected:
@@ -17,9 +18,7 @@ protected:
 public:
     GameStateManager* gameStateManager;
     DataSystem* dataSystem;
-
     ~Gamelib();
-
 };
 
 

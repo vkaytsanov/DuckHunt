@@ -12,7 +12,7 @@ class ModInputHandler : public ModLogic{
 public:
 	void init() override;
 	void update() override;
-	void post() override;
+	void post(Event* e) override;
 	void reinit() override;
 };
 

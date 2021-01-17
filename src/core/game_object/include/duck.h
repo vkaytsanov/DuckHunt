@@ -6,14 +6,10 @@
 #define DUCK_H
 
 
-#include "entity_animated.h"
-#include "../../lib/utils/include/texture_region.h"
+#include "../generic/include/entity_animated.h"
+#include "../../../lib/utils/include/texture_region.h"
+#include "../generic/include/sprite_parsable.h"
 
-static const int FILE_WIDTH = 512;
-static const int FRAME_WIDTH = 64;
-static const int FRAME_HEIGHT = 32;
-static const int RENDERING_WIDTH = 120;
-static const int RENDERING_HEIGHT = 60;
 
 enum DuckAnimationState{
 	FLAT_FLYING,
@@ -23,10 +19,13 @@ enum DuckAnimationState{
 	DIED
 };
 
-class Duck : public EntityAnimated{
+class Duck : public EntityAnimated, public SpriteParsable{
 private:
+	int RENDERING_WIDTH = 120;
+	int RENDERING_HEIGHT = 60;
 	float stateTime = 0;
 protected:
+	int score;
 	// TODO make them all from animation class, put them in array for fast animation processing based on current state
 	Animation<TextureRegion> flatFlyingAnimation;
 	Animation<TextureRegion> diagFlyingAnimation;
@@ -36,10 +35,9 @@ protected:
 public:
 	void copyTextures(const Duck& duck);
 	virtual void loadEntity(Assets& assets);
-	void parseFile(Texture* spriteSheet, std::vector<TextureRegion>& regions, int i);
-	void parseFile(Texture* spriteSheet, TextureRegion& region, int i);
 	void beginParsing(Texture* spriteSheet, int startingIndex);
 	void processAnimation(float dt) override;
+	int getScore() const;
 };
 
 

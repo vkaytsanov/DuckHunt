@@ -6,7 +6,7 @@
 void DuckHunt::create() {
     Gamelib::create();
     graphicsSystem = new GraphicsSystem(*this);
-    logicSystem = new LogicSystem();
+    logicSystem = new LogicSystem(*this);
 }
 
 void DuckHunt::render() {
@@ -31,6 +31,9 @@ void DuckHunt::pause() {
 void DuckHunt::resume() {
 
 }
+
+
+
 
 
 

@@ -12,33 +12,7 @@ void Duck::copyTextures(const Duck& duck) {
 	this->diedTexture = duck.diedTexture;
 }
 
-
-void Duck::parseFile(Texture* spriteSheet, std::vector<TextureRegion>& regions, int i) {
-	const int j = i / 8;
-	i = i % 8;
-
-	regions.emplace_back(
-			TextureRegion(spriteSheet,
-			              i * FRAME_WIDTH,
-			              j * FRAME_HEIGHT,
-			              FRAME_WIDTH,
-			              FRAME_HEIGHT
-			));
-}
-
-void Duck::parseFile(Texture* spriteSheet, TextureRegion& region, int i) {
-	const int j = i / 8;
-	i = i % 8;
-
-	region.set(spriteSheet,
-	           i * FRAME_WIDTH,
-	           j * FRAME_HEIGHT,
-	           FRAME_WIDTH,
-	           FRAME_HEIGHT
-	);
-}
-
-void Duck::processAnimation(float dt) {
+void Duck::processAnimation(const float dt) {
 	stateTime += dt;
 	currentFrame = flatFlyingAnimation.getFrame(stateTime, true);
 }
@@ -49,6 +23,7 @@ void Duck::loadEntity(Assets& assets) {
 
 void Duck::beginParsing(Texture* spriteSheet, const int startingIndex) {
 	const int framesPerAnimation = 3;
+	set(8, 64, 32);
 	width = RENDERING_WIDTH;
 	height = RENDERING_HEIGHT;
 
@@ -74,6 +49,11 @@ void Duck::beginParsing(Texture* spriteSheet, const int startingIndex) {
 	diagFlyingAnimation.loadFrames(0.15f, diagFlyingTextures);
 	upFlyingAnimation.loadFrames(0.15f, upFlyingTextures);
 }
+
+int Duck::getScore() const {
+	return score;
+}
+
 
 
 

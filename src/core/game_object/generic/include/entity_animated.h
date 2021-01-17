@@ -7,14 +7,14 @@
 
 
 #include "game_object.h"
-#include "../../lib/utils/include/texture.h"
-#include "../../data/include/assets.h"
-#include "../../../lib/utils/include/animation.h"
+#include "../../../lib/utils/include/texture.h"
+#include "../../../data/include/assets.h"
+#include "../../../../lib/utils/include/animation.h"
 
 // TODO Animation Class
 class EntityAnimated : public GameObject{
 private:
-    bool visible;
+    bool visible = false;
     bool facingLeft;
 protected:
 	TextureRegion currentFrame;
@@ -22,7 +22,7 @@ public:
 	EntityAnimated() = default;
 	EntityAnimated(float x, float y);
     virtual void loadEntity(Assets& assets) = 0;
-    virtual void processAnimation(float dt);
+	virtual void processAnimation(float dt);
 	bool isVisible() const;
 	void setVisible(bool visible);
 	bool isFacingLeft() const;

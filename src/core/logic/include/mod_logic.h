@@ -6,12 +6,14 @@
 #define MOD_LOGIC_H
 
 
+#include "../events/include/event.h"
+
 class ModLogic {
 public:
-	virtual void init() = 0;
-	virtual void update() = 0;
-	virtual void post() = 0;
-	virtual void reinit() = 0;
+	virtual void init();
+	virtual void update();
+	virtual void post(Event* e);
+	virtual void reinit();
 };
 
 

@@ -23,6 +23,7 @@ public:
     LabelStyle(const std::string& name, const SDL_Color &color, int size);
     LabelStyle(const std::string& name);
     LabelStyle(const std::string& name, int size);
+    LabelStyle(TTF_Font* font, const SDL_Color& color);
     ~LabelStyle();
 };
 

@@ -8,12 +8,18 @@
 
 #include "assets.h"
 #include "ducks_db.h"
+#include "dog_data.h"
+#include "current_game_data.h"
+
 
 class DataSystem {
 public:
-    Assets assets;
-    DucksDB ducksDb;
-    DataSystem();
+	Assets assets;
+	DucksDB ducksDb;
+	DogData dogData;
+	CurrentGameData currentGameData;
+	DataSystem();
+
 };
 
 

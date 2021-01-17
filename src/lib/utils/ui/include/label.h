@@ -13,17 +13,18 @@
 class Label : public Actor{
 private:
     std::string m_text;
-    LabelStyle m_style;
+    const LabelStyle* m_style;
     SDL_Texture* m_texture;
 public:
     Label() = default;
-    Label(const std::string& text, const LabelStyle& style);
-    Label(const LabelStyle& style);
+    Label(const std::string& text, const LabelStyle* style);
+    Label(const LabelStyle* style);
     Label(const std::string& text);
     ~Label();
     const std::string &getText() const;
     void setText(const std::string &text);
-    void setStyle(const LabelStyle &style);
+    void setStyle(const LabelStyle* style);
+    void updateText();
     void draw() override;
 };
 

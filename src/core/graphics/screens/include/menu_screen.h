@@ -12,6 +12,8 @@ class MenuScreen : public AbstractScreen{
 private:
     Texture* logo;
     Label playLabel[2];
+    Label maximumScore;
+    Label copyright;
     Gamelib& game;
 public:
     explicit MenuScreen(Gamelib& game);

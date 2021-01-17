@@ -2,14 +2,14 @@
 // Created by Viktor on 15.1.2021 г..
 //
 
-#include "include/mod_duck_create.h"
+#include "include/mod_create_objects.h"
 #include "../game_object/include/black_duck.h"
 #include "../game_object/include/blue_duck.h"
 #include "../game_object/include/red_duck.h"
 
-ModDuckCreate::ModDuckCreate(Gamelib& game) : game(game) {}
+ModCreateObjects::ModCreateObjects(Gamelib& game) : game(game) {}
 
-void ModDuckCreate::init() {
+void ModCreateObjects::init() {
 	BlackDuck blackDuck;
 	blackDuck.loadEntity(game.dataSystem->assets);
 
@@ -36,17 +36,20 @@ void ModDuckCreate::init() {
 	game.dataSystem->ducksDb.addDuck(redDuck);
 	game.dataSystem->ducksDb.addDuck(redDuck2);
 
+	Dog dog;
+	dog.loadEntity(game.dataSystem->assets);
+	game.dataSystem->dogData.setDog(dog);
 }
 
-void ModDuckCreate::update() {
+void ModCreateObjects::update() {
 
 }
 
-void ModDuckCreate::post() {
+void ModCreateObjects::post(Event* e) {
 
 }
 
-void ModDuckCreate::reinit() {
+void ModCreateObjects::reinit() {
 
 }
 

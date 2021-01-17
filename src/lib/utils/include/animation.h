@@ -17,14 +17,15 @@ private:
 	std::vector<T> frames;
 	float frameDuration;
 	float animationDuration;
+	bool looping;
 
 public:
 	Animation() = default;
 
-	void loadFrames(const float frameDuration, const std::vector<T>& frames) {
+	void loadFrames(const float frameDuration, const std::vector<T>& frames,  bool looping = false) {
 		this->frameDuration = frameDuration;
 		this->frames = frames;
-
+		this->looping = looping;
 		animationDuration = frameDuration * frames.size();
 	}
 
@@ -39,6 +40,10 @@ public:
 		const int idx = frameNumber;
 
 		return frames[idx];
+	}
+
+	T getFrame(float stateTime) const {
+		return getFrame(looping);
 	}
 
 };

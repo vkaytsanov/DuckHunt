@@ -35,3 +35,5 @@ void EntityAnimated::processAnimation(const float dt) {
 EntityAnimated::EntityAnimated(float x, float y) : GameObject(x, y) {
 
 }
+
+

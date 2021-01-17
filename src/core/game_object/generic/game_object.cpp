@@ -28,11 +28,11 @@ float GameObject::getHeight() const {
     return height;
 }
 
-float GameObject::getDx() const {
+float GameObject::getDX() const {
     return dx;
 }
 
-float GameObject::getDy() const {
+float GameObject::getDY() const {
     return dy;
 }
 
@@ -56,6 +56,22 @@ void GameObject::setX(float x) {
 
 void GameObject::setY(float y) {
     this->y = y;
+}
+
+bool GameObject::wantsToMove() {
+	return wantMove;
+}
+
+float GameObject::getSpeed() const {
+	return speed;
+}
+
+void GameObject::setDX(float dx) {
+	GameObject::dx = dx;
+}
+
+void GameObject::setDY(float dy) {
+	GameObject::dy = dy;
 }
 
 

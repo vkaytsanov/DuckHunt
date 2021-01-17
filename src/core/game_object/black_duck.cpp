@@ -12,4 +12,8 @@ void BlackDuck::loadEntity(Assets& assets) {
 	beginParsing(spriteSheet, startingIndex);
 }
 
+BlackDuck::BlackDuck(){
+	score = 500;
+}
+
 

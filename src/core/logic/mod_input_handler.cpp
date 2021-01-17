@@ -12,7 +12,7 @@ void ModInputHandler::update() {
 
 }
 
-void ModInputHandler::post() {
+void ModInputHandler::post(Event* e) {
 
 }
 

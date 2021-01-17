@@ -2,23 +2,23 @@
 // Created by Viktor on 15.1.2021 г..
 //
 
-#ifndef MOD_DUCK_CREATE_H
-#define MOD_DUCK_CREATE_H
+#ifndef MOD_CREATE_OBJECTS_H
+#define MOD_CREATE_OBJECTS_H
 
 
 #include "mod_logic.h"
 #include "../../include/game_utils.h"
 
-class ModDuckCreate : public ModLogic{
+class ModCreateObjects : public ModLogic {
 private:
 	Gamelib& game;
 public:
-	explicit ModDuckCreate(Gamelib &game);
+	explicit ModCreateObjects(Gamelib& game);
 	void init() override;
 	void update() override;
-	void post() override;
+	void post(Event* e) override;
 	void reinit() override;
 };
 
 
-#endif //MOD_DUCK_CREATE_H
+#endif //MOD_CREATE_OBJECTS_H
