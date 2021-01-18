@@ -39,7 +39,10 @@ file(GLOB SOURCES
         )
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-#in case CMake doesn't find the libraries
+# in case CMake doesn't find the libraries
+# change the following directory to your SDL2 folder with all the libraries
+# and put the sdl2-config.cmake in the root of that folder. Don't forget to add the
+# 32-bit .dll-s to the SysWOW64 folder
 list(APPEND CMAKE_PREFIX_PATH "D:/SDL2")
 
 find_package(sdl2 REQUIRED)
@@ -50,7 +53,6 @@ message(STATUS "SDL2_LIBRARIES=${SDL2_LIBRARIES}")
 message(STATUS "SDL2IMAGE_LIBRARIES=${SDL2IMAGE_LIBRARIES}")
 message(STATUS "SDL2TTF_LIBRARIES=${SDL2TTF_LIBRARIES}")
 message(STATUS "SDL2AUDIO_LIBRARIES=${SDL2AUDIO_LIBRARIES}")
-
 
 
 include_directories(${SDL2_INCLUDE_DIRS})

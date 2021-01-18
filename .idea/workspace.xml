@@ -12,103 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cce279b2-e5e5-4a25-af0a-334e17d17fb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SDL2_mixer.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libmpg123-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/01 - Title Screen.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/02 - Duck Hunt Intro.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/04 - Got Duck(s).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/05 - Round Clear.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/06 - Perfect.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/07 - You Failed.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/08 - Game Over.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/99 - Bark! (SFX).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/99 - Dead Duck Falls (SFX).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/99 - Dead Duck Lands (SFX).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/99 - Duck Flapping (SFX).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/audio/99 - Gunshot (SFX).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/audio/audio_system.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/audio/include/audio_system.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/graphics/include/shots_receiver.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/graphics/shots_receiver.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/logic/events/include/start_spawning.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/logic/events/start_spawning.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/logic/include/mod_script_handler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/logic/mod_script_handler.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/logic/scripts/dog_jumping_script.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/logic/scripts/dog_reaction_script.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/logic/scripts/duck_dying_script.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/logic/scripts/include/dog_jumping_script.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/logic/scripts/include/dog_reaction_script.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/logic/scripts/include/duck_dying_script.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/audio.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/include/audio.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/include/music.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/include/sound.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/music.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/sound.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake/sdl2-config.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/data/ducks_db.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/data/ducks_db.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/data/include/current_game_data.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/data/include/current_game_data.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/data/include/ducks_db.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/data/include/ducks_db.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/duckhunt.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/duckhunt.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/game_object/dog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/game_object/dog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/game_object/duck.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/game_object/duck.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/game_object/generic/game_object.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/game_object/generic/game_object.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/game_object/generic/include/entity_animated.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/game_object/generic/include/entity_animated.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/game_object/generic/include/game_object.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/game_object/generic/include/game_object.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/game_object/include/dog.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/game_object/include/dog.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/game_object/include/duck.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/game_object/include/duck.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/game_utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/game_utils.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/game_object_renderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/game_object_renderer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/graphics_system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/graphics_system.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/include/game_object_renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/include/game_object_renderer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/include/graphics_system.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/include/graphics_system.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/screens/abstract_screen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/screens/abstract_screen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/screens/hud_renderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/screens/hud_renderer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/screens/include/abstract_screen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/screens/include/abstract_screen.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/screens/include/hud_renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/screens/include/hud_renderer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/screens/include/menu_screen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/screens/include/menu_screen.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/screens/include/playing_screen.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/screens/include/playing_screen.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/screens/loading_screen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/screens/loading_screen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/screens/menu_screen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/screens/menu_screen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/screens/playing_screen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/screens/playing_screen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/include/duckhunt.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/include/duckhunt.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/include/game_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/include/game_utils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/events/event.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/events/event.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/events/include/event.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/events/include/event.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/events/include/start_round.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/events/include/start_round.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/events/shot_fired.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/events/shot_fired.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/events/start_round.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/events/start_round.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/include/logic_system.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/include/logic_system.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/include/mod_create_objects.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/include/mod_create_objects.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/include/mod_duck_movement.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/include/mod_game_object_movement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/include/mod_duck_spawner.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/include/mod_duck_spawner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/include/mod_event_handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/include/mod_event_handler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/include/mod_logic.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/include/mod_logic.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/include/mod_round.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/include/mod_round.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/include/mod_score.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/include/mod_score.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/include/mod_shots.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/include/mod_shots.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/logic_system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/logic_system.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/mod_create_objects.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/mod_create_objects.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/mod_duck_movement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/mod_game_object_movement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/mod_duck_spawner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/mod_duck_spawner.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/mod_event_handler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/mod_event_handler.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/mod_logic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/mod_logic.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/mod_round.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/mod_round.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/mod_score.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/mod_score.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/mod_shots.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/mod_shots.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/scripts/dog_sniffing_script.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/scripts/dog_sniffing_script.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/scripts/include/dog_sniffing_script.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/scripts/include/dog_sniffing_script.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/scripts/include/script.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/scripts/include/script.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/graphics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/graphics.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/include/application.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/include/application.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/include/lib.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/include/lib.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/lib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/lib.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/include/animation.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/include/animation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/ui/include/label.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/ui/include/label.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/ui/label.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/ui/label.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,17 +44,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\cmake" />
       <recent name="C:\Users\vikto\CLionProjects\DuckHunt" />
       <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\assets" />
       <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\core\logic\events" />
       <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\assets\fonts" />
-      <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\assets\sprites" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vikto\CLionProjects\DuckHunt\src\core\audio\include" />
