@@ -1,7 +1,18 @@
+**Using:**
+
+
+`SDL2.0.14`
+
+`SDL_Image2.0.5`
+
+`SDL2_TTF2.0.15`
+
+`SDL2_Mixer2.0.4`
+
+
 **TODO:**
 
-- Create spawner 
-- Create their movement AI
+- In Trello: https://trello.com/b/kFtJmwOx/duck-hunt
 
 
 
