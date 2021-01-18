@@ -7,7 +7,8 @@
 
 
 #include "../../../../lib/utils/ui/include/user_interface.h"
-#include "../../include/game_utils.h"
+
+class Gamelib;
 
 class AbstractScreen {
 protected:
@@ -16,6 +17,7 @@ public:
     AbstractScreen() = default;
     virtual ~AbstractScreen() = default;
     virtual void render(const float& dt) = 0;
+    virtual void start();
 
 };
 

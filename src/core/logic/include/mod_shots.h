@@ -5,7 +5,7 @@
 #ifndef MOD_SHOTS_H
 #define MOD_SHOTS_H
 
-#include "../../include/game_utils.h"
+
 #include "mod_logic.h"
 
 class ModShots : public ModLogic {

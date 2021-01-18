@@ -7,10 +7,13 @@
 
 
 #include "event.h"
+#include "../../include/mod_duck_spawner.h"
 
 class StartRound : public Event{
 public:
+	DifficultyLevel difficultyLevel;
 	StartRound();
+	StartRound(DifficultyLevel difficultyLevel);
 };
 
 

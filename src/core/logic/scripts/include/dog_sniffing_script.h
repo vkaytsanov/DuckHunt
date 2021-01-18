@@ -10,11 +10,10 @@
 
 class DogSniffingScript : public Script{
 private:
-	const float SNIFF_TIME = 2.3f;
+	const float SNIFF_TIME = 5.3f;
 	float currentSniffTime = 0.0f;
-	bool stoppedSniffing = false;
 public:
-	DogSniffingScript(Gamelib& game);
+	explicit DogSniffingScript(Gamelib& game);
 	bool update(Gamelib& game) override;
 };
 

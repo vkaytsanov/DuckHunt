@@ -26,11 +26,14 @@ private:
 	Animation<TextureRegion> animations[3];
 	TextureRegion ducks[2];
 	DogState currentState;
+	bool drawBefore = false;
 public:
 	void loadEntity(Assets& assets) override;
 	void processAnimation(float dt) override;
 	void setState(DogState state);
-
+	void resetStateTime();
+	bool isDrawBefore() const;
+	void setDrawBefore(bool drawBefore);
 };
 
 

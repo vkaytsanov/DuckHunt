@@ -3,24 +3,28 @@
 //
 
 #include "include/hud_renderer.h"
+#include "../../include/game_utils.h"
 
 HudRenderer::HudRenderer(Gamelib& game) : game(game)  {
 	bullet = game.dataSystem->assets.getSprite("bullet");
 	ducks[0].set(game.dataSystem->assets.getSprite("ducks-ui"), 0, 0, 8, 7);
 	ducks[1].set(game.dataSystem->assets.getSprite("ducks-ui"), 8, 0, 8, 7);
 
-	LabelStyle* whiteStyle = new LabelStyle("pixel-emulator.ttf", 20);
+	LabelStyle* whiteStyle = new LabelStyle("pixel-emulator.ttf", 16);
 	whiteStyle->color = {0xff, 0xff, 0xff};
 
 	scoreLabel.setText("0");
+	scoreLabel.setAlign(Right);
+
 	roundLabel.setText("0");
 
 	scoreLabel.setStyle(whiteStyle);
 	LabelStyle* greenStyle = new LabelStyle(whiteStyle->font, {0x75, 0xcb, 0x0b, 0xff});
+	greenStyle->size = 20;
 	roundLabel.setStyle(greenStyle);
 
 	scoreLabel.setWidth(20);
-	scoreLabel.setHeight(25);
+	scoreLabel.setHeight(20);
 	scoreLabel.setX(GRAPHICS_WIDTH/2 + 195);
 	scoreLabel.setY(GRAPHICS_HEIGHT - 78);
 

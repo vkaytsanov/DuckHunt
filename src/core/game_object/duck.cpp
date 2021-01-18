@@ -3,18 +3,18 @@
 //
 
 #include "include/duck.h"
+#include "../../lib/include/lib.h"
+#include <cassert>
 
-void Duck::copyTextures(const Duck& duck) {
-	this->flatFlyingAnimation = duck.flatFlyingAnimation;
-	this->diagFlyingAnimation = duck.diagFlyingAnimation;
-	this->upFlyingAnimation = duck.upFlyingAnimation;
-	this->shotTexture = duck.shotTexture;
-	this->diedTexture = duck.diedTexture;
-}
 
 void Duck::processAnimation(const float dt) {
 	stateTime += dt;
-	currentFrame = flatFlyingAnimation.getFrame(stateTime, true);
+	if(currentState < 3) {
+		currentFrame = animations[currentState].getFrame(stateTime, true);
+	}
+	else{
+		currentFrame = death[currentState - 3];
+	}
 }
 
 void Duck::loadEntity(Assets& assets) {
@@ -36,22 +36,41 @@ void Duck::beginParsing(Texture* spriteSheet, const int startingIndex) {
 	diagFlyingTextures.reserve(framesPerAnimation);
 	upFlyingTextures.reserve(framesPerAnimation);
 
-	for (int i = startingIndex; i < framesPerAnimation; i++) {
+	for (int i = startingIndex; i < startingIndex + framesPerAnimation; i++) {
 		parseFile(spriteSheet, flatFlyingTextures, i);
 		parseFile(spriteSheet, diagFlyingTextures, i + 3);
 		parseFile(spriteSheet, upFlyingTextures, i + 6);
 	}
 
-	parseFile(spriteSheet, shotTexture, startingIndex + framesPerAnimation * 3 + 1);
-	parseFile(spriteSheet, diedTexture, startingIndex + framesPerAnimation * 3 + 2);
+	parseFile(spriteSheet, death[0], startingIndex + framesPerAnimation * 3);
+	parseFile(spriteSheet, death[1], startingIndex + framesPerAnimation * 3 + 1);
 
-	flatFlyingAnimation.loadFrames(0.15f, flatFlyingTextures);
-	diagFlyingAnimation.loadFrames(0.15f, diagFlyingTextures);
-	upFlyingAnimation.loadFrames(0.15f, upFlyingTextures);
+	animations[0].loadFrames(0.15f, flatFlyingTextures);
+	animations[1].loadFrames(0.15f, diagFlyingTextures);
+	animations[2].loadFrames(0.15f, upFlyingTextures);
+
+	Lib::app->log("Assets", "binded");
+	assert(flatFlyingTextures.size() == framesPerAnimation);
+	assert(diagFlyingTextures.size() == framesPerAnimation);
+	assert(upFlyingTextures.size() == framesPerAnimation);
+
 }
 
 int Duck::getScore() const {
 	return score;
+}
+
+void Duck::setState(DuckState state) {
+	currentState = state;
+}
+
+bool Duck::isHit(const float& mouseX, const float& mouseY) {
+	return  x < mouseX && mouseX < (x + width) &&
+	        y < mouseY && mouseY < (y + height);
+}
+
+DuckState Duck::getState() const {
+	return currentState;
 }
 
 

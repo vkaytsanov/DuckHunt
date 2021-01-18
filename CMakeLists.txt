@@ -7,6 +7,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 # Add all cpp source files under the src directory
 file(GLOB SOURCES
+        "src/core/audio/*.cpp"
+        "src/core/audio/include/*.h"
         "src/core/data/*.cpp"
         "src/core/data/include/*.h"
         "src/core/graphics/*.cpp"
@@ -42,15 +44,15 @@ list(APPEND CMAKE_PREFIX_PATH "D:/SDL2")
 
 find_package(sdl2 REQUIRED)
 find_package(OpenGL REQUIRED)
-#find_package(SDL2_ttf REQUIRED)
 
 message(STATUS "SDL2_INCLUDE_DIRS=${SDL2_INCLUDE_DIRS}")
 message(STATUS "SDL2_LIBRARIES=${SDL2_LIBRARIES}")
 message(STATUS "SDL2IMAGE_LIBRARIES=${SDL2IMAGE_LIBRARIES}")
 message(STATUS "SDL2TTF_LIBRARIES=${SDL2TTF_LIBRARIES}")
+message(STATUS "SDL2AUDIO_LIBRARIES=${SDL2AUDIO_LIBRARIES}")
 
 
 
 include_directories(${SDL2_INCLUDE_DIRS})
-target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES} ${SDL2IMAGE_LIBRARIES} ${SDL2TTF_LIBRARIES} ${OPENGL_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES} ${SDL2IMAGE_LIBRARIES} ${SDL2TTF_LIBRARIES} ${SDL2AUDIO_LIBRARIES} ${OPENGL_LIBRARIES})
 

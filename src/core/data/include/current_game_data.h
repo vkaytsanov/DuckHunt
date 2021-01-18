@@ -13,8 +13,6 @@ enum DuckTracker{
 
 class CurrentGameData {
 public:
-	bool didDogSniff = false;
-	bool isDogSniffing = false;
 	int score = 0;
 	int round = 0;
 	int shots = 3;

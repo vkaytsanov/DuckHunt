@@ -8,20 +8,12 @@
 
 #include <string>
 
-enum EventType{
-	Basic,
-	ShotFiredType,
-	StartRoundType
-
-};
 
 class Event {
 public:
-	EventType type;
 	std::string name;
 	Event() = default;
-	explicit Event(std::string& name);
-	Event(const std::string& name, const EventType type);
+	explicit Event(std::string name);
 };
 
 

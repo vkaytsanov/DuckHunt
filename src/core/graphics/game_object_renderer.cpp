@@ -8,26 +8,21 @@
 GameObjectRenderer::GameObjectRenderer(Gamelib& game) : game(game){}
 
 void GameObjectRenderer::draw(const float& dt) {
-	for(Duck& duck : game.dataSystem->ducksDb.getDucks()){
-		if(duck.isVisible()){
+	for(Duck* duck : game.dataSystem->ducksDb.getDucks()){
+		if(duck->isVisible()){
 			drawObject(duck, dt);
 		}
 	}
 
-	Dog& dog = game.dataSystem->dogData.getDog();
-	if(dog.isVisible()) {
-		dog.processAnimation(dt);
-		dog.getCurrentFrame().draw(dog.getX(), dog.getY(), dog.getWidth(), dog.getHeight());
-	}
 }
 
-void GameObjectRenderer::drawObject(EntityAnimated& e, const float& dt) {
-	e.processAnimation(dt);
-	if(e.isFacingLeft()){
-		e.getCurrentFrame().draw(e.getX(), e.getY(), e.getWidth(), e.getHeight(), SDL_FLIP_HORIZONTAL);
+void GameObjectRenderer::drawObject(EntityAnimated* e, const float& dt) {
+	e->processAnimation(dt);
+	if(e->isFacingLeft()){
+		e->getCurrentFrame().draw(e->getX(), e->getY(), e->getWidth(), e->getHeight(), SDL_FLIP_HORIZONTAL);
 	}
 	else{
-		e.getCurrentFrame().draw(e.getX(), e.getY(), e.getWidth(), e.getHeight());
+		e->getCurrentFrame().draw(e->getX(), e->getY(), e->getWidth(), e->getHeight());
 	}
 }
 

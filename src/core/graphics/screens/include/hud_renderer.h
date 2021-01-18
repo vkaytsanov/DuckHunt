@@ -8,6 +8,7 @@
 #include "../../../../lib/utils/ui/include/label.h"
 #include "../../../../lib/utils/ui/include/user_interface.h"
 #include "../../../../lib/utils/include/texture.h"
+#include "../../../../lib/utils/include/texture_region.h"
 #include "../../../graphics/include/graphics_system.h"
 
 
@@ -18,9 +19,9 @@ private:
 	Texture* bullet;
 	TextureRegion ducks[2];
 	UserInterface userInterface;
+public:
 	Label scoreLabel;
 	Label roundLabel;
-public:
 	explicit HudRenderer(Gamelib& game);
 	void draw(const float& dt);
 };

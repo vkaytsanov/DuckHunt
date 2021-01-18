@@ -43,7 +43,7 @@ public:
 	}
 
 	T getFrame(float stateTime) const {
-		return getFrame(looping);
+		return getFrame(stateTime, looping);
 	}
 
 };

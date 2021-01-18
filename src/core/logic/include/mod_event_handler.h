@@ -17,6 +17,7 @@ private:
 public:
 	void update(std::vector<ModLogic*>& modules);
 	void post(Event* e) override;
+	void reinit() override;
 };
 
 

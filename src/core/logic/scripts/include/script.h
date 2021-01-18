@@ -5,7 +5,7 @@
 #ifndef SCRIPT_H
 #define SCRIPT_H
 
-#include "../../../include/game_utils.h"
+class Gamelib;
 
 class Script {
 public:

@@ -22,7 +22,15 @@ void ModEventHandler::post(Event* e) {
 
 void ModEventHandler::sendToModules(std::vector<ModLogic*>& modules, Event* e) {
 	for(ModLogic* mod : modules){
-		Lib::app->log("Event", (e->name +  " posted").c_str());
 		mod->post(e);
+	}
+	Lib::app->log("Event", (e->name +  " posted").c_str());
+}
+
+void ModEventHandler::reinit() {
+	while(!events.empty()){
+		Event* e = events.front();
+		events.pop();
+		delete e;
 	}
 }

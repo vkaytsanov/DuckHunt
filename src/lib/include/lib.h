@@ -13,6 +13,7 @@ namespace Lib {
     extern Application* app;
     extern Graphics* graphics;
     extern Input* input;
+    extern Audio* audio;
 }
 
 #endif //DUCKHUNT_LIB_H

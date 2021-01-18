@@ -8,7 +8,7 @@
 
 #include <SDL.h>
 
-static const float DEFAULT_MOVE_SPEED = 150.0f;
+static const float DEFAULT_MOVE_SPEED = 100.0f;
 
 class GameObject {
 private:
@@ -16,8 +16,8 @@ private:
 protected:
     float x;
     float y;
-	float dx;
-	float dy;
+	float dx = 0;
+	float dy = 0;
     float width;
     float height;
     bool wantMove = false;
@@ -38,6 +38,7 @@ public:
     void setY(float y);
     void setWidth(float width);
     void setHeight(float height);
+    void setWantToMove(bool wants);
     bool wantsToMove();
 	float getSpeed() const;
 };

@@ -74,6 +74,10 @@ void GameObject::setDY(float dy) {
 	GameObject::dy = dy;
 }
 
+void GameObject::setWantToMove(bool wants) {
+	wantMove = wants;
+}
+
 
 
 

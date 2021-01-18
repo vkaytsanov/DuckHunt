@@ -57,3 +57,15 @@ void Dog::setState(DogState state) {
 	currentState = state;
 }
 
+void Dog::resetStateTime() {
+	stateTime = 0.0f;
+}
+
+bool Dog::isDrawBefore() const {
+	return drawBefore;
+}
+
+void Dog::setDrawBefore(bool drawBefore) {
+	Dog::drawBefore = drawBefore;
+}
+

@@ -5,7 +5,7 @@
 #ifndef MOD_SCORE_H
 #define MOD_SCORE_H
 
-#include "../../include/game_utils.h"
+
 #include "mod_logic.h"
 
 class ModScore : public ModLogic{

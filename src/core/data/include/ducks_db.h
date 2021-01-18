@@ -12,11 +12,12 @@
 static const int NUMBER_OF_DUCKS = 6;
 class DucksDB {
 private:
-	std::vector<Duck> ducks;
+	std::vector<Duck*> ducks;
 public:
 	DucksDB();
-	void addDuck(const Duck& duck);
-	std::vector<Duck>& getDucks();
+	~DucksDB();
+	void addDuck(Duck* duck);
+	std::vector<Duck*>& getDucks();
 
 };
 

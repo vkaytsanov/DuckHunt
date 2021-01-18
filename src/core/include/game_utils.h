@@ -8,7 +8,9 @@
 
 #include "game_state_manager.h"
 #include "../data/include/data_system.h"
-#include "../logic/events/include/event.h"
+#include "../graphics/include/graphics_system.h"
+#include "../logic/include/logic_system.h"
+#include "../audio/include/audio_system.h"
 
 class Gamelib{
 private:
@@ -16,8 +18,11 @@ private:
 protected:
     void create();
 public:
+	LogicSystem* logicSystem;
+	GraphicsSystem* graphicsSystem;
     GameStateManager* gameStateManager;
     DataSystem* dataSystem;
+    AudioSystem* audioSystem;
     ~Gamelib();
 };
 

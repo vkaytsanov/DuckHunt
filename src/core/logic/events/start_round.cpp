@@ -4,6 +4,10 @@
 
 #include "include/start_round.h"
 
-StartRound::StartRound() : Event("StartRound", StartRoundType) {
+StartRound::StartRound() : Event("StartRound") {
+	difficultyLevel = ONE_DUCK;
+}
 
+StartRound::StartRound(DifficultyLevel difficultyLevel) : Event("StartRound") {
+	this->difficultyLevel = difficultyLevel;
 }

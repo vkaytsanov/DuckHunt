@@ -15,7 +15,7 @@ private:
 public:
 	explicit GameObjectRenderer(Gamelib& game);
 	void draw(const float& dt);
-	void drawObject(EntityAnimated& e, const float& dt);
+	void drawObject(EntityAnimated* e, const float& dt);
 };
 
 

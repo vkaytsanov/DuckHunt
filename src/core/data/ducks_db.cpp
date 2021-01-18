@@ -8,10 +8,16 @@ DucksDB::DucksDB() {
 	ducks.reserve(NUMBER_OF_DUCKS);
 }
 
-void DucksDB::addDuck(const Duck& duck) {
-	ducks.push_back(duck);
+void DucksDB::addDuck(Duck* duck) {
+	ducks.emplace_back(duck);
 }
 
-std::vector<Duck>& DucksDB::getDucks() {
+std::vector<Duck*>& DucksDB::getDucks() {
 	return ducks;
+}
+
+DucksDB::~DucksDB() {
+	for(auto & duck : ducks){
+		delete duck;
+	}
 }

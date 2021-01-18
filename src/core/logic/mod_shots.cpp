@@ -3,6 +3,9 @@
 //
 
 #include "include/mod_shots.h"
+#include "../include/game_utils.h"
+#include "scripts/include/dog_reaction_script.h"
+#include "../../lib/include/lib.h"
 
 void ModShots::init() {
 	game.dataSystem->currentGameData.shots = 3;
@@ -13,8 +16,9 @@ void ModShots::update() {
 }
 
 void ModShots::post(Event* e) {
-	if(e->type == ShotFiredType){
+	if(e->name == "ShotFired"){
 		game.dataSystem->currentGameData.shots--;
+		game.audioSystem->playSound(GUNSHOT, game.audioSystem->shotChannel, false);
 	}
 }
 

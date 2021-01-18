@@ -8,6 +8,7 @@
 #include "../../lib/include/lib.h"
 #include "screens/include/playing_screen.h"
 
+
 int GRAPHICS_WIDTH;
 int GRAPHICS_HEIGHT;
 float WORLD_WIDTH = 240;
@@ -30,6 +31,15 @@ void GraphicsSystem::render(const float& dt) {
 void GraphicsSystem::resizeViewport(const int &width, const int &height) {
     viewport.update(width, height, false);
 }
+
+void GraphicsSystem::start(int state) {
+	screens[state]->start();
+}
+
+HudRenderer GraphicsSystem::getHudRenderer() {
+	return ((PlayingScreen*) screens[Playing])->hudRenderer;
+}
+
 
 
 

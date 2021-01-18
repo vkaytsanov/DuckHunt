@@ -6,35 +6,21 @@
 #include "../game_object/include/black_duck.h"
 #include "../game_object/include/blue_duck.h"
 #include "../game_object/include/red_duck.h"
-
+#include "../include/game_utils.h"
 ModCreateObjects::ModCreateObjects(Gamelib& game) : game(game) {}
 
 void ModCreateObjects::init() {
-	BlackDuck blackDuck;
-	blackDuck.loadEntity(game.dataSystem->assets);
-
-	BlueDuck blueDuck;
-	blueDuck.loadEntity(game.dataSystem->assets);
-
-	RedDuck redDuck;
-	redDuck.loadEntity(game.dataSystem->assets);
-
-	BlackDuck blackDuck2;
-	blackDuck2.copyTextures(blackDuck);
-
-	BlueDuck blueDuck2;
-	blueDuck2.copyTextures(blueDuck);
-
-	RedDuck redDuck2;
-	redDuck2.copyTextures(redDuck);
-
-
-	game.dataSystem->ducksDb.addDuck(blackDuck);
-	game.dataSystem->ducksDb.addDuck(blackDuck2);
-	game.dataSystem->ducksDb.addDuck(blueDuck);
-	game.dataSystem->ducksDb.addDuck(blueDuck2);
-	game.dataSystem->ducksDb.addDuck(redDuck);
-	game.dataSystem->ducksDb.addDuck(redDuck2);
+	for(int i = 0; i < 2; i++){
+		auto* blackDuck = new BlackDuck();
+		blackDuck->loadEntity(game.dataSystem->assets);
+		game.dataSystem->ducksDb.addDuck(blackDuck);
+		auto* blueDuck = new BlueDuck();
+		blueDuck->loadEntity(game.dataSystem->assets);
+		game.dataSystem->ducksDb.addDuck(blueDuck);
+		auto* redDuck = new RedDuck();
+		redDuck->loadEntity(game.dataSystem->assets);
+		game.dataSystem->ducksDb.addDuck(redDuck);
+	}
 
 	Dog dog;
 	dog.loadEntity(game.dataSystem->assets);

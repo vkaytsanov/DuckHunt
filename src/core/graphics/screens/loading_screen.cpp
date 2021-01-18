@@ -3,7 +3,7 @@
 //
 
 #include "include/loading_screen.h"
-
+#include "../../include/game_utils.h"
 
 LoadingScreen::LoadingScreen(Gamelib &game) : game(game) {
     isReady = true;

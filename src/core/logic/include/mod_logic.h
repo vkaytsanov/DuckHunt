@@ -8,6 +8,8 @@
 
 #include "../events/include/event.h"
 
+class Gamelib;
+
 class ModLogic {
 public:
 	virtual void init();

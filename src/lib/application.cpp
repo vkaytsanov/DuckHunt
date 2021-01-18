@@ -29,6 +29,8 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 	this->logger = new Logger();
 	// Receive user input
 	this->input = new Input(config->width, config->height);
+	// Our library for audio
+	this->audio = new Audio();
 	// if we dont have declared title, we will use the name of the class
 	if (config->title == nullptr) config->title = typeid(listener).name();
 	// creating the window
@@ -37,6 +39,7 @@ Application::Application(Listener* listener, Configuration* config, Graphics* gr
 	Lib::app = this;
 	Lib::graphics = graphics;
 	Lib::input = input;
+	Lib::audio = audio;
     // creating the objects from the game
 	listener->create();
 
@@ -101,6 +104,7 @@ void Application::exitApp() {
 }
 
 Application::~Application() {
+	delete audio;
     delete logger;
     delete listener;
     delete graphics;

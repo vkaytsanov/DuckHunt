@@ -11,7 +11,7 @@
 #include "../../../data/include/assets.h"
 #include "../../../../lib/utils/include/animation.h"
 
-// TODO Animation Class
+
 class EntityAnimated : public GameObject{
 private:
     bool visible = false;

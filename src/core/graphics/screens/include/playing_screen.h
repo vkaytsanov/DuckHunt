@@ -11,16 +11,19 @@
 #include "../../../game_object/generic/include/entity.h"
 #include "../../include/game_object_renderer.h"
 #include "hud_renderer.h"
+#include "../../include/shots_receiver.h"
 
 class PlayingScreen : public AbstractScreen{
 private:
     Gamelib& game;
     Entity background;
     GameObjectRenderer gameObjectRenderer;
+    ShotsReceiver shotsReceiver;
 public:
 	HudRenderer hudRenderer;
     explicit PlayingScreen(Gamelib& game);
     void render(const float& dt) override;
+	void start() override;
 };
 
 

@@ -5,6 +5,7 @@
 #include "logger.h"
 #include "graphics.h"
 #include "input.h"
+#include "audio.h"
 
 
 class Application{
@@ -15,6 +16,7 @@ private:
 	Configuration* config;
     Graphics* graphics;
     Logger* logger;
+    Audio* audio;
 	void gameLoop();
 	void exitApp();
 public:

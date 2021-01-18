@@ -12,18 +12,23 @@
 #include "mod_event_handler.h"
 #include "mod_round.h"
 #include "mod_shots.h"
-#include "mod_duck_movement.h"
+#include "mod_game_object_movement.h"
+#include "mod_script_handler.h"
+#include "mod_duck_spawner.h"
+
 
 class LogicSystem : public ModLogic{
 private:
 	Gamelib& game;
 	std::vector<ModLogic*> modules;
 	ModEventHandler eventHandler;
+	ModScriptHandler scriptHandler;
 	ModCreateObjects modCreateObjects;
 	ModScore modScore;
 	ModRound modRound;
 	ModShots modShots;
-	ModDuckMovement modDuckMovement;
+	ModGameObjectMovement modDuckMovement;
+	ModDuckSpawner modDuckSpawner;
 	bool initialLoadingComplete = false;
 public:
     LogicSystem(Gamelib& game);
@@ -31,6 +36,7 @@ public:
 	void update() override;
 	void post(Event* e);
 	void reinit() override;
+	void addScript(Script* s);
 	bool isInitialLoadingComplete() const;
 };
 

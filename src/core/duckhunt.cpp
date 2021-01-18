@@ -5,8 +5,8 @@
 
 void DuckHunt::create() {
     Gamelib::create();
-    graphicsSystem = new GraphicsSystem(*this);
-    logicSystem = new LogicSystem(*this);
+	logicSystem->init();
+	audioSystem->playMusic(TITLE);
 }
 
 void DuckHunt::render() {

@@ -7,6 +7,7 @@
 
 #include "abstract_screen.h"
 #include "../../../../lib/utils/ui/include/label.h"
+#include "../../../../lib/utils/include/texture.h"
 
 class MenuScreen : public AbstractScreen{
 private:
@@ -14,7 +15,6 @@ private:
     Label playLabel[2];
     Label maximumScore;
     Label copyright;
-    Gamelib& game;
 public:
     explicit MenuScreen(Gamelib& game);
     void render(const float& dt) override;
