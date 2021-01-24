@@ -8,20 +8,25 @@
 #include "../../../lib/include/lib.h"
 #include "../events/include/start_spawning.h"
 
-DogReactionScript::DogReactionScript(Gamelib& game, int ducksAlive, int ducksSpawned){
+DogReactionScript::DogReactionScript(Gamelib& game, int ducksAlive, int ducksSpawned) {
 	Dog& dog = game.dataSystem->dogData.getDog();
 	const int count = 2 + ducksSpawned - ducksAlive;
 	const auto dogState = static_cast<DogState>(count);
 	dog.setState(dogState);
-	dog.setX((float) GRAPHICS_WIDTH / 2  - dog.getWidth() / 2);
+	dog.setX((float) GRAPHICS_WIDTH / 2 - dog.getWidth() / 2);
 	dog.setY((float) GRAPHICS_HEIGHT / 2 + 100);
 	dog.setDY(0);
 	dog.setDX(0);
 	dog.setVisible(true);
-	dog.setDrawBefore(true);
-	if(count > 2){
-		playSound = true;
+	dog.setWantToMove(true);
+	if (count > 2) {
+		playGotDucks = true;
 	}
+}
+
+DogReactionScript::DogReactionScript(Gamelib& game, int ducksAlive, int ducksSpawned, bool finishedRound)
+		: DogReactionScript(game, ducksAlive, ducksSpawned) {
+	this->finishedRound = finishedRound;
 }
 
 bool DogReactionScript::update(Gamelib& game) {
@@ -33,24 +38,32 @@ bool DogReactionScript::update(Gamelib& game) {
 	float dt = Lib::graphics->getDeltaTime();
 	currentWaitTime += dt;
 	Dog& dog = game.dataSystem->dogData.getDog();
-	if(currentWaitTime > WAIT_TIME && !didShowReaction) {
-		dog.setDY(-1);
-		if (dog.getY() < (float) GRAPHICS_HEIGHT / 2 + 20) {
+	// Going Up
+	if (currentWaitTime > WAIT_TIME && !didShowReaction) {
+		dog.setDY(-1.5f);
+		if (dog.getY() < (float) GRAPHICS_HEIGHT / 2 + 22) {
 			didShowReaction = true;
 			dog.setDY(0);
-			if(playSound) game.audioSystem->playSound(GOT_DUCKS, 2, false);
+			if (playGotDucks) game.audioSystem->playSound(GOT_DUCKS);
+			else game.audioSystem->playSound(MISS);
 		}
 	}
+		// Going Down
 	else if (currentWaitTime > WAIT_TIME * 2 && didShowReaction) {
-		dog.setDY(1);
+		dog.setDY(1.5f);
 		if (dog.getY() > (float) GRAPHICS_HEIGHT / 2 + 100) {
-			game.dataSystem->currentGameData.shots = 3;
-			game.logicSystem->post(new StartSpawning());
-			game.graphicsSystem->start(Playing);
+			if(!finishedRound){
+				game.dataSystem->currentGameData.shots = 3;
+				game.logicSystem->post(new StartSpawning());
+				game.graphicsSystem->start(Playing);
+				dog.setVisible(false);
+			}
 			return true;
 		}
 	}
 	return false;
 }
+
+
 
 

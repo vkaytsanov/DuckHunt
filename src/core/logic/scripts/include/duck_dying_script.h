@@ -15,6 +15,9 @@ private:
 	Duck* duck;
 	const float WAIT_TIME = 0.5f;
 	float currentTime = 0.f;
+	bool isFalling = false;
+	void displayScore(Gamelib& game);
+	int getLabelIndex() const;
 public:
 	explicit DuckDyingScript(Duck* duck);
 	bool update(Gamelib& game) override;

@@ -4,6 +4,8 @@
 
 #include "include/data_system.h"
 
-DataSystem::DataSystem() : assets(), ducksDb(), dogData(), currentGameData(){}
+DataSystem::DataSystem(){
+	userData.load();
+}
 
 

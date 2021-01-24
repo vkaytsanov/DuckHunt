@@ -16,6 +16,7 @@ public:
 	~Audio();
 	Sound newSound(const std::string& file_path);
 	Music newMusic(const std::string& file_path);
+	void stopMusic();
 };
 
 

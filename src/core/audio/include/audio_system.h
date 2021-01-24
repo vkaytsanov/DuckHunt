@@ -13,16 +13,18 @@ static std::string AUDIO_LOCATION = __FILE__ "/../../../../assets/audio/";
 
 enum MusicType{
 	TITLE,
-	INTRO
+	INTRO,
+	FLAPPING,
 };
 
 enum SoundType{
 	GOT_DUCKS,
+	MISS,
 	GUNSHOT,
-	FLAPPING,
 	FALLING,
 	LANDS,
-	BARKS
+	BARKS,
+	QUACK
 };
 
 
@@ -32,21 +34,12 @@ private:
 	std::vector<Sound*> sounds;
 	std::vector<Music*> musics;
 public:
-	int duckOneChannel = 0;
-	int duckTwoChannel = 1;
-	int dogChannel = 2;
-	int shotChannel = 3;
-//	Sound* channels[4] = {nullptr};
 	AudioSystem();
 	~AudioSystem();
-	void playSound(SoundType type, int channel = -1, bool loop = false);
-	void stopSound(SoundType type, int channel = -1);
-	void playMusic(MusicType type);
-	int getSoundChannel(SoundType type);
-	int getFreeChannel();
-	void setChannelUsed(int i, SoundType type);
-	void setChannelFree(int i);
-
+	void playSound(SoundType type, bool loop = false);
+	void stopSound(SoundType type);
+	void playMusic(MusicType type, bool loop = false);
+	void stopMusic();
 };
 
 

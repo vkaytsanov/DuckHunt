@@ -13,9 +13,9 @@ enum DuckTracker{
 
 class CurrentGameData {
 public:
-	int score = 0;
-	int round = 0;
-	int shots = 3;
+	int score;
+	int round;
+	int shots;
 	DuckTracker ducksTracker[10] = {ESCAPED};
 };
 

@@ -39,3 +39,7 @@ ModScriptHandler::ModScriptHandler(Gamelib& game) : game(game){
 void ModScriptHandler::addScript(Script* s) {
 	scripts.emplace_back(s);
 }
+
+int ModScriptHandler::size() {
+	return scripts.size();
+}

@@ -4,9 +4,15 @@
 
 #include "include/mod_round.h"
 #include "../include/game_utils.h"
+#include "../graphics/windows/include/round_window.h"
+#include "../graphics/screens/include/hud_renderer.h"
+
+ModRound::ModRound(Gamelib& game) : game(game){
+
+}
 
 void ModRound::init() {
-	game.dataSystem->currentGameData.round = -1;
+	game.dataSystem->currentGameData.round = 0;
 }
 
 void ModRound::update() {
@@ -16,6 +22,9 @@ void ModRound::update() {
 void ModRound::post(Event* e) {
 	if(e->name == "StartRound"){
 		game.dataSystem->currentGameData.round++;
+		RoundWindow& roundWindow = game.graphicsSystem->getHudRenderer().roundWindow;
+		roundWindow.update();
+		roundWindow.setVisible(true);
 	}
 }
 
@@ -23,6 +32,4 @@ void ModRound::reinit() {
 	init();
 }
 
-ModRound::ModRound(Gamelib& game) : game(game){
 
-}

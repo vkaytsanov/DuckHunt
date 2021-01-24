@@ -2,18 +2,18 @@
 // Created by Viktor on 15.1.2021 г..
 //
 
-#ifndef MOD_CREATE_OBJECTS_H
-#define MOD_CREATE_OBJECTS_H
+#ifndef MOD_OBJECTS_HANDLER_H
+#define MOD_OBJECTS_HANDLER_H
 
 
 #include "mod_logic.h"
 
 
-class ModCreateObjects : public ModLogic {
+class ModObjectsHandler : public ModLogic {
 private:
 	Gamelib& game;
 public:
-	explicit ModCreateObjects(Gamelib& game);
+	explicit ModObjectsHandler(Gamelib& game);
 	void init() override;
 	void update() override;
 	void post(Event* e) override;
@@ -21,4 +21,4 @@ public:
 };
 
 
-#endif //MOD_CREATE_OBJECTS_H
+#endif //MOD_OBJECTS_HANDLER_H

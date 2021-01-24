@@ -13,9 +13,11 @@ private:
 	const float WAIT_TIME = 2.0f;
 	float currentWaitTime = 0.0f;
 	bool didShowReaction = false;
-	bool playSound = false;
+	bool playGotDucks = false;
+	bool finishedRound = false;
 public:
 	DogReactionScript(Gamelib& game, int ducksAlive, int ducksSpawned);
+	DogReactionScript(Gamelib& game, int ducksAlive, int ducksSpawned, bool finishedRound);
 	bool update(Gamelib& game) override;
 };
 

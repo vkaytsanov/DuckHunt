@@ -13,9 +13,8 @@ Audio::Audio() {
 		exit(-1);
 	}
 	//Initialize SDL_mixer
-	if( Mix_OpenAudio( 44100, MIX_DEFAULT_FORMAT, 4, 2048 ) < 0 )
-	{
-		printf( "SDL_mixer could not initialize! SDL_mixer Error: %s\n", Mix_GetError() );
+	if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 4, 1024) < 0) {
+		printf("SDL_mixer could not initialize! SDL_mixer Error: %s\n", Mix_GetError());
 	}
 }
 
@@ -30,4 +29,8 @@ Music Audio::newMusic(const std::string& file_path) {
 
 Audio::~Audio() {
 	Mix_Quit();
+}
+
+void Audio::stopMusic() {
+	Mix_HaltMusic();
 }

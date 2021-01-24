@@ -10,11 +10,12 @@
 Assets::Assets() {
     std::string spritePaths[] = {
             "logo.png",
+            "pointer.png",
             "dog.png",
             "bullet.png",
             "ducks.png",
             "ducks-ui.png",
-            "fly-away.png",
+            "window.png",
             "playing-screen-background.png"
     };
 
@@ -42,6 +43,6 @@ Assets::~Assets() {
 }
 
 std::string Assets::stripName(std::string& name) {
-    return name.substr(0, name.find('.'));
+    return name.substr(0, name.length() - 4);
 }
 

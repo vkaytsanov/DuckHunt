@@ -20,8 +20,8 @@ void DuckHunt::resize(const int &width, const int &height) {
 }
 
 DuckHunt::~DuckHunt() {
-    delete graphicsSystem;
-    delete logicSystem;
+	delete graphicsSystem;
+	delete logicSystem;
 }
 
 void DuckHunt::pause() {

@@ -36,4 +36,10 @@ EntityAnimated::EntityAnimated(float x, float y) : GameObject(x, y) {
 
 }
 
+void EntityAnimated::setFacing() {
+	dx > 0 ? setFacingLeft(false) : setFacingLeft(true);
+}
+
+
+
 

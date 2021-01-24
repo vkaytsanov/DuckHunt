@@ -20,17 +20,16 @@ void Sound::loadSound(const std::string& file_path) {
 }
 
 void Sound::play(int channel, bool loopable) {
-	// if we were multithreading would be nice
-//	if(Mix_Playing(channel)) SDL_Delay(20);
-
 	Mix_PlayChannel(channel, rawSound, loopable ? -1 : 0);
 }
 
 Sound::~Sound() {
 	Mix_FreeChunk(rawSound);
+	rawSound = nullptr;
 }
 
 void Sound::stop(int channel) {
 	Mix_HaltChannel(channel);
 }
+
 

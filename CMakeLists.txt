@@ -15,6 +15,8 @@ file(GLOB SOURCES
         "src/core/graphics/include/*.h"
         "src/core/graphics/screens/*.cpp"
         "src/core/graphics/screens/include/*.h"
+        "src/core/graphics/windows/*.cpp"
+        "src/core/graphics/windows/include/*.h"
         "src/core/logic/*.cpp"
         "src/core/logic/include/*.h"
         "src/core/logic/events/*.cpp"

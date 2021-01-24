@@ -127,7 +127,17 @@ void Input::update() {
 }
 
 void Input::processEvents() {
-    if(!processor) return;
+    if(!processor){
+    	// Get rid of the events that happened, else we will get bombarded
+    	// with events after a InputProcessor gets used
+    	while(!keyEvents.empty()){
+    		keyEvents.pop();
+    	}
+    	while(!touchEvents.empty()){
+    		touchEvents.pop();
+    	}
+    	return;
+    }
     while(!keyEvents.empty()){
         SDL_Event event = keyEvents.front();
         keyEvents.pop();
@@ -221,6 +231,10 @@ float Input::getMouseDeltaY() const {
 
 void Input::setProcessor(InputProcessor* processor) {
     this->processor = processor;
+}
+
+InputProcessor* Input::getProcessor() const {
+	return processor;
 }
 
 

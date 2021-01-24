@@ -29,6 +29,7 @@ public:
     float getHeight() const;
     void setX(float x);
     void setY(float y);
+    void setPosition(float x, float y);
     void act(float dt);
 
     virtual void draw(){}
@@ -38,6 +39,7 @@ public:
     void setId(int id);
     void setWidth(float width);
     void setHeight(float height);
+    void setSize(float width, float height);
     bool isVisible() const;
     void setVisible(bool visible);
     bool hit(const float& mouseX, const float& mouseY);

@@ -40,15 +40,22 @@ UserInterface::~UserInterface() {
 
 
 void UserInterface::keyDown(SDL_Event &e, int key) {
-    Lib::app->log("InputProcessor", "keyDown");
+    for(Actor* actor : actors){
+	    for (EventListener *listener : actor->getListeners()) {
+		    listener->handle(e);
+	    }
+    }
 }
 
 void UserInterface::keyUp(SDL_Event &e, int key) {
-    Lib::app->log("InputProcessor", "keyUp");
+	for(Actor* actor : actors){
+		for (EventListener *listener : actor->getListeners()) {
+			listener->handle(e);
+		}
+	}
 }
 
 void UserInterface::touchDown(SDL_Event &e, float x, float y) {
-    Lib::app->log("InputProcessor", "touchDown");
     for(Actor *actor : actors) {
         if(actor->hit(x, y)) {
             for (EventListener *listener : actor->getListeners()) {
@@ -67,6 +74,11 @@ void UserInterface::touchUp(SDL_Event &e, float x, float y) {
             }
         }
     }
+}
+
+/** Adds listener to the first actor in the UI */
+void UserInterface::addListener(EventListener* e) {
+	actors[0]->addListener(e);
 }
 
 

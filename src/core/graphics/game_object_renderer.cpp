@@ -19,10 +19,10 @@ void GameObjectRenderer::draw(const float& dt) {
 void GameObjectRenderer::drawObject(EntityAnimated* e, const float& dt) {
 	e->processAnimation(dt);
 	if(e->isFacingLeft()){
-		e->getCurrentFrame().draw(e->getX(), e->getY(), e->getWidth(), e->getHeight(), SDL_FLIP_HORIZONTAL);
+		e->getCurrentFrame().draw((int) e->getX(), (int) e->getY(), (int) e->getWidth(), (int) e->getHeight(), SDL_FLIP_HORIZONTAL);
 	}
 	else{
-		e->getCurrentFrame().draw(e->getX(), e->getY(), e->getWidth(), e->getHeight());
+		e->getCurrentFrame().draw((int) e->getX(), (int) e->getY(), (int) e->getWidth(), (int) e->getHeight());
 	}
 }
 

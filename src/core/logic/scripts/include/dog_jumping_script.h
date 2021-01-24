@@ -12,6 +12,7 @@ private:
 	bool bounced = false;
 	const float WAIT_TIME = 1.0f;
 	float currentWaitTime = 0.0f;
+	bool didBark = false;
 public:
 	explicit DogJumpingScript(Gamelib& game);
 	bool update(Gamelib& game) override;

@@ -9,6 +9,7 @@
 #include "../events/include/start_spawning.h"
 
 DogJumpingScript::DogJumpingScript(Gamelib& game) {
+
 }
 
 bool DogJumpingScript::update(Gamelib& game) {
@@ -18,23 +19,28 @@ bool DogJumpingScript::update(Gamelib& game) {
 		dog.resetStateTime();
 		return false;
 	}
-	dog.setDY(-1.0f);
-	dog.setDX(0.4f);
-	if(dog.getY() < 330){
-		bounced = true;
+	if(!didBark){
+		didBark = true;
+		game.audioSystem->playSound(BARKS);
 	}
+	// Jumping
+	dog.setDY(-4.0f);
+	dog.setDX(0.4f);
+	if(dog.getY() < 300){
+		bounced = true;
+		dog.setDrawBefore(true);
+
+	}
+	// Needs to fall down
 	if(bounced) {
-		dog.setHeight(dog.getHeight() - dog.getSpeed()*2 * Lib::graphics->getDeltaTime());
-		dog.setDY(1.5f);
-		if (dog.getHeight() <= 50.f) {
+		dog.setDY(3.5f);
+		if (dog.getY() > 370) {
 			dog.setVisible(false);
-			// resetting to default height
-			dog.setHeight(100);
 
 			// add event to start spawning
 			game.logicSystem->post(new StartSpawning());
+			// Gives input to the playing screen
 			game.graphicsSystem->start(Playing);
-			game.audioSystem->playSound(BARKS, -1, false);
 			return true;
 		}
 	}

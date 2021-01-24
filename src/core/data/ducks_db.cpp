@@ -21,3 +21,15 @@ DucksDB::~DucksDB() {
 		delete duck;
 	}
 }
+
+int DucksDB::getBlackDuckStartIndex() {
+	return 0 * NUMBER_OF_DUCKS_PER_TYPE;
+}
+
+int DucksDB::getBlueDuckStartIndex() {
+	return 1 * NUMBER_OF_DUCKS_PER_TYPE;
+}
+
+int DucksDB::getRedDuckStartIndex() {
+	return 2 * NUMBER_OF_DUCKS_PER_TYPE ;
+}

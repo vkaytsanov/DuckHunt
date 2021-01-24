@@ -66,15 +66,16 @@ float GameObject::getSpeed() const {
 	return speed;
 }
 
-void GameObject::setDX(float dx) {
+void GameObject::setDX(const float dx) {
 	GameObject::dx = dx;
+
 }
 
-void GameObject::setDY(float dy) {
+void GameObject::setDY(const float dy) {
 	GameObject::dy = dy;
 }
 
-void GameObject::setWantToMove(bool wants) {
+void GameObject::setWantToMove(const bool wants) {
 	wantMove = wants;
 }
 

@@ -36,7 +36,7 @@ void GraphicsSystem::start(int state) {
 	screens[state]->start();
 }
 
-HudRenderer GraphicsSystem::getHudRenderer() {
+HudRenderer& GraphicsSystem::getHudRenderer() {
 	return ((PlayingScreen*) screens[Playing])->hudRenderer;
 }
 

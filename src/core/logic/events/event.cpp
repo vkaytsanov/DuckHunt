@@ -4,7 +4,12 @@
 
 #include "include/event.h"
 
+#include <utility>
 
-Event::Event(std::string name) {
-	this->name = name;
+
+Event::Event(std::string  name) : name(std::move(name)){}
+
+
+Event::~Event() {
+
 }

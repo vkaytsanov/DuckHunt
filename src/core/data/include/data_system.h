@@ -10,6 +10,7 @@
 #include "ducks_db.h"
 #include "dog_data.h"
 #include "current_game_data.h"
+#include "user_data.h"
 
 
 class DataSystem {
@@ -18,6 +19,7 @@ public:
 	DucksDB ducksDb;
 	DogData dogData;
 	CurrentGameData currentGameData;
+	UserData userData;
 	DataSystem();
 
 };

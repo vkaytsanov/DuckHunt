@@ -5,7 +5,7 @@
 #include "include/start_round.h"
 
 StartRound::StartRound() : Event("StartRound") {
-	difficultyLevel = ONE_DUCK;
+	difficultyLevel = NONE;
 }
 
 StartRound::StartRound(DifficultyLevel difficultyLevel) : Event("StartRound") {

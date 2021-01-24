@@ -13,7 +13,8 @@ class Event {
 public:
 	std::string name;
 	Event() = default;
-	explicit Event(std::string name);
+	explicit Event(std::string  name);
+	virtual ~Event();
 };
 
 

@@ -11,6 +11,7 @@
 class ModScore : public ModLogic{
 private:
 	Gamelib& game;
+	void displayNewScore() const;
 public:
 	explicit ModScore(Gamelib& game);
 	void init() override;

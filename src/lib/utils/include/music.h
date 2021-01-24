@@ -16,7 +16,7 @@ public:
 	Music(const std::string& file_path);
 	~Music();
 	void loadMusic(const std::string& file_path);
-	void play();
+	void play(bool loopable);
 	bool isPlaying();
 };
 

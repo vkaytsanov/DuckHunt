@@ -8,11 +8,13 @@
 
 #include "mod_logic.h"
 
+
 class GameObject;
 
 class ModGameObjectMovement : public ModLogic{
 private:
 	Gamelib& game;
+	void keepInBounds(GameObject* duck);
 	void move(GameObject* e, const float& dx, const float& dy);
 public:
 	explicit ModGameObjectMovement(Gamelib& game);
@@ -20,6 +22,7 @@ public:
 	void update() override;
 	void post(Event* e) override;
 	void reinit() override;
+
 };
 
 

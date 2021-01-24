@@ -38,6 +38,7 @@ public:
 	void setState(DuckState state);
 	DuckState getState() const;
 	bool isHit(const float& x, const float& y);
+	void setFacingAndState();
 };
 
 

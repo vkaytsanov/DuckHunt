@@ -10,7 +10,9 @@
 #include "../../../../lib/utils/include/texture.h"
 #include "../../../../lib/utils/include/texture_region.h"
 #include "../../../graphics/include/graphics_system.h"
-
+#include "../../windows/include/fly_away_window.h"
+#include "../../windows/include/round_window.h"
+#include "../../windows/include/end_of_round_window.h"
 
 
 class HudRenderer {
@@ -20,6 +22,11 @@ private:
 	TextureRegion ducks[2];
 	UserInterface userInterface;
 public:
+	FlyAwayWindow flyAwayWindow;
+	RoundWindow roundWindow;
+	EndOfRoundWindow endOfRoundWindow;
+	// the scores that will pop when a duck is shot
+	Label shotScoreLabels[3];
 	Label scoreLabel;
 	Label roundLabel;
 	explicit HudRenderer(Gamelib& game);

@@ -13,7 +13,6 @@
 class UserInterface : public InputProcessor{
 private:
     // TODO Use KD/BVH Tree
-    // Using pointers so we can use runtime polymorphism
     std::vector<Actor*> actors;
 public:
     ~UserInterface();
@@ -25,6 +24,7 @@ public:
     void touchDown(SDL_Event &e, float x, float y) override;
     void touchUp(SDL_Event &e, float x, float y) override;
     void keyUp(SDL_Event &e, int key) override;
+    void addListener(EventListener* e);
 };
 
 

@@ -73,6 +73,15 @@ DuckState Duck::getState() const {
 	return currentState;
 }
 
+void Duck::setFacingAndState() {
+	if(dx == 0){
+		setState(UP_FLYING);
+		return;
+	}
+	setFacing();
+	std::abs(dx - dy) > 0.99f ? setState(DIAG_FLYING) : setState(FLAT_FLYING);
+}
+
 
 
 

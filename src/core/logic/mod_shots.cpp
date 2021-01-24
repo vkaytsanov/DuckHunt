@@ -18,7 +18,8 @@ void ModShots::update() {
 void ModShots::post(Event* e) {
 	if(e->name == "ShotFired"){
 		game.dataSystem->currentGameData.shots--;
-		game.audioSystem->playSound(GUNSHOT, game.audioSystem->shotChannel, false);
+		game.audioSystem->stopSound(GUNSHOT);
+		game.audioSystem->playSound(GUNSHOT);
 	}
 }
 

@@ -29,7 +29,7 @@ public:
     void render(const float& dt);
     void resizeViewport(const int &width, const int &height);
     void start(int state);
-    HudRenderer getHudRenderer();
+    HudRenderer& getHudRenderer();
 };
 
 

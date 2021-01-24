@@ -7,15 +7,18 @@
 #include "../../../lib/include/lib.h"
 #include "include/dog_jumping_script.h"
 #include "../../include/game_utils.h"
+#include "../../graphics/screens/include/hud_renderer.h"
 
 DogSniffingScript::DogSniffingScript(Gamelib& game) {
 	Dog& dog = game.dataSystem->dogData.getDog();
 	dog.setVisible(true);
 	dog.setX(-dog.getWidth());
 	dog.setY(GRAPHICS_HEIGHT - 90 - dog.getHeight());
-	dog.setDX(0.45f);
+	dog.setDX(0.7f);
+	dog.setDY(0);
 	dog.setState(Sniffing);
 	dog.setWantToMove(true);
+	dog.setDrawBefore(false);
 
 }
 
@@ -28,10 +31,7 @@ bool DogSniffingScript::update(Gamelib& game) {
 		dog.setState(Jumping);
 		dog.resetStateTime();
 		game.logicSystem->addScript(new DogJumpingScript(game));
-//		int channel = game.audioSystem->getFreeChannel();
-//		if(channel == -1) channel = game.audioSystem->getSoundChannel(BARKS);
-//		game.audioSystem->setChannelUsed(channel, BARKS);
-		game.audioSystem->playSound(BARKS, game.audioSystem->dogChannel, false);
+		game.graphicsSystem->getHudRenderer().roundWindow.setVisible(false);
 		Lib::app->log("DogSniffing", "Script completed");
 		return true;
 	}

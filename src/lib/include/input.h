@@ -31,6 +31,7 @@ public:
     void resetMouse();
     bool shouldQuit() const;
     void setProcessor(InputProcessor* processor);
+	InputProcessor* getProcessor() const;
 	bool isKeyPressed(char key);
     bool isMouseMoved() const;
     float getLastMousePosX() const;

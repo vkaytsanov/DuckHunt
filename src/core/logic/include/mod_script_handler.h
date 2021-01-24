@@ -21,6 +21,7 @@ public:
 	void update() override;
 	void post(Event* e) override;
 	void reinit() override;
+	int size();
 };
 
 

@@ -16,7 +16,7 @@ float Actor::getX() const {
     return x;
 }
 
-void Actor::setX(float x) {
+void Actor::setX(const float x) {
     Actor::x = x;
 }
 
@@ -24,15 +24,25 @@ float Actor::getY() const {
     return y;
 }
 
-void Actor::setY(float y) {
+void Actor::setY(const float y) {
     Actor::y = y;
+}
+
+void Actor::setPosition(const float x, const float y) {
+	this->x = x;
+	this->y = y;
+}
+
+void Actor::setSize(const float width, const float height) {
+	this->width = width;
+	this->height = height;
 }
 
 void Actor::addListener(EventListener *e) {
     listeners.emplace_back(e);
 }
 
-void Actor::act(float dt) {
+void Actor::act(const float dt) {
 
 }
 
@@ -42,7 +52,7 @@ int Actor::getId() const {
     return ID;
 }
 
-void Actor::setId(int id) {
+void Actor::setId(const int id) {
     ID = id;
 }
 
@@ -55,11 +65,11 @@ float Actor::getHeight() const {
 }
 
 
-void Actor::setWidth(float width) {
+void Actor::setWidth(const float width) {
     Actor::width = width;
 }
 
-void Actor::setHeight(float height) {
+void Actor::setHeight(const float height) {
     Actor::height = height;
 }
 
@@ -67,7 +77,7 @@ bool Actor::isVisible() const {
     return visible;
 }
 
-void Actor::setVisible(bool visible) {
+void Actor::setVisible(const bool visible) {
     Actor::visible = visible;
 }
 

@@ -39,7 +39,7 @@ void Dog::loadEntity(Assets& assets) {
 	parseFile(spriteSheet, ducks[1], sniffCountTex + 1 + jumpCountTex + laughCountTex);
 
 	animations[0].loadFrames(0.15f, sniffingAnimationTextures, true);
-	animations[1].loadFrames(0.30f, jumpingAnimationTextures, false);
+	animations[1].loadFrames(0.10f, jumpingAnimationTextures, false);
 	animations[2].loadFrames(0.20f, laughingAnimationTextures, true);
 }
 

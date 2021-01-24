@@ -47,13 +47,14 @@ void Label::updateText() {
 	SDL_Surface* textSurface = TTF_RenderText_Blended(m_style->font, m_text.c_str(), m_style->color);
 	m_texture = SDL_CreateTextureFromSurface(Lib::graphics->getRenderer(), textSurface);
 	SDL_FreeSurface(textSurface);
-	float lastWidth = getWidth();
-	setWidth(m_text.length() * m_style->size);
-	if(getWidth() != lastWidth) {
-		if (align == Right) {
-			setX(getX() - getWidth() / 1.4f);
-		}
-	}
+	// TODO Proper positioning
+//		if ((align & Right) != 0) {
+//			x += width;
+//		}
+//		else if((align & Left) != 0){
+//			x += width / 2;
+//		}
+
 }
 
 const LabelStyle* Label::getStyle() const {

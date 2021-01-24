@@ -18,15 +18,10 @@ void ModGameObjectMovement::init() {
 void ModGameObjectMovement::update() {
 	for(Duck* duck : game.dataSystem->ducksDb.getDucks()){
 		if(duck->wantsToMove() && duck->isVisible()){
-//			if(duck->getState() == DIED){
-////				int channel = game.audioSystem->getSoundChannel(FALLING);
-////				if(channel == -1) channel = game.audioSystem->getFreeChannel();
-////				game.audioSystem->playSound(FALLING, channel, false);
-//			}
-//			else if(duck->getState() == SHOT){
-//				//game.audioSystem->stopSound(FLAPPING);
-//			}
-
+			if(duck->getState() != SHOT && duck->getState() != DIED && duck->getState() != UP_FLYING) {
+				keepInBounds(duck);
+				duck->setFacing();
+			}
 			move(duck, duck->getDX(), duck->getDY());
 		}
 	}
@@ -34,6 +29,23 @@ void ModGameObjectMovement::update() {
 	if(dog.wantsToMove()){
 		move(&dog, dog.getDX(), dog.getDY());
 	}
+}
+
+
+void ModGameObjectMovement::keepInBounds(GameObject* duck) {
+	// checking if it is leaving the screen bounds
+	const float& x = duck->getX();
+	const float& y = duck->getY();
+	const float& width = duck->getWidth();
+	const float& height = duck->getHeight();
+
+
+	// in the left or right
+	if(x < 0 || x + width > (float) GRAPHICS_WIDTH) duck->setDX(-duck->getDX());
+	// in top or bottom, including the bushes
+	if(y < 0) duck->setDY(-duck->getDY());
+	else if(y + height + 200 > (float) GRAPHICS_HEIGHT) duck->setDY(std::abs(duck->getDY()) * -1);
+
 }
 
 void ModGameObjectMovement::post(Event* e) {
@@ -50,9 +62,6 @@ void ModGameObjectMovement::move(GameObject* e, const float& dx, const float& dy
 		e->setX(e->getX() + (dx * speed) * Lib::graphics->getDeltaTime());
 		e->setY(e->getY() + (dy * speed) * Lib::graphics->getDeltaTime());
 	}
-//	else{
-//		Lib::app->error("DuckMovement", "error");
-//	}
 }
 
 

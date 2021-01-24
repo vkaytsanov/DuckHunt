@@ -4,20 +4,25 @@
 
 #include "include/audio_system.h"
 #include "cassert"
+#include "../../lib/include/lib.h"
+
+#define AUDIO 0
 
 AudioSystem::AudioSystem() {
 	std::string musicNames[] = {
-			"01 - Title Screen.mp3",
-			"02 - Duck Hunt Intro.mp3"
+			"title.mp3",
+			"intro.mp3",
+			"flapping.wav",
 	};
 
 	std::string soundNames[] = {
-			"04 - Got Duck(s).mp3",
-			"99 - Gunshot (SFX).mp3",
-			"99 - Duck Flapping (SFX).mp3",
-			"99 - Dead Duck Falls (SFX).mp3",
-			"99 - Dead Duck Lands (SFX).mp3",
-			"99 - Bark! (SFX).mp3"
+			"got_ducks.wav",
+			"miss.wav",
+			"gunshot.wav",
+			"falling.wav",
+			"lands.wav",
+			"bark.wav",
+			"quack.wav"
 	};
 
 
@@ -28,55 +33,39 @@ AudioSystem::AudioSystem() {
 	for(std::string& loc : musicNames){
 		musics.emplace_back(new Music(AUDIO_LOCATION + loc));
 	}
-
-	assert(sizeof(soundNames)/sizeof(soundNames[0]) == 6);
 }
 
-void AudioSystem::playSound(SoundType type, int channel, bool loop) {
-	sounds[type]->play(channel, loop);
+void AudioSystem::playSound(SoundType type, bool loop) {
+#if AUDIO
+	sounds[type]->play(-1, loop);
+#endif
 }
 
-void AudioSystem::playMusic(MusicType type) {
-	musics[type]->play();
+void AudioSystem::playMusic(MusicType type, bool loop) {
+#if AUDIO
+	musics[type]->play(loop);
+#endif
+}
+
+void AudioSystem::stopSound(SoundType type) {
+	sounds[type]->stop(-1);
+}
+
+void AudioSystem::stopMusic() {
+	Lib::audio->stopMusic();
 }
 
 AudioSystem::~AudioSystem() {
 	for(Sound* sound : sounds){
+		sound->stop();
 		delete sound;
 	}
+	// TODO Unable to delete the initialized music
+	Lib::audio->stopMusic();
 //	for(Music* music : musics){
+//		Lib::app->log("Music", "deleting music");
 //		delete music;
 //	}
 }
 
-void AudioSystem::stopSound(SoundType type, int channel) {
-	sounds[type]->stop(channel);
-}
 
-int AudioSystem::getSoundChannel(SoundType type) {
-//	for(int i = 0; i < 4; i++){
-//		if(channels[i] == sounds[type]){
-//			return i;
-//		}
-//	}
-//	return -1;
-	return 0;
-}
-
-int AudioSystem::getFreeChannel() {
-//	for(int i = 0; i < 4; i++){
-//		if(!channels[i]){
-//			return i;
-//		}
-//	}
-//	return -1;
-	return 0;
-}
-
-void AudioSystem::setChannelUsed(int i, SoundType type) {
-	//channels[i] = sounds[type];
-}
-
-void AudioSystem::setChannelFree(int i) {
-	//channels[i] = nullptr;
-}

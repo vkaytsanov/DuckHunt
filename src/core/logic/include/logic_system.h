@@ -7,7 +7,7 @@
 
 
 #include "mod_logic.h"
-#include "mod_create_objects.h"
+#include "mod_objects_handler.h"
 #include "mod_score.h"
 #include "mod_event_handler.h"
 #include "mod_round.h"
@@ -23,7 +23,7 @@ private:
 	std::vector<ModLogic*> modules;
 	ModEventHandler eventHandler;
 	ModScriptHandler scriptHandler;
-	ModCreateObjects modCreateObjects;
+	ModObjectsHandler modCreateObjects;
 	ModScore modScore;
 	ModRound modRound;
 	ModShots modShots;
@@ -31,12 +31,13 @@ private:
 	ModDuckSpawner modDuckSpawner;
 	bool initialLoadingComplete = false;
 public:
-    LogicSystem(Gamelib& game);
+    explicit LogicSystem(Gamelib& game);
 	void init() override;
 	void update() override;
-	void post(Event* e);
+	void post(Event* e) override;
 	void reinit() override;
 	void addScript(Script* s);
+	int getScriptsSize();
 	bool isInitialLoadingComplete() const;
 };
 
