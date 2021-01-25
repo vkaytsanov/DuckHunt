@@ -14,10 +14,10 @@ private:
     Texture* logo;
     Texture* pointer;
     Label playLabel[2];
-    Label maximumScore;
     Label copyright;
     int currentlySelected = 0;
 public:
+	Label maximumScore;
     explicit MenuScreen(Gamelib& game);
     void render(const float& dt) override;
 };

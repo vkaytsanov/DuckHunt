@@ -38,6 +38,7 @@ void Label::setStyle(const LabelStyle* style) {
 
 Label::~Label() {
 	SDL_DestroyTexture(m_texture);
+	m_texture = nullptr;
 	delete m_style;
 
 }

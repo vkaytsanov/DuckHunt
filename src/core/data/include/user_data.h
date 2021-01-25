@@ -16,6 +16,7 @@ private:
 public:
 	int getHighScore() const;
 	void setHighScore(int highScore);
+	bool isBetterHighScore(int highScore);
 	void save();
 	void load();
 };

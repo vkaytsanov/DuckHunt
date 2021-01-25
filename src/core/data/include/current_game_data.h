@@ -11,12 +11,22 @@ enum DuckTracker{
 	KILLED
 };
 
+enum DifficultyLevel{
+	ONE_DUCK = 1,
+	TWO_DUCKS = 2,
+	NONE
+};
+
 class CurrentGameData {
 public:
 	int score;
 	int round;
 	int shots;
-	DuckTracker ducksTracker[10] = {ESCAPED};
+	int ducksAlive;
+	int ducksSpawnedTotal;
+	int minimumDucksToAdvance;
+	DifficultyLevel difficultyLevel;
+	DuckTracker ducksTracker[10];
 };
 
 

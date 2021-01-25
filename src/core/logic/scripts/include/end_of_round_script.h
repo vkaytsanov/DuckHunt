@@ -8,19 +8,22 @@
 
 #include "script.h"
 #include "../../../data/include/current_game_data.h"
+#include "../../../graphics/windows/include/end_of_round_window.h"
 
 class EndOfRoundScript : public Script{
 private:
+	Gamelib& game;
+	EndOfRoundType type;
 	float currentTime = 0.0f;
 	const float WAIT_TIME = 1.5f;
-	int ducksAlive = 0;
 	bool blinked = false;
-	float scoreCounter = 0;
+	float scoreCounter = 0.0f;
 	DuckTracker duckTracker[10] = {ESCAPED};
-	void sortDucksUI(Gamelib& game);
-	void blinkDucksUI(Gamelib& game);
-	void animateScoreGain(Gamelib& game);
-	void EndOfRoundScript::displayNewScore(Gamelib& game) const;
+	void sortDucksUI();
+	void blinkDucksUI();
+	void animateScoreGain();
+	bool isAnimationComplete() const;
+	void displayNewScore() const;
 public:
 	explicit EndOfRoundScript(Gamelib& game);
 	bool update(Gamelib& game) override;

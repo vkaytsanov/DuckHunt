@@ -20,13 +20,14 @@ private:
 	Gamelib& game;
 	Texture* bullet;
 	TextureRegion ducks[2];
+	Texture* minimumDucksIndicator;
 	UserInterface userInterface;
 public:
 	FlyAwayWindow flyAwayWindow;
 	RoundWindow roundWindow;
 	EndOfRoundWindow endOfRoundWindow;
 	// the scores that will pop when a duck is shot
-	Label shotScoreLabels[3];
+	Label shotScoreLabel;
 	Label scoreLabel;
 	Label roundLabel;
 	explicit HudRenderer(Gamelib& game);

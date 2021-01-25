@@ -7,10 +7,11 @@
 #include "../../include/game_utils.h"
 #include "../../../lib/include/lib.h"
 #include "../events/include/start_spawning.h"
+#include "include/end_of_round_script.h"
 
-DogReactionScript::DogReactionScript(Gamelib& game, int ducksAlive, int ducksSpawned) {
+DogReactionScript::DogReactionScript(Gamelib& game) {
 	Dog& dog = game.dataSystem->dogData.getDog();
-	const int count = 2 + ducksSpawned - ducksAlive;
+	const int count = 2 + game.dataSystem->currentGameData.difficultyLevel - game.dataSystem->currentGameData.ducksAlive;
 	const auto dogState = static_cast<DogState>(count);
 	dog.setState(dogState);
 	dog.setX((float) GRAPHICS_WIDTH / 2 - dog.getWidth() / 2);
@@ -22,11 +23,6 @@ DogReactionScript::DogReactionScript(Gamelib& game, int ducksAlive, int ducksSpa
 	if (count > 2) {
 		playGotDucks = true;
 	}
-}
-
-DogReactionScript::DogReactionScript(Gamelib& game, int ducksAlive, int ducksSpawned, bool finishedRound)
-		: DogReactionScript(game, ducksAlive, ducksSpawned) {
-	this->finishedRound = finishedRound;
 }
 
 bool DogReactionScript::update(Gamelib& game) {
@@ -48,12 +44,15 @@ bool DogReactionScript::update(Gamelib& game) {
 			else game.audioSystem->playSound(MISS);
 		}
 	}
-		// Going Down
+	// Going Down
 	else if (currentWaitTime > WAIT_TIME * 2 && didShowReaction) {
 		dog.setDY(1.5f);
 		if (dog.getY() > (float) GRAPHICS_HEIGHT / 2 + 100) {
-			if(!finishedRound){
-				game.dataSystem->currentGameData.shots = 3;
+			const bool finishedRound = game.dataSystem->currentGameData.ducksSpawnedTotal == 10;
+			if(finishedRound) {
+				game.logicSystem->addScript(new EndOfRoundScript(game));
+			}
+			else{
 				game.logicSystem->post(new StartSpawning());
 				game.graphicsSystem->start(Playing);
 				dog.setVisible(false);

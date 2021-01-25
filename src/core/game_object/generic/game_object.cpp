@@ -79,6 +79,14 @@ void GameObject::setWantToMove(const bool wants) {
 	wantMove = wants;
 }
 
+float GameObject::getModSpeed() const {
+	return modSpeed;
+}
+
+void GameObject::setModSpeed(const float modSpeed) {
+	GameObject::modSpeed = modSpeed;
+}
+
 
 
 

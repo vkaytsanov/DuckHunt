@@ -6,12 +6,16 @@
 #include "cassert"
 #include "../../lib/include/lib.h"
 
-#define AUDIO 0
+// disabling the audio during development because it gets annoying
+#define AUDIO 1
 
 AudioSystem::AudioSystem() {
 	std::string musicNames[] = {
 			"title.mp3",
 			"intro.mp3",
+			"perfect.wav",
+			"round_clear.wav",
+			"game_over.wav",
 			"flapping.wav",
 	};
 

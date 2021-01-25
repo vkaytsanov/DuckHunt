@@ -6,6 +6,8 @@
 #include "../include/game_utils.h"
 #include "scripts/include/dog_reaction_script.h"
 #include "../../lib/include/lib.h"
+#include "scripts/include/fly_away_script.h"
+#include "scripts/include/end_of_round_script.h"
 
 void ModShots::init() {
 	game.dataSystem->currentGameData.shots = 3;
@@ -16,10 +18,19 @@ void ModShots::update() {
 }
 
 void ModShots::post(Event* e) {
+	if(e->name == "StartSpawning"){
+		game.dataSystem->currentGameData.shots = 3;
+	}
 	if(e->name == "ShotFired"){
-		game.dataSystem->currentGameData.shots--;
 		game.audioSystem->stopSound(GUNSHOT);
 		game.audioSystem->playSound(GUNSHOT);
+		game.dataSystem->currentGameData.shots--;
+		const bool shouldFlyAway = game.dataSystem->currentGameData.shots == 0 && game.dataSystem->currentGameData.ducksAlive != 0;
+		if(shouldFlyAway){
+			// fly away script
+			game.logicSystem->addScript(new FlyAwayScript(game));
+			Lib::input->setProcessor(nullptr);
+		}
 	}
 }
 

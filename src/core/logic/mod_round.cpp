@@ -22,6 +22,7 @@ void ModRound::update() {
 void ModRound::post(Event* e) {
 	if(e->name == "StartRound"){
 		game.dataSystem->currentGameData.round++;
+		displayNewRound();
 		RoundWindow& roundWindow = game.graphicsSystem->getHudRenderer().roundWindow;
 		roundWindow.update();
 		roundWindow.setVisible(true);
@@ -30,6 +31,12 @@ void ModRound::post(Event* e) {
 
 void ModRound::reinit() {
 	init();
+}
+
+void ModRound::displayNewRound() {
+	Label& roundLabel = game.graphicsSystem->getHudRenderer().roundLabel;
+	roundLabel.setText(std::to_string(game.dataSystem->currentGameData.round));
+	roundLabel.updateText();
 }
 
 

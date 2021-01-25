@@ -59,8 +59,9 @@ void ModGameObjectMovement::reinit() {
 void ModGameObjectMovement::move(GameObject* e, const float& dx, const float& dy) {
 	if(dx != 0 || dy != 0){
 		const float speed = e->getSpeed();
-		e->setX(e->getX() + (dx * speed) * Lib::graphics->getDeltaTime());
-		e->setY(e->getY() + (dy * speed) * Lib::graphics->getDeltaTime());
+		const float modSpeed = e->getModSpeed();
+		e->setX(e->getX() + (dx * speed * modSpeed) * Lib::graphics->getDeltaTime());
+		e->setY(e->getY() + (dy * speed * modSpeed) * Lib::graphics->getDeltaTime());
 	}
 }
 

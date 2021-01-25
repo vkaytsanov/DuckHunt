@@ -8,6 +8,6 @@ StartRound::StartRound() : Event("StartRound") {
 	difficultyLevel = NONE;
 }
 
-StartRound::StartRound(DifficultyLevel difficultyLevel) : Event("StartRound") {
+StartRound::StartRound(const DifficultyLevel difficultyLevel) : Event("StartRound") {
 	this->difficultyLevel = difficultyLevel;
 }

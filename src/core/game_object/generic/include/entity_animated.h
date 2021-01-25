@@ -29,7 +29,7 @@ public:
 	void setFacingLeft(bool facingLeft);
 	void setFacing();
 	TextureRegion getCurrentFrame() const;
-	void setCurrentFrame(TextureRegion currentFrame);
+	void setCurrentFrame(const TextureRegion& currentFrame);
 };
 
 

@@ -19,13 +19,17 @@ LogicSystem::LogicSystem(Gamelib& game) : game(game),
                                           modRound(game),
                                           modShots(game),
                                           modDuckMovement(game),
-                                          modDuckSpawner(game) {
+                                          modDuckSpawner(game),
+                                          modDuckTracker(game),
+                                          modDifficultyController(game){
 	modules.emplace_back(&modCreateObjects);
 	modules.emplace_back(&modScore);
 	modules.emplace_back(&modRound);
-	modules.emplace_back(&modShots);
 	modules.emplace_back(&modDuckMovement);
 	modules.emplace_back(&modDuckSpawner);
+	modules.emplace_back(&modDuckTracker);
+	modules.emplace_back(&modDifficultyController);
+	modules.emplace_back(&modShots);
 
 }
 
@@ -48,7 +52,6 @@ void LogicSystem::update() {
 void LogicSystem::post(Event* e) {
 	if (e->name == "StartRound") {
 		Lib::app->log("Event", "StartRound posted");
-		game.gameStateManager->changeState(Playing);
 #if SKIP_INTRO
 		// add event to start spawning
 		game.logicSystem->post(new StartSpawning());
@@ -63,14 +66,17 @@ void LogicSystem::post(Event* e) {
 #endif
 		auto* s = dynamic_cast<StartRound*>(e);
 		if(s->difficultyLevel != NONE) {
-			modDuckSpawner.setCurrentDifficultyLevel(s->difficultyLevel);
-			for (ModLogic* mod : modules) {
-				mod->reinit();
-			}
+			game.gameStateManager->changeState(Playing);
+			game.dataSystem->currentGameData.difficultyLevel = s->difficultyLevel;
 		}
 	}
-
-	eventHandler.post(e);
+	if(e->name == "Reinitialize"){
+		for(ModLogic* mod : modules){
+			mod->reinit();
+		}
+	}else{
+		eventHandler.post(e);
+	}
 
 }
 

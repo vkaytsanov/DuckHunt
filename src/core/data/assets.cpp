@@ -15,6 +15,7 @@ Assets::Assets() {
             "bullet.png",
             "ducks.png",
             "ducks-ui.png",
+            "minimum-ducks-indicator.png",
             "window.png",
             "playing-screen-background.png"
     };

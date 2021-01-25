@@ -11,6 +11,7 @@
 class ModRound : public ModLogic{
 private:
 	Gamelib& game;
+	void displayNewRound();
 public:
 	ModRound(Gamelib& game);
 	void init() override;

@@ -4,6 +4,11 @@
 
 #include "include/mod_script_handler.h"
 
+ModScriptHandler::ModScriptHandler(Gamelib& game) : game(game){
+
+}
+
+
 void ModScriptHandler::init() {
 
 }
@@ -30,10 +35,6 @@ void ModScriptHandler::reinit() {
 	while(!scripts.empty()){
 		scripts.pop_front();
 	}
-}
-
-ModScriptHandler::ModScriptHandler(Gamelib& game) : game(game){
-
 }
 
 void ModScriptHandler::addScript(Script* s) {

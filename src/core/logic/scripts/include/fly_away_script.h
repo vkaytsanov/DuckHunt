@@ -12,10 +12,8 @@ class FlyAwayScript : public Script{
 private:
 	float currentTime = 0.0f;
 	const float WAIT_TIME = 1.5f;
-	int ducksAlive = 0;
-	int ducksSpawned;
 public:
-	FlyAwayScript(Gamelib& game, int ducksSpawned);
+	explicit FlyAwayScript(Gamelib& game);
 	bool update(Gamelib& game) override;
 };
 

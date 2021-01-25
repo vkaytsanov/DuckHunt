@@ -11,6 +11,4 @@ void BlueDuck::loadEntity(Assets& assets) {
 	beginParsing(spriteSheet, startingIndex);
 }
 
-BlueDuck::BlueDuck() {
-	score = 1000;
-}
+

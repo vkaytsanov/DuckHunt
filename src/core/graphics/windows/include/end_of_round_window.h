@@ -12,7 +12,7 @@
 class Gamelib;
 
 // There are 3 types of outcome on the end of the round:
-// 1. 10/10 Ducks slain -> PERFECT, 10_000 Score
+// 1. 10/10 Ducks slain -> PERFECT, +10_000 Score
 // 2. Min number of ducks slain threshold reached -> Nothing happens
 // 3. Min number of ducks slain threshold not reached -> Game Over
 enum EndOfRoundType{

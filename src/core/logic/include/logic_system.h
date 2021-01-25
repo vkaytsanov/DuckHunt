@@ -15,6 +15,8 @@
 #include "mod_game_object_movement.h"
 #include "mod_script_handler.h"
 #include "mod_duck_spawner.h"
+#include "mod_duck_tracker.h"
+#include "mod_difficulty_controller.h"
 
 
 class LogicSystem : public ModLogic{
@@ -29,6 +31,8 @@ private:
 	ModShots modShots;
 	ModGameObjectMovement modDuckMovement;
 	ModDuckSpawner modDuckSpawner;
+	ModDuckTracker modDuckTracker;
+	ModDifficultyController modDifficultyController;
 	bool initialLoadingComplete = false;
 public:
     explicit LogicSystem(Gamelib& game);

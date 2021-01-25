@@ -10,7 +10,6 @@
 
 class BlackDuck : public Duck{
 public:
-	BlackDuck();
 	void loadEntity(Assets& assets) override;
 
 };

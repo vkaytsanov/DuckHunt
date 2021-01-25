@@ -9,7 +9,6 @@
 
 class BlueDuck : public Duck{
 public:
-	BlueDuck();
 	void loadEntity(Assets& assets) override;
 
 };

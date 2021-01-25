@@ -8,6 +8,7 @@
 
 #include "event.h"
 #include "../../include/mod_duck_spawner.h"
+#include "../../../data/include/current_game_data.h"
 
 class StartRound : public Event{
 public:

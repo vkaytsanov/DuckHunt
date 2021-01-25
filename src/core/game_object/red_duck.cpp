@@ -11,6 +11,4 @@ void RedDuck::loadEntity(Assets& assets) {
 	beginParsing(spriteSheet, startingIndex);
 }
 
-RedDuck::RedDuck() {
-	score = 1500;
-}
+

@@ -82,6 +82,10 @@ void Duck::setFacingAndState() {
 	std::abs(dx - dy) > 0.99f ? setState(DIAG_FLYING) : setState(FLAT_FLYING);
 }
 
+void Duck::setScore(const int score) {
+	this->score = score;
+}
+
 
 
 

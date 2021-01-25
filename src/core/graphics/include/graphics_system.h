@@ -22,7 +22,7 @@ class HudRenderer;
 class GraphicsSystem {
 private:
     UniversalViewport viewport;
-    std::unordered_map<int, AbstractScreen*> screens;
+    AbstractScreen* screens[3];
     Gamelib& game;
 public:
     explicit GraphicsSystem(Gamelib &game);
@@ -30,6 +30,7 @@ public:
     void resizeViewport(const int &width, const int &height);
     void start(int state);
     HudRenderer& getHudRenderer();
+    AbstractScreen* getScreen(int state);
 };
 
 

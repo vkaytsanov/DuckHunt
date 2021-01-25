@@ -14,6 +14,9 @@ static std::string AUDIO_LOCATION = __FILE__ "/../../../../assets/audio/";
 enum MusicType{
 	TITLE,
 	INTRO,
+	PERFECT_END,
+	ROUND_CLEAR_END,
+	GAME_OVER_END,
 	FLAPPING,
 };
 

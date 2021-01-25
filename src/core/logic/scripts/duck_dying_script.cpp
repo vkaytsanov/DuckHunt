@@ -17,6 +17,8 @@ bool DuckDyingScript::update(Gamelib& game) {
 	if(currentTime > WAIT_TIME){
 		duck->setState(DIED);
 		duck->setDY(2.5f);
+		// spin effect like in the original game
+		duck->setFacingLeft(!duck->isFacingLeft());
 		if(!isFalling){
 			isFalling = true;
 			game.audioSystem->playSound(FALLING, true);
@@ -28,8 +30,7 @@ bool DuckDyingScript::update(Gamelib& game) {
 			duck->setVisible(false);
 			Lib::app->log("DuckScript", "duck finished flying down");
 			// hide the label
-			const int idx = getLabelIndex();
-			game.graphicsSystem->getHudRenderer().shotScoreLabels[idx].setVisible(false);
+			game.graphicsSystem->getHudRenderer().shotScoreLabel.setVisible(false);
 			return true;
 		}
 	}
@@ -37,18 +38,13 @@ bool DuckDyingScript::update(Gamelib& game) {
 }
 
 void DuckDyingScript::displayScore(Gamelib& game) {
-	const int idx = getLabelIndex();
-	Label& label = game.graphicsSystem->getHudRenderer().shotScoreLabels[idx];
+	Label& label = game.graphicsSystem->getHudRenderer().shotScoreLabel;
+	label.setText(std::to_string(duck->getScore()));
+	label.updateText();
 	// we will display it where it was on the shot
 	label.setPosition(duck->getX() + (duck->getWidth() - label.getWidth()) / 2, duck->getY());
 	label.setVisible(true);
 }
 
-int DuckDyingScript::getLabelIndex() const {
-	// 500 / 501 = 0
-	// 1000 / 501 = 1
-	// 1500 / 501 = 2
-	return duck->getScore() / 501;
-}
 
 

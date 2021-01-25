@@ -17,25 +17,28 @@ ModDuckSpawner::ModDuckSpawner(Gamelib& game) : game(game),
 	lastBlackDuckIndex = -1;
 	lastBlueDuckIndex = -1;
 	lastRedDuckIndex = -1;
+	canSpawn = false;
 }
 
 void ModDuckSpawner::init() {
-	ducksPerSpawn = currentDifficultyLevel;
-	ducksAlive = 0;
-	ducksCount = 9;
+	game.dataSystem->currentGameData.ducksAlive = 0;
+	game.dataSystem->currentGameData.ducksSpawnedTotal = 0;
+
 	canSpawn = false;
 }
 
 void ModDuckSpawner::update() {
 	if (canSpawn) {
 		canSpawn = false;
+		const int ducksPerSpawn = game.dataSystem->currentGameData.difficultyLevel;
 
 		for (int i = 0; i < ducksPerSpawn; i++) {
 			const int idx = getCandidate(dist(generator));
 			spawn(game.dataSystem->ducksDb.getDucks()[idx]);
 		}
-		ducksAlive = ducksPerSpawn;
-		ducksCount += ducksPerSpawn;
+
+		game.dataSystem->currentGameData.ducksAlive = ducksPerSpawn;
+		game.dataSystem->currentGameData.ducksSpawnedTotal += ducksPerSpawn;
 	}
 }
 
@@ -71,30 +74,11 @@ void ModDuckSpawner::spawn(Duck* duck) const {
 
 
 void ModDuckSpawner::post(Event* e) {
+	if(e->name == "StartRound"){
+		init();
+	}
 	if (e->name == "StartSpawning") {
 		canSpawn = true;
-	} else if (e->name == "ShotFired") {
-		auto* s = dynamic_cast<ShotFired*>(e);
-		if (s->duck) {
-			game.dataSystem->currentGameData.ducksTracker[ducksCount - ducksAlive] = KILLED;
-			ducksAlive--;
-		}
-		bool finishedRound = ducksCount == 10;
-		if (ducksAlive == 0) {
-			game.logicSystem->addScript(new DogReactionScript(game, ducksAlive, ducksPerSpawn, finishedRound));
-			Lib::input->setProcessor(nullptr);
-			if(finishedRound){
-				game.logicSystem->addScript(new EndOfRoundScript(game));
-			}
-		}
-		else if(game.dataSystem->currentGameData.shots == 0){
-			// fly away script
-			game.logicSystem->addScript(new FlyAwayScript(game, ducksPerSpawn));
-			Lib::input->setProcessor(nullptr);
-			if(finishedRound){
-				game.logicSystem->addScript(new EndOfRoundScript(game));
-			}
-		}
 	}
 }
 
@@ -102,8 +86,5 @@ void ModDuckSpawner::reinit() {
 	init();
 }
 
-void ModDuckSpawner::setCurrentDifficultyLevel(const DifficultyLevel difficulty) {
-	this->currentDifficultyLevel = difficulty;
-}
 
 

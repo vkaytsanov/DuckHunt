@@ -22,6 +22,7 @@ protected:
     float height;
     bool wantMove = false;
     float speed = DEFAULT_MOVE_SPEED;
+    float modSpeed = 1.0f;
 public:
     GameObject() = default;
     GameObject(float x, float y);
@@ -41,6 +42,8 @@ public:
     void setWantToMove(bool wants);
     bool wantsToMove();
 	float getSpeed() const;
+	float getModSpeed() const;
+	void setModSpeed(float modSpeed);
 };
 
 

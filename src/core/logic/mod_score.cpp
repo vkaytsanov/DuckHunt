@@ -24,7 +24,7 @@ void ModScore::post(Event* e) {
 	if(e->name == "ShotFired"){
 		auto* s = dynamic_cast<ShotFired*>(e);
 		if(s->duck){
-			game.dataSystem->currentGameData.score += s->duck->getScore();
+			game.dataSystem->currentGameData.score = (game.dataSystem->currentGameData.score + s->duck->getScore()) % 100000;
 			displayNewScore();
 		}
 		Lib::app->log("Score", game.dataSystem->currentGameData.score);
@@ -33,9 +33,8 @@ void ModScore::post(Event* e) {
 
 void ModScore::reinit() {
 	init();
+	displayNewScore();
 }
-
-
 
 void ModScore::displayNewScore() const {
 	int zeros = 0;

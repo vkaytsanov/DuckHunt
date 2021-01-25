@@ -40,6 +40,10 @@ HudRenderer& GraphicsSystem::getHudRenderer() {
 	return ((PlayingScreen*) screens[Playing])->hudRenderer;
 }
 
+AbstractScreen* GraphicsSystem::getScreen(int state) {
+	return screens[state];
+}
+
 
 
 

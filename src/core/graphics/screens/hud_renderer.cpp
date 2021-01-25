@@ -10,6 +10,8 @@ HudRenderer::HudRenderer(Gamelib& game) : game(game), flyAwayWindow(game), round
 	ducks[0].set(game.dataSystem->assets.getSprite("ducks-ui"), 0, 0, 8, 7);
 	ducks[1].set(game.dataSystem->assets.getSprite("ducks-ui"), 8, 0, 8, 7);
 
+	minimumDucksIndicator = game.dataSystem->assets.getSprite("minimum-ducks-indicator");
+
 	LabelStyle* whiteStyle = new LabelStyle("pixel-emulator.ttf", 18);
 	whiteStyle->color = {0xff, 0xff, 0xff};
 
@@ -23,13 +25,11 @@ HudRenderer::HudRenderer(Gamelib& game) : game(game), flyAwayWindow(game), round
 	greenStyle->size = 20;
 	roundLabel.setStyle(greenStyle);
 
-	for (int i = 0; i < 3; i++) {
-		shotScoreLabels[i].setText(std::to_string(500 + 500 * i));
-		shotScoreLabels[i].setStyle(whiteStyle);
-		shotScoreLabels[i].setSize(i == 0 ? 30 : 50, 40);
-		shotScoreLabels[i].setVisible(false);
-		userInterface.addActor(&shotScoreLabels[i]);
-	}
+	shotScoreLabel.setStyle(whiteStyle);
+	shotScoreLabel.setSize(50, 40);
+	shotScoreLabel.setVisible(false);
+	userInterface.addActor(&shotScoreLabel);
+
 
 	scoreLabel.setWidth(90);
 	scoreLabel.setHeight(30);
@@ -45,21 +45,22 @@ HudRenderer::HudRenderer(Gamelib& game) : game(game), flyAwayWindow(game), round
 	userInterface.addActor(&roundLabel);
 	userInterface.addActor(&flyAwayWindow);
 	userInterface.addActor(&roundWindow);
+	userInterface.addActor(&endOfRoundWindow);
 
 }
 
 void HudRenderer::draw(const float& dt) {
-	if (std::stoi(roundLabel.getText()) != game.dataSystem->currentGameData.round) {
-		roundLabel.setText(std::to_string(game.dataSystem->currentGameData.round));
-		roundLabel.updateText();
-	}
-
 	for (int i = 0; i < game.dataSystem->currentGameData.shots; i++) {
 		bullet->draw(GRAPHICS_WIDTH / 2 - 195 + 15 * i, GRAPHICS_HEIGHT - 70, 8, 14);
 	}
 	for (int i = 0; i < 10; i++) {
 		ducks[game.dataSystem->currentGameData.ducksTracker[i]].draw(GRAPHICS_WIDTH / 2 - 63 + 15 * i,
 		                                                             GRAPHICS_HEIGHT - 70, 14, 14);
+	}
+
+	for(int i = 0; i < game.dataSystem->currentGameData.minimumDucksToAdvance; i++){
+		minimumDucksIndicator->draw(GRAPHICS_WIDTH / 2 - 63 + 15 * i,
+		                            GRAPHICS_HEIGHT - 50, 14, 14);
 	}
 
 	userInterface.act(dt);

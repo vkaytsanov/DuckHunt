@@ -13,13 +13,15 @@
 MenuScreen::MenuScreen(Gamelib& game) :  playLabel(){
     logo = game.dataSystem->assets.getSprite("logo");
     pointer = game.dataSystem->assets.getSprite("pointer");
-    LabelStyle style("pixel-emulator.ttf", 24);
+
+	auto* greenStyle = new LabelStyle("pixel-emulator.ttf", 24);
+	greenStyle->color = {0x15, 0xcb, 0x0b, 0xff};
+    LabelStyle style("pixel-emulator.ttf", {0xff, 0xa2, 0x38}, 20);
     std::string gameModes[2] = {"GAME A   1 DUCK",
                                 "GAME B   2 DUCKS"};
 
     for(int i = 0; i < 2; i++) {
         playLabel[i].setText(gameModes[i]);
-        style.color = {0xff, 0xa2, 0x38};
         playLabel[i].setStyle(&style);
         const float width = (float) GRAPHICS_WIDTH * 0.6f + 40.f * (float) i;
         const float height = 50.f;
@@ -35,8 +37,7 @@ MenuScreen::MenuScreen(Gamelib& game) :  playLabel(){
     }
 
     maximumScore.setText("TOP SCORE = " + std::to_string(game.dataSystem->userData.getHighScore()));
-    style.color = {0x15, 0xcb, 0x0b, 0xff};
-    maximumScore.setStyle(&style);
+    maximumScore.setStyle(greenStyle);
     maximumScore.setSize((float) GRAPHICS_WIDTH * 0.6f, 50);
     maximumScore.setPosition((float) GRAPHICS_WIDTH * 0.2f, (float) GRAPHICS_WIDTH * 0.3f + 150);
 

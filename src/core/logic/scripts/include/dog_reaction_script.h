@@ -14,10 +14,8 @@ private:
 	float currentWaitTime = 0.0f;
 	bool didShowReaction = false;
 	bool playGotDucks = false;
-	bool finishedRound = false;
 public:
-	DogReactionScript(Gamelib& game, int ducksAlive, int ducksSpawned);
-	DogReactionScript(Gamelib& game, int ducksAlive, int ducksSpawned, bool finishedRound);
+	explicit DogReactionScript(Gamelib& game);
 	bool update(Gamelib& game) override;
 };
 

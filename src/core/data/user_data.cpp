@@ -11,7 +11,8 @@ int UserData::getHighScore() const {
 }
 
 void UserData::setHighScore(const int highScore) {
-	if(this->highScore < highScore) this->highScore = highScore;
+	this->highScore = highScore;
+
 }
 
 void UserData::save() {
@@ -21,9 +22,13 @@ void UserData::save() {
 		Lib::app->error("SaveFile", "Couldn't open save file for write");
 		exit(err);
 	}
-	std::string buffer = ("H " + std::to_string(highScore));
-	fwrite(buffer.c_str(), sizeof(char), sizeof (buffer.c_str()), saveFile);
+	std::string buffer = "H " + std::to_string(highScore);
+	Lib::app->log("Buffer", buffer.c_str());
+
+	fwrite(&buffer[0], 1, buffer.length(), saveFile);
+	Lib::app->log("Buffer", "wrote");
 	fclose(saveFile);
+	Lib::app->log("Buffer","closed");
 }
 
 void UserData::load() {
@@ -47,4 +52,8 @@ void UserData::load() {
 	}
 	Lib::app->log("User HighScore Loaded", highScore);
 	fclose(saveFile);
+}
+
+bool UserData::isBetterHighScore(const int highScore) {
+	return this->highScore < highScore;
 }

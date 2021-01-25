@@ -35,6 +35,7 @@ public:
 	void beginParsing(Texture* spriteSheet, int startingIndex);
 	void processAnimation(float dt) override;
 	int getScore() const;
+	void setScore(int score);
 	void setState(DuckState state);
 	DuckState getState() const;
 	bool isHit(const float& x, const float& y);
