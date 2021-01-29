@@ -59,6 +59,11 @@ bool EndOfRoundScript::update(Gamelib& game) {
 	if (game.logicSystem->getScriptsSize() != 1) return false;
 	currentTime += Lib::graphics->getDeltaTime();
 	if (currentTime > WAIT_TIME) {
+		if(!isCurrentTracker){
+			isCurrentTracker = true;
+			blinked = false;
+			blinkDucksUI();
+		}
 		if (type == PERFECT) {
 			animateScoreGain();
 			if(!isAnimationComplete()) return false;
@@ -76,11 +81,7 @@ bool EndOfRoundScript::update(Gamelib& game) {
 			}
 			return true;
 		}
-		if(!isCurrentTracker){
-			isCurrentTracker = true;
-			blinked = false;
-			blinkDucksUI();
-		}
+
 	} else {
 		blinkDucksUI();
 	}

@@ -11,12 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cce279b2-e5e5-4a25-af0a-334e17d17fb9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/graphics_system.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/graphics_system.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/graphics/include/graphics_system.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/graphics/include/graphics_system.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/logic/scripts/dog_sniffing_script.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/logic/scripts/dog_sniffing_script.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="cce279b2-e5e5-4a25-af0a-334e17d17fb9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +97,7 @@
       <workItem from="1610882390702" duration="30188000" />
       <workItem from="1611345238283" duration="75289000" />
       <workItem from="1611603041891" duration="25000" />
-      <workItem from="1611904698292" duration="7844000" />
+      <workItem from="1611904698292" duration="8121000" />
     </task>
     <servers />
   </component>
