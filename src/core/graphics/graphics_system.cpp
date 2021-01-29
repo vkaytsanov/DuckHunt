@@ -44,6 +44,12 @@ AbstractScreen* GraphicsSystem::getScreen(int state) {
 	return screens[state];
 }
 
+GraphicsSystem::~GraphicsSystem() {
+	for(auto& screen : screens){
+		delete screen;
+	}
+}
+
 
 
 

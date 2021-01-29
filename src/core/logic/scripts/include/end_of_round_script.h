@@ -17,6 +17,7 @@ private:
 	float currentTime = 0.0f;
 	const float WAIT_TIME = 1.5f;
 	bool blinked = false;
+	bool isCurrentTracker = false;
 	float scoreCounter = 0.0f;
 	DuckTracker duckTracker[10] = {ESCAPED};
 	void sortDucksUI();

@@ -22,7 +22,7 @@ DogSniffingScript::DogSniffingScript(Gamelib& game) {
 
 }
 
-// Keep scripts in the CurrentGameData class?
+
 bool DogSniffingScript::update(Gamelib& game) {
 	currentSniffTime += Lib::graphics->getDeltaTime();
 	if(currentSniffTime > SNIFF_TIME){

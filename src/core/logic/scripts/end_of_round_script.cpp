@@ -76,6 +76,11 @@ bool EndOfRoundScript::update(Gamelib& game) {
 			}
 			return true;
 		}
+		if(!isCurrentTracker){
+			isCurrentTracker = true;
+			blinked = false;
+			blinkDucksUI();
+		}
 	} else {
 		blinkDucksUI();
 	}
@@ -90,10 +95,12 @@ void EndOfRoundScript::blinkDucksUI() {
 		return;
 	}
 	if (game.dataSystem->currentGameData.ducksTracker[0] == KILLED) {
+		isCurrentTracker = false;
 		for (auto& i : game.dataSystem->currentGameData.ducksTracker) {
 			i = ESCAPED;
 		}
 	} else {
+		isCurrentTracker = true;
 		for (int i = 0; i < 10; i++) {
 			game.dataSystem->currentGameData.ducksTracker[i] = duckTracker[i];
 		}
