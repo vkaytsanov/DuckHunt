@@ -8,6 +8,7 @@
 
 #include "window.h"
 #include "../../../../lib/utils/ui/include/label.h"
+#include "../../include/fonts.h"
 
 class Gamelib;
 
@@ -28,7 +29,7 @@ private:
 	Label gameOverLabel;
 	EndOfRoundType currentType;
 public:
-	explicit EndOfRoundWindow(Gamelib& game);
+	explicit EndOfRoundWindow(Gamelib* game, Fonts* fonts);
 	void draw() override;
 	void update(EndOfRoundType type);
 

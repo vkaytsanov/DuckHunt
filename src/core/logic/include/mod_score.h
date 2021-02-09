@@ -10,10 +10,10 @@
 
 class ModScore : public ModLogic{
 private:
-	Gamelib& game;
+	Gamelib* game;
 	void displayNewScore() const;
 public:
-	explicit ModScore(Gamelib& game);
+	explicit ModScore(Gamelib* game);
 	void init() override;
 	void update() override;
 	void post(Event* e) override;

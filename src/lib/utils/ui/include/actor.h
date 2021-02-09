@@ -42,7 +42,7 @@ public:
     void setSize(float width, float height);
     bool isVisible() const;
     void setVisible(bool visible);
-    bool hit(const float& mouseX, const float& mouseY);
+    bool hit(const float mouseX, const float mouseY);
 };
 
 

@@ -15,8 +15,8 @@ private:
 	bool didShowReaction = false;
 	bool playGotDucks = false;
 public:
-	explicit DogReactionScript(Gamelib& game);
-	bool update(Gamelib& game) override;
+	explicit DogReactionScript(Gamelib* game);
+	bool update(Gamelib* game) override;
 };
 
 

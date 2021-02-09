@@ -25,7 +25,7 @@ private:
 public:
     std::queue<SDL_Event> keyEvents;
     std::queue<SDL_Event> touchEvents;
-    Input(const float& width, const float& height);
+    Input(const float width, const float height);
     void update();
     void processEvents();
     void resetMouse();

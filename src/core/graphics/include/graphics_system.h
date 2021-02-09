@@ -9,6 +9,7 @@
 #include "../screens/include/menu_screen.h"
 #include "../screens/include/abstract_screen.h"
 #include "../../../lib/utils/include/universal_viewport.h"
+#include "fonts.h"
 
 extern int GRAPHICS_WIDTH;
 extern int GRAPHICS_HEIGHT;
@@ -23,12 +24,13 @@ class GraphicsSystem {
 private:
     UniversalViewport viewport;
     AbstractScreen* screens[3];
-    Gamelib& game;
+    Fonts* fonts;
+    Gamelib* game;
 public:
-    explicit GraphicsSystem(Gamelib &game);
+    explicit GraphicsSystem(Gamelib* game);
     ~GraphicsSystem();
-    void render(const float& dt);
-    void resizeViewport(const int &width, const int &height);
+    void render(const float dt);
+    void resizeViewport(const int width, const int height);
     void start(int state);
     HudRenderer& getHudRenderer();
     AbstractScreen* getScreen(int state);

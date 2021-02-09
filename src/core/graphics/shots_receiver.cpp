@@ -6,22 +6,22 @@
 #include "../include/game_utils.h"
 #include "../logic/events/include/shot_fired.h"
 
-ShotsReceiver::ShotsReceiver(Gamelib& game) : game(game){
+ShotsReceiver::ShotsReceiver(Gamelib* game) : game(game){
 
 }
 
 
 void ShotsReceiver::touchDown(SDL_Event& e, float x, float y) {
-	if(game.dataSystem->currentGameData.shots > 0) {
-		for (Duck* duck : game.dataSystem->ducksDb.getDucks()) {
+	if(game->dataSystem->currentGameData.shots > 0) {
+		for (Duck* duck : game->dataSystem->ducksDb.getDucks()) {
 			// check if the coordinates are over its rect
 			if (duck->isVisible() && duck->isHit(x, y)) {
-				game.logicSystem->post(new ShotFired(duck));
+				game->logicSystem->post(new ShotFired(duck));
 				return;
 			}
 		}
 		// else nullptr;
-		game.logicSystem->post(new ShotFired());
+		game->logicSystem->post(new ShotFired());
 	}
 }
 

@@ -5,10 +5,10 @@
 #include "include/game_object_renderer.h"
 #include "include/graphics_system.h"
 
-GameObjectRenderer::GameObjectRenderer(Gamelib& game) : game(game){}
+GameObjectRenderer::GameObjectRenderer(Gamelib* game) : game(game){}
 
-void GameObjectRenderer::draw(const float& dt) {
-	for(Duck* duck : game.dataSystem->ducksDb.getDucks()){
+void GameObjectRenderer::draw(const float dt) {
+	for(Duck* duck : game->dataSystem->ducksDb.getDucks()){
 		if(duck->isVisible()){
 			drawObject(duck, dt);
 		}
@@ -16,7 +16,7 @@ void GameObjectRenderer::draw(const float& dt) {
 
 }
 
-void GameObjectRenderer::drawObject(EntityAnimated* e, const float& dt) {
+void GameObjectRenderer::drawObject(EntityAnimated* e, const float dt) {
 	e->processAnimation(dt);
 	if(e->isFacingLeft()){
 		e->getCurrentFrame().draw((int) e->getX(), (int) e->getY(), (int) e->getWidth(), (int) e->getHeight(), SDL_FLIP_HORIZONTAL);

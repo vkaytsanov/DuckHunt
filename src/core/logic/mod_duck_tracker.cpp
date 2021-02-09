@@ -9,12 +9,12 @@
 #include "../../lib/include/lib.h"
 
 
-ModDuckTracker::ModDuckTracker(Gamelib& game) : game(game){
+ModDuckTracker::ModDuckTracker(Gamelib* game) : game(game){
 
 }
 
 void ModDuckTracker::init() {
-	for(auto& duckTracker : game.dataSystem->currentGameData.ducksTracker){
+	for(auto& duckTracker : game->dataSystem->currentGameData.ducksTracker){
 		duckTracker = ESCAPED;
 	}
 }
@@ -30,11 +30,9 @@ void ModDuckTracker::post(Event* e) {
 	if(e->name == "ShotFired"){
 		auto* s = dynamic_cast<ShotFired*>(e);
 		if (s->duck) {
-			const int idx = game.dataSystem->currentGameData.ducksSpawnedTotal - game.dataSystem->currentGameData.ducksAlive;
-			game.dataSystem->currentGameData.ducksTracker[idx] = KILLED;
-			game.dataSystem->currentGameData.ducksAlive--;
-			if (game.dataSystem->currentGameData.ducksAlive == 0) {
-				game.logicSystem->addScript(new DogReactionScript(game));
+			game->dataSystem->currentGameData.setDuckKilled();
+			if (game->dataSystem->currentGameData.ducksAlive == 0) {
+				game->logicSystem->addScript(new DogReactionScript(game));
 				Lib::input->setProcessor(nullptr);
 			}
 		}

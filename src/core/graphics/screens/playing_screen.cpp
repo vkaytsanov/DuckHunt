@@ -6,8 +6,8 @@
 #include "../../../lib/include/lib.h"
 
 
-PlayingScreen::PlayingScreen(Gamelib &game) : game(game), hudRenderer(game), gameObjectRenderer(game), shotsReceiver(game){
-    background.setTexture(game.dataSystem->assets.getSprite("playing-screen-background"));
+PlayingScreen::PlayingScreen(Gamelib* game, Fonts* fonts) : game(game), hudRenderer(game, fonts), gameObjectRenderer(game), shotsReceiver(game){
+    background.setTexture(game->dataSystem->assets.getSprite("playing-screen-background"));
 
     background.setWidth((float) GRAPHICS_WIDTH);
     background.setHeight((float) GRAPHICS_WIDTH * 0.5f);
@@ -19,11 +19,11 @@ void PlayingScreen::start() {
 	Lib::input->setProcessor(&shotsReceiver);
 }
 
-void PlayingScreen::render(const float &dt) {
+void PlayingScreen::render(const float dt) {
     SDL_SetRenderDrawColor(Lib::graphics->getRenderer(), 0x32, 0xb5, 0xfc, 0xff);
     SDL_RenderClear(Lib::graphics->getRenderer());
 
-	Dog& dog = game.dataSystem->dogData.getDog();
+	Dog& dog = game->dataSystem->dogData.getDog();
 
     if(dog.isDrawBefore()){
 	    if(dog.isVisible()) {

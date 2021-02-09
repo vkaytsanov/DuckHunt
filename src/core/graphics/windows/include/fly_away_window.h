@@ -8,6 +8,7 @@
 
 #include "window.h"
 #include "../../../../lib/utils/ui/include/label.h"
+#include "../../include/fonts.h"
 
 class Gamelib;
 
@@ -15,7 +16,7 @@ class FlyAwayWindow : public Window{
 private:
 	Label flyAway;
 public:
-	explicit FlyAwayWindow(Gamelib& game);
+	explicit FlyAwayWindow(Gamelib* game, Fonts* fonts);
 	void draw() override;
 };
 

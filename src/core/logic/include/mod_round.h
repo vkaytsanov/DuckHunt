@@ -10,10 +10,10 @@
 
 class ModRound : public ModLogic{
 private:
-	Gamelib& game;
+	Gamelib* game;
 	void displayNewRound();
 public:
-	ModRound(Gamelib& game);
+	ModRound(Gamelib* game);
 	void init() override;
 	void update() override;
 	void post(Event* e) override;

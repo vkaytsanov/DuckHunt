@@ -5,12 +5,12 @@
 #include "include/fly_away_window.h"
 #include "../../include/game_utils.h"
 
-FlyAwayWindow::FlyAwayWindow(Gamelib& game){
-	background = game.dataSystem->assets.getSprite("window");
+FlyAwayWindow::FlyAwayWindow(Gamelib* game, Fonts* fonts){
+	background = game->dataSystem->assets.getSprite("window");
 	setSize(200, 50);
 	setPosition(GRAPHICS_WIDTH / 2 - getWidth() / 2, GRAPHICS_HEIGHT / 2 - getHeight() * 2);
 	setVisible(false);
-	LabelStyle style("pixel-emulator.ttf", 20);
+	LabelStyle style(fonts->getMainFont(), 20);
 	flyAway.setText("FLY AWAY");
 	flyAway.setStyle(&style);
 	flyAway.setPosition(this->getX() + 10, this->getY() + 10);

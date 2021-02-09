@@ -9,7 +9,7 @@ class Gamelib;
 
 class Script {
 public:
-	virtual bool update(Gamelib& game) = 0;
+	virtual bool update(Gamelib* game) = 0;
 };
 
 

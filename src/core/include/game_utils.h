@@ -13,8 +13,6 @@
 #include "../audio/include/audio_system.h"
 
 class Gamelib{
-private:
-    Gamelib& operator=(const Gamelib& game);
 protected:
     void create();
 public:

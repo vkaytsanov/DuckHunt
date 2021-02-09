@@ -16,10 +16,10 @@ private:
 	const float WAIT_TIME = 0.5f;
 	float currentTime = 0.f;
 	bool isFalling = false;
-	void displayScore(Gamelib& game);
+	void displayScore(Gamelib* game);
 public:
 	explicit DuckDyingScript(Duck* duck);
-	bool update(Gamelib& game) override;
+	bool update(Gamelib* game) override;
 };
 
 

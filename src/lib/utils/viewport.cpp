@@ -26,12 +26,12 @@ void Viewport::setWorldHeight(float worldHeight) {
     Viewport::worldHeight = worldHeight;
 }
 
-void Viewport::setWorldSize(float& worldWidth, float& worldHeight) {
+void Viewport::setWorldSize(float worldWidth, float worldHeight) {
     this->worldWidth = worldWidth;
     this->worldHeight = worldHeight;
 }
 
-void Viewport::setScreenBounds(const int x, const int y, const int& width, const int& height) {
+void Viewport::setScreenBounds(const int x, const int y, const int width, const int height) {
     screenX = x;
     screenY = y;
     screenWidth = width;

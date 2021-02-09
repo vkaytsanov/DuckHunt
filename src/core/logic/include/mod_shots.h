@@ -10,9 +10,9 @@
 
 class ModShots : public ModLogic {
 private:
-	Gamelib& game;
+	Gamelib* game;
 public:
-	ModShots(Gamelib& game);
+	ModShots(Gamelib* game);
 	void init() override;
 	void update() override;
 	void post(Event* e) override;

@@ -9,9 +9,9 @@
 #include "../events/include/start_spawning.h"
 #include "include/end_of_round_script.h"
 
-DogReactionScript::DogReactionScript(Gamelib& game) {
-	Dog& dog = game.dataSystem->dogData.getDog();
-	const int count = 2 + game.dataSystem->currentGameData.difficultyLevel - game.dataSystem->currentGameData.ducksAlive;
+DogReactionScript::DogReactionScript(Gamelib* game) {
+	Dog& dog = game->dataSystem->dogData.getDog();
+	const int count = 2 + game->dataSystem->currentGameData.difficultyLevel - game->dataSystem->currentGameData.ducksAlive;
 	const auto dogState = static_cast<DogState>(count);
 	dog.setState(dogState);
 	dog.setX((float) GRAPHICS_WIDTH / 2 - dog.getWidth() / 2);
@@ -25,7 +25,7 @@ DogReactionScript::DogReactionScript(Gamelib& game) {
 	}
 }
 
-bool DogReactionScript::update(Gamelib& game) {
+bool DogReactionScript::update(Gamelib* game) {
 	// TODO:
 	// We have written the drawing before part in the playing screen just because of this method,
 	// because the dog is being rendered last in the playing screen
@@ -33,28 +33,28 @@ bool DogReactionScript::update(Gamelib& game) {
 	// using the Painter's algorithm...
 	float dt = Lib::graphics->getDeltaTime();
 	currentWaitTime += dt;
-	Dog& dog = game.dataSystem->dogData.getDog();
+	Dog& dog = game->dataSystem->dogData.getDog();
 	// Going Up
 	if (currentWaitTime > WAIT_TIME && !didShowReaction) {
 		dog.setDY(-1.5f);
 		if (dog.getY() < (float) GRAPHICS_HEIGHT / 2 + 22) {
 			didShowReaction = true;
 			dog.setDY(0);
-			if (playGotDucks) game.audioSystem->playSound(GOT_DUCKS);
-			else game.audioSystem->playSound(MISS);
+			if (playGotDucks) game->audioSystem->playSound(GOT_DUCKS);
+			else game->audioSystem->playSound(MISS);
 		}
 	}
 	// Going Down
 	else if (currentWaitTime > WAIT_TIME * 2 && didShowReaction) {
 		dog.setDY(1.5f);
 		if (dog.getY() > (float) GRAPHICS_HEIGHT / 2 + 100) {
-			const bool finishedRound = game.dataSystem->currentGameData.ducksSpawnedTotal == 10;
+			const bool finishedRound = game->dataSystem->currentGameData.ducksSpawnedTotal == 10;
 			if(finishedRound) {
-				game.logicSystem->addScript(new EndOfRoundScript(game));
+				game->logicSystem->addScript(new EndOfRoundScript(game));
 			}
 			else{
-				game.logicSystem->post(new StartSpawning());
-				game.graphicsSystem->start(Playing);
+				game->logicSystem->post(new StartSpawning());
+				game->graphicsSystem->start(Playing);
 				dog.setVisible(false);
 			}
 			return true;

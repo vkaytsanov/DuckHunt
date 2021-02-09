@@ -10,28 +10,28 @@
 #include "scripts/include/duck_dying_script.h"
 #include "events/include/shot_fired.h"
 
-ModObjectsHandler::ModObjectsHandler(Gamelib& game) : game(game) {}
+ModObjectsHandler::ModObjectsHandler(Gamelib* game) : game(game) {}
 
 void ModObjectsHandler::init() {
 	for(int i = 0; i < NUMBER_OF_DUCKS_PER_TYPE; i++){
 		auto* blackDuck = new BlackDuck();
-		blackDuck->loadEntity(game.dataSystem->assets);
-		game.dataSystem->ducksDb.addDuck(blackDuck);
+		blackDuck->loadEntity(game->dataSystem->assets);
+		game->dataSystem->ducksDb.addDuck(blackDuck);
 	}
 	for(int i = 0; i < NUMBER_OF_DUCKS_PER_TYPE; i++){
 		auto* blueDuck = new BlueDuck();
-		blueDuck->loadEntity(game.dataSystem->assets);
-		game.dataSystem->ducksDb.addDuck(blueDuck);
+		blueDuck->loadEntity(game->dataSystem->assets);
+		game->dataSystem->ducksDb.addDuck(blueDuck);
 	}
 	for(int i = 0; i < NUMBER_OF_DUCKS_PER_TYPE; i++){
 		auto* redDuck = new RedDuck();
-		redDuck->loadEntity(game.dataSystem->assets);
-		game.dataSystem->ducksDb.addDuck(redDuck);
+		redDuck->loadEntity(game->dataSystem->assets);
+		game->dataSystem->ducksDb.addDuck(redDuck);
 	}
 
 	Dog dog;
-	dog.loadEntity(game.dataSystem->assets);
-	game.dataSystem->dogData.setDog(dog);
+	dog.loadEntity(game->dataSystem->assets);
+	game->dataSystem->dogData.setDog(dog);
 }
 
 void ModObjectsHandler::update() {
@@ -46,8 +46,8 @@ void ModObjectsHandler::post(Event* e) {
 			duck->setDY(0);
 			duck->setDX(0);
 			duck->setState(SHOT);
-			game.audioSystem->stopMusic();
-			game.logicSystem->addScript(new DuckDyingScript(duck));
+			game->audioSystem->stopMusic();
+			game->logicSystem->addScript(new DuckDyingScript(duck));
 		}
 	}
 }

@@ -11,13 +11,13 @@
 /** @link https://strategywiki.org/wiki/Duck_Hunt */
 class ModDifficultyController : public ModLogic {
 private:
-	Gamelib& game;
+	Gamelib* game;
 	void setDuckScores(int score);
 	void setMinimumDucksToAdvance(int minimum);
 	void setDucksModSpeed(float additionalAmount);
 	void resetDucksModSpeed();
 public:
-	explicit ModDifficultyController(Gamelib& game);
+	explicit ModDifficultyController(Gamelib* game);
 	void init() override;
 	void update() override;
 	void post(Event* e) override;

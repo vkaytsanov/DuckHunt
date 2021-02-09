@@ -38,7 +38,7 @@ public:
 	void setScore(int score);
 	void setState(DuckState state);
 	DuckState getState() const;
-	bool isHit(const float& x, const float& y);
+	bool isHit(const float x, const float y);
 	void setFacingAndState();
 };
 

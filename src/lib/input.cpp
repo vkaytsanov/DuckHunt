@@ -4,7 +4,7 @@
 #include "include/lib.h"
 #include "utils/ui/include/user_interface.h"
 
-Input::Input(const float& width, const float& height) {
+Input::Input(const float width, const float height) {
     std::memset(keys, false, sizeof keys);
     lastMousePosX = currMousePosX = width / 2;
     lastMousePosY = currMousePosY = height / 2;

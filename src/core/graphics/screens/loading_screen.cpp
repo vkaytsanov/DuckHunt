@@ -5,13 +5,13 @@
 #include "include/loading_screen.h"
 #include "../../include/game_utils.h"
 
-LoadingScreen::LoadingScreen(Gamelib &game) : game(game) {
+LoadingScreen::LoadingScreen(Gamelib* game) : game(game) {
     isReady = true;
 }
 
-void LoadingScreen::render(const float& dt) {
+void LoadingScreen::render(const float dt) {
     if(isReady){
-        game.gameStateManager->changeState(Menu);
+        game->gameStateManager->changeState(Menu);
     }
 }
 

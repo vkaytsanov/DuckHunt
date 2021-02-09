@@ -10,19 +10,15 @@ void DuckHunt::create() {
 }
 
 void DuckHunt::render() {
-    const float dt = Lib::graphics->getDeltaTime();
     logicSystem->update();
-    graphicsSystem->render(dt);
+    graphicsSystem->render(Lib::graphics->getDeltaTime());
 }
 
-void DuckHunt::resize(const int &width, const int &height) {
+void DuckHunt::resize(const int width, const int height) {
     graphicsSystem->resizeViewport(width, height);
 }
 
-DuckHunt::~DuckHunt() {
-	delete graphicsSystem;
-	delete logicSystem;
-}
+DuckHunt::~DuckHunt() = default;
 
 void DuckHunt::pause() {
 

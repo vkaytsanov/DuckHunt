@@ -11,9 +11,11 @@
 #include "scripts/include/end_of_round_script.h"
 
 
-ModDuckSpawner::ModDuckSpawner(Gamelib& game) : game(game),
+ModDuckSpawner::ModDuckSpawner(Gamelib* game) : game(game),
                                                 generator(std::random_device()()),
-                                                dist(0, 100) {
+                                                typesDistribution(0, 100),
+                                                locationDistribution(100, GRAPHICS_WIDTH - 100),
+                                                speedDistribution(1.3f, 1.7f){
 	lastBlackDuckIndex = -1;
 	lastBlueDuckIndex = -1;
 	lastRedDuckIndex = -1;
@@ -21,8 +23,8 @@ ModDuckSpawner::ModDuckSpawner(Gamelib& game) : game(game),
 }
 
 void ModDuckSpawner::init() {
-	game.dataSystem->currentGameData.ducksAlive = 0;
-	game.dataSystem->currentGameData.ducksSpawnedTotal = 0;
+	game->dataSystem->currentGameData.ducksAlive = 0;
+	game->dataSystem->currentGameData.ducksSpawnedTotal = 0;
 
 	canSpawn = false;
 }
@@ -30,19 +32,19 @@ void ModDuckSpawner::init() {
 void ModDuckSpawner::update() {
 	if (canSpawn) {
 		canSpawn = false;
-		const int ducksPerSpawn = game.dataSystem->currentGameData.difficultyLevel;
+		const int ducksPerSpawn = game->dataSystem->currentGameData.difficultyLevel;
 
 		for (int i = 0; i < ducksPerSpawn; i++) {
-			const int idx = getCandidate(dist(generator));
-			spawn(game.dataSystem->ducksDb.getDucks()[idx]);
+			const int idx = getCandidate(typesDistribution(generator));
+			spawn(game->dataSystem->ducksDb.getDucks()[idx]);
 		}
 
-		game.dataSystem->currentGameData.ducksAlive = ducksPerSpawn;
-		game.dataSystem->currentGameData.ducksSpawnedTotal += ducksPerSpawn;
+		game->dataSystem->currentGameData.ducksAlive = ducksPerSpawn;
+		game->dataSystem->currentGameData.ducksSpawnedTotal += ducksPerSpawn;
 	}
 }
 
-int ModDuckSpawner::getCandidate(const int& percent) {
+int ModDuckSpawner::getCandidate(const int percent) {
 	// 70% to spawn black duck
 	if(percent < BLACK_DUCK_SPAWN_RATE){
 		return DucksDB::getBlackDuckStartIndex() + ((++lastBlackDuckIndex) % NUMBER_OF_DUCKS_PER_TYPE);
@@ -55,22 +57,23 @@ int ModDuckSpawner::getCandidate(const int& percent) {
 	return DucksDB::getRedDuckStartIndex() + ((++lastRedDuckIndex) % NUMBER_OF_DUCKS_PER_TYPE);
 }
 
-void ModDuckSpawner::spawn(Duck* duck) const {
+void ModDuckSpawner::spawn(Duck* duck){
 	duck->setVisible(true);
-	duck->setX((float) (std::rand() % GRAPHICS_WIDTH));
+	duck->setX((float) locationDistribution(generator));
 	duck->setY((float) GRAPHICS_HEIGHT - 100);
 	duck->setWantToMove(true);
 	// flies always to opposite side
 	duck->setDX(((float) GRAPHICS_WIDTH / 2 - duck->getX()) > 0 ? 1.5f : -1.5f);
 	// There are only 2 duck types on spawn, besides their color:
 	// The ones that fly only diagonally and the ones that only fly flat
-	duck->setDY((float) -1 - (std::rand() % 2));
+	duck->setDY((float) -speedDistribution(generator));
 	duck->setFacingAndState();
 
-//	game.audioSystem->playMusic(FLAPPING, true);
-	game.audioSystem->playSound(QUACK);
+//	game->audioSystem->playMusic(FLAPPING, true);
+	game->audioSystem->playSound(QUACK);
 	SDL_Delay(100);
 }
+
 
 
 void ModDuckSpawner::post(Event* e) {

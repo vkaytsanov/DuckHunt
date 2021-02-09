@@ -10,13 +10,13 @@
 #include "../../logic/events/include/start_round.h"
 
 
-MenuScreen::MenuScreen(Gamelib& game) :  playLabel(){
-    logo = game.dataSystem->assets.getSprite("logo");
-    pointer = game.dataSystem->assets.getSprite("pointer");
+MenuScreen::MenuScreen(Gamelib* game, Fonts* fonts) :  playLabel(){
+    logo = game->dataSystem->assets.getSprite("logo");
+    pointer = game->dataSystem->assets.getSprite("pointer");
 
-	auto* greenStyle = new LabelStyle("pixel-emulator.ttf", 24);
-	greenStyle->color = {0x15, 0xcb, 0x0b, 0xff};
-    LabelStyle style("pixel-emulator.ttf", {0xff, 0xa2, 0x38}, 20);
+	greenLabelStyle = new LabelStyle(fonts->getMainFont(), 24);
+	greenLabelStyle->color = {0x15, 0xcb, 0x0b, 0xff};
+    LabelStyle style(fonts->getMainFont(), {0xff, 0xa2, 0x38}, 20);
     std::string gameModes[2] = {"GAME A   1 DUCK",
                                 "GAME B   2 DUCKS"};
 
@@ -28,16 +28,16 @@ MenuScreen::MenuScreen(Gamelib& game) :  playLabel(){
         playLabel[i].setSize(width, height);
         playLabel[i].setPosition((float) GRAPHICS_WIDTH * 0.2f, (float) GRAPHICS_WIDTH * 0.3f + height * (float) i);
 	    playLabel[i].addListener(
-			    new ClickListener([&, i]{
+			    new ClickListener([game, i]{
 				    Lib::input->setProcessor(nullptr);
-				    game.logicSystem->post(new StartRound(i == 0 ? ONE_DUCK : TWO_DUCKS));
+				    game->logicSystem->post(new StartRound(i == 0 ? ONE_DUCK : TWO_DUCKS));
 			    })
 	    );
         userInterface.addActor(&playLabel[i]);
     }
 
-    maximumScore.setText("TOP SCORE = " + std::to_string(game.dataSystem->userData.getHighScore()));
-    maximumScore.setStyle(greenStyle);
+    maximumScore.setText("TOP SCORE = " + std::to_string(game->dataSystem->userData.getHighScore()));
+    maximumScore.setStyle(greenLabelStyle);
     maximumScore.setSize((float) GRAPHICS_WIDTH * 0.6f, 50);
     maximumScore.setPosition((float) GRAPHICS_WIDTH * 0.2f, (float) GRAPHICS_WIDTH * 0.3f + 150);
 
@@ -61,7 +61,7 @@ MenuScreen::MenuScreen(Gamelib& game) :  playLabel(){
 		// 13 is for Enter
 		else if(key == 13){
 			Lib::input->setProcessor(nullptr);
-			game.logicSystem->post(new StartRound(currentlySelected == 0 ? ONE_DUCK : TWO_DUCKS));
+			game->logicSystem->post(new StartRound(currentlySelected == 0 ? ONE_DUCK : TWO_DUCKS));
 		}
 	};
 
@@ -71,7 +71,7 @@ MenuScreen::MenuScreen(Gamelib& game) :  playLabel(){
 }
 
 
-void MenuScreen::render(const float& dt) {
+void MenuScreen::render(const float dt) {
     SDL_SetRenderDrawColor(Lib::graphics->getRenderer(), 0, 0, 0, 255);
     SDL_RenderClear(Lib::graphics->getRenderer());
 
@@ -80,6 +80,10 @@ void MenuScreen::render(const float& dt) {
 
     userInterface.act(dt);
     userInterface.draw();
+}
+
+MenuScreen::~MenuScreen() {
+	delete greenLabelStyle;
 }
 
 

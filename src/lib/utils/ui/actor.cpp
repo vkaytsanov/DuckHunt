@@ -81,7 +81,7 @@ void Actor::setVisible(const bool visible) {
     Actor::visible = visible;
 }
 
-bool Actor::hit(const float& mouseX, const float& mouseY) {
+bool Actor::hit(const float mouseX, const float mouseY) {
     return  x < mouseX && mouseX < (x + width) &&
             y < mouseY && mouseY < (y + height);
 }

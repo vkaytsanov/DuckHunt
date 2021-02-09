@@ -16,7 +16,7 @@ protected:
 public:
     AbstractScreen() = default;
     virtual ~AbstractScreen() = default;
-    virtual void render(const float& dt) = 0;
+    virtual void render(const float dt) = 0;
     virtual void start();
 
 };

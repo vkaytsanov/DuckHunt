@@ -9,8 +9,8 @@
 #include "../../include/game_utils.h"
 #include "../../graphics/screens/include/hud_renderer.h"
 
-DogSniffingScript::DogSniffingScript(Gamelib& game) {
-	Dog& dog = game.dataSystem->dogData.getDog();
+DogSniffingScript::DogSniffingScript(Gamelib* game) {
+	Dog& dog = game->dataSystem->dogData.getDog();
 	dog.setVisible(true);
 	dog.setX(-dog.getWidth());
 	dog.setY(GRAPHICS_HEIGHT - 90 - dog.getHeight());
@@ -23,15 +23,15 @@ DogSniffingScript::DogSniffingScript(Gamelib& game) {
 }
 
 
-bool DogSniffingScript::update(Gamelib& game) {
+bool DogSniffingScript::update(Gamelib* game) {
 	currentSniffTime += Lib::graphics->getDeltaTime();
 	if(currentSniffTime > SNIFF_TIME){
-		Dog& dog = game.dataSystem->dogData.getDog();
+		Dog& dog = game->dataSystem->dogData.getDog();
 		dog.setDX(0);
 		dog.setState(Jumping);
 		dog.resetStateTime();
-		game.logicSystem->addScript(new DogJumpingScript(game));
-		game.graphicsSystem->getHudRenderer().roundWindow.setVisible(false);
+		game->logicSystem->addScript(new DogJumpingScript(game));
+		game->graphicsSystem->getHudRenderer().roundWindow.setVisible(false);
 		Lib::app->log("DogSniffing", "Script completed");
 		return true;
 	}

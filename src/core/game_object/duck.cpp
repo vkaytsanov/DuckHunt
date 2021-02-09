@@ -64,7 +64,7 @@ void Duck::setState(DuckState state) {
 	currentState = state;
 }
 
-bool Duck::isHit(const float& mouseX, const float& mouseY) {
+bool Duck::isHit(const float mouseX, const float mouseY) {
 	return  x < mouseX && mouseX < (x + width) &&
 	        y < mouseY && mouseY < (y + height);
 }

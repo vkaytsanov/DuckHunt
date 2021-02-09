@@ -50,11 +50,11 @@ void GameObject::setHeight(const float height) {
     rect.h = height;
 }
 
-void GameObject::setX(float x) {
+void GameObject::setX(const float x) {
     this->x = x;
 }
 
-void GameObject::setY(float y) {
+void GameObject::setY(const float y) {
     this->y = y;
 }
 

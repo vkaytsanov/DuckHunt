@@ -11,11 +11,11 @@
 
 class LoadingScreen : public AbstractScreen{
 private:
-    Gamelib& game;
+    Gamelib* game;
     bool isReady;
 public:
-    explicit LoadingScreen(Gamelib& game);
-    void render(const float& dt) override;
+    explicit LoadingScreen(Gamelib* game);
+    void render(const float dt) override;
 };
 
 

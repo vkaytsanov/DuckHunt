@@ -14,8 +14,8 @@ private:
 	float currentWaitTime = 0.0f;
 	bool didBark = false;
 public:
-	explicit DogJumpingScript(Gamelib& game);
-	bool update(Gamelib& game) override;
+	explicit DogJumpingScript(Gamelib* game);
+	bool update(Gamelib* game) override;
 };
 
 

@@ -4,7 +4,7 @@
 
 #include "include/mod_script_handler.h"
 
-ModScriptHandler::ModScriptHandler(Gamelib& game) : game(game){
+ModScriptHandler::ModScriptHandler(Gamelib* game) : game(game){
 
 }
 

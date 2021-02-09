@@ -5,14 +5,15 @@
 #include "include/hud_renderer.h"
 #include "../../include/game_utils.h"
 
-HudRenderer::HudRenderer(Gamelib& game) : game(game), flyAwayWindow(game), roundWindow(game), endOfRoundWindow(game) {
-	bullet = game.dataSystem->assets.getSprite("bullet");
-	ducks[0].set(game.dataSystem->assets.getSprite("ducks-ui"), 0, 0, 8, 7);
-	ducks[1].set(game.dataSystem->assets.getSprite("ducks-ui"), 8, 0, 8, 7);
+HudRenderer::HudRenderer(Gamelib* game, Fonts* fonts) : game(game), flyAwayWindow(game, fonts), roundWindow(game, fonts),
+                                                        endOfRoundWindow(game, fonts) {
+	bullet = game->dataSystem->assets.getSprite("bullet");
+	ducks[0].set(game->dataSystem->assets.getSprite("ducks-ui"), 0, 0, 8, 7);
+	ducks[1].set(game->dataSystem->assets.getSprite("ducks-ui"), 8, 0, 8, 7);
 
-	minimumDucksIndicator = game.dataSystem->assets.getSprite("minimum-ducks-indicator");
+	minimumDucksIndicator = game->dataSystem->assets.getSprite("minimum-ducks-indicator");
 
-	LabelStyle* whiteStyle = new LabelStyle("pixel-emulator.ttf", 18);
+	whiteStyle = new LabelStyle(fonts->getMainFont(), 18);
 	whiteStyle->color = {0xff, 0xff, 0xff};
 
 	scoreLabel.setText("000000");
@@ -21,8 +22,8 @@ HudRenderer::HudRenderer(Gamelib& game) : game(game), flyAwayWindow(game), round
 	roundLabel.setText("0");
 
 	scoreLabel.setStyle(whiteStyle);
-	LabelStyle* greenStyle = new LabelStyle(whiteStyle->font, {0x75, 0xcb, 0x0b, 0xff});
-	greenStyle->size = 20;
+	greenStyle = new LabelStyle(fonts->getMainFont(), {0x75, 0xcb, 0x0b, 0xff}, 20);
+
 	roundLabel.setStyle(greenStyle);
 
 	shotScoreLabel.setStyle(whiteStyle);
@@ -49,16 +50,16 @@ HudRenderer::HudRenderer(Gamelib& game) : game(game), flyAwayWindow(game), round
 
 }
 
-void HudRenderer::draw(const float& dt) {
-	for (int i = 0; i < game.dataSystem->currentGameData.shots; i++) {
+void HudRenderer::draw(const float dt) {
+	for (int i = 0; i < game->dataSystem->currentGameData.shots; i++) {
 		bullet->draw(GRAPHICS_WIDTH / 2 - 195 + 15 * i, GRAPHICS_HEIGHT - 70, 8, 14);
 	}
 	for (int i = 0; i < 10; i++) {
-		ducks[game.dataSystem->currentGameData.ducksTracker[i]].draw(GRAPHICS_WIDTH / 2 - 63 + 15 * i,
+		ducks[game->dataSystem->currentGameData.ducksTracker[i]].draw(GRAPHICS_WIDTH / 2 - 63 + 15 * i,
 		                                                             GRAPHICS_HEIGHT - 70, 14, 14);
 	}
 
-	for(int i = 0; i < game.dataSystem->currentGameData.minimumDucksToAdvance; i++){
+	for (int i = 0; i < game->dataSystem->currentGameData.minimumDucksToAdvance; i++) {
 		minimumDucksIndicator->draw(GRAPHICS_WIDTH / 2 - 63 + 15 * i,
 		                            GRAPHICS_HEIGHT - 50, 14, 14);
 	}
@@ -69,3 +70,8 @@ void HudRenderer::draw(const float& dt) {
 
 }
 
+
+HudRenderer::~HudRenderer() {
+	delete whiteStyle;
+	delete greenStyle;
+}

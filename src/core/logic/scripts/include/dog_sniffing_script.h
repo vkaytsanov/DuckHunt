@@ -13,8 +13,8 @@ private:
 	const float SNIFF_TIME = 4.3f;
 	float currentSniffTime = 0.0f;
 public:
-	explicit DogSniffingScript(Gamelib& game);
-	bool update(Gamelib& game) override;
+	explicit DogSniffingScript(Gamelib* game);
+	bool update(Gamelib* game) override;
 };
 
 

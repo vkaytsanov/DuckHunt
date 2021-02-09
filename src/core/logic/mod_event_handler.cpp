@@ -10,7 +10,6 @@ void ModEventHandler::update(std::vector<ModLogic*>& modules) {
 	while(!events.empty()){
 		Event* e = events.front();
 		sendToModules(modules, e);
-		delete e;
 		events.pop();
 	}
 }
@@ -29,8 +28,6 @@ void ModEventHandler::sendToModules(std::vector<ModLogic*>& modules, Event* e) {
 
 void ModEventHandler::reinit() {
 	while(!events.empty()){
-		Event* e = events.front();
 		events.pop();
-		delete e;
 	}
 }

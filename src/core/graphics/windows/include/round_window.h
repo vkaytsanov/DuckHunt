@@ -8,17 +8,20 @@
 
 #include "window.h"
 #include "fly_away_window.h"
+#include "../../include/fonts.h"
 
 class Gamelib;
 
 
 class RoundWindow : public Window{
 private:
-	Gamelib& game;
+	Gamelib* game;
+	LabelStyle* style;
 	Label roundLabel;
 	Label roundNumber;
 public:
-	explicit RoundWindow(Gamelib& game);
+	explicit RoundWindow(Gamelib* game, Fonts* fonts);
+	~RoundWindow();
 	void update();
 	void draw() override;
 };

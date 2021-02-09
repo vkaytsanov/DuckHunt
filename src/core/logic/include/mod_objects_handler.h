@@ -11,9 +11,9 @@
 
 class ModObjectsHandler : public ModLogic {
 private:
-	Gamelib& game;
+	Gamelib* game;
 public:
-	explicit ModObjectsHandler(Gamelib& game);
+	explicit ModObjectsHandler(Gamelib* game);
 	void init() override;
 	void update() override;
 	void post(Event* e) override;

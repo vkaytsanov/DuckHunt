@@ -12,7 +12,7 @@
 
 class EndOfRoundScript : public Script{
 private:
-	Gamelib& game;
+	Gamelib* game;
 	EndOfRoundType type;
 	float currentTime = 0.0f;
 	const float WAIT_TIME = 1.5f;
@@ -26,8 +26,8 @@ private:
 	bool isAnimationComplete() const;
 	void displayNewScore() const;
 public:
-	explicit EndOfRoundScript(Gamelib& game);
-	bool update(Gamelib& game) override;
+	explicit EndOfRoundScript(Gamelib* game);
+	bool update(Gamelib* game) override;
 
 };
 

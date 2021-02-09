@@ -12,9 +12,9 @@ class Gamelib;
 
 class ShotsReceiver : public InputProcessor{
 private:
-	Gamelib& game;
+	Gamelib* game;
 public:
-	explicit ShotsReceiver(Gamelib& game);
+	explicit ShotsReceiver(Gamelib* game);
 	void touchDown(SDL_Event& e, float x, float y) override;
 	void touchUp(SDL_Event& e, float x, float y) override;
 	void keyDown(SDL_Event& e, int key) override;

@@ -10,7 +10,7 @@
 #define AUDIO 1
 
 AudioSystem::AudioSystem() {
-	std::string musicNames[] = {
+	const std::string musicNames[] = {
 			"title.mp3",
 			"intro.mp3",
 			"perfect.wav",
@@ -19,7 +19,7 @@ AudioSystem::AudioSystem() {
 			"flapping.wav",
 	};
 
-	std::string soundNames[] = {
+	const std::string soundNames[] = {
 			"got_ducks.wav",
 			"miss.wav",
 			"gunshot.wav",
@@ -29,29 +29,29 @@ AudioSystem::AudioSystem() {
 			"quack.wav"
 	};
 
-
-	for(std::string& loc : soundNames){
+	sounds.reserve(6);
+	for(const std::string& loc : soundNames){
 		sounds.emplace_back(new Sound(AUDIO_LOCATION + loc));
 	}
-
-	for(std::string& loc : musicNames){
+	musics.reserve(7);
+	for(const std::string& loc : musicNames){
 		musics.emplace_back(new Music(AUDIO_LOCATION + loc));
 	}
 }
 
-void AudioSystem::playSound(SoundType type, bool loop) {
+void AudioSystem::playSound(const SoundType type, const bool loop) {
 #if AUDIO
 	sounds[type]->play(-1, loop);
 #endif
 }
 
-void AudioSystem::playMusic(MusicType type, bool loop) {
+void AudioSystem::playMusic(const MusicType type, const bool loop) {
 #if AUDIO
 	musics[type]->play(loop);
 #endif
 }
 
-void AudioSystem::stopSound(SoundType type) {
+void AudioSystem::stopSound(const SoundType type) {
 	sounds[type]->stop(-1);
 }
 
@@ -60,16 +60,12 @@ void AudioSystem::stopMusic() {
 }
 
 AudioSystem::~AudioSystem() {
-	for(Sound* sound : sounds){
-		sound->stop();
+	for(auto & sound : sounds){
 		delete sound;
 	}
-	// TODO Unable to delete the initialized music
-	Lib::audio->stopMusic();
-//	for(Music* music : musics){
-//		Lib::app->log("Music", "deleting music");
-//		delete music;
-//	}
+	for(auto & music : musics){
+		delete music;
+	}
 }
 
 

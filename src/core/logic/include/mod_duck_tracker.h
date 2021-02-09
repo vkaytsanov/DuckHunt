@@ -10,9 +10,9 @@
 
 class ModDuckTracker : public ModLogic{
 private:
-	Gamelib& game;
+	Gamelib* game;
 public:
-	explicit ModDuckTracker(Gamelib& game);
+	explicit ModDuckTracker(Gamelib* game);
 	void init() override;
 	void update() override;
 	void post(Event* e) override;

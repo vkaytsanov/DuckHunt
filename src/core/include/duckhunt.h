@@ -10,7 +10,6 @@
 
 class DuckHunt : public Listener, public Gamelib {
 public:
-
     DuckHunt() = default;
     ~DuckHunt() override;
 	// Inherited via Listener
@@ -18,7 +17,7 @@ public:
 	void render() override;
     void pause() override;
     void resume() override;
-    void resize(const int& width, const int& height) override;
+    void resize(const int width, const int height) override;
 };
 
 

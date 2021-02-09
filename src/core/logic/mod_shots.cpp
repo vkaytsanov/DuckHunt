@@ -9,8 +9,13 @@
 #include "scripts/include/fly_away_script.h"
 #include "scripts/include/end_of_round_script.h"
 
+
+ModShots::ModShots(Gamelib* game) : game(game){
+
+}
+
 void ModShots::init() {
-	game.dataSystem->currentGameData.shots = 3;
+	game->dataSystem->currentGameData.shots = 3;
 }
 
 void ModShots::update() {
@@ -19,16 +24,15 @@ void ModShots::update() {
 
 void ModShots::post(Event* e) {
 	if(e->name == "StartSpawning"){
-		game.dataSystem->currentGameData.shots = 3;
+		game->dataSystem->currentGameData.shots = 3;
 	}
 	if(e->name == "ShotFired"){
-		game.audioSystem->stopSound(GUNSHOT);
-		game.audioSystem->playSound(GUNSHOT);
-		game.dataSystem->currentGameData.shots--;
-		const bool shouldFlyAway = game.dataSystem->currentGameData.shots == 0 && game.dataSystem->currentGameData.ducksAlive != 0;
-		if(shouldFlyAway){
+		game->audioSystem->stopSound(GUNSHOT);
+		game->audioSystem->playSound(GUNSHOT);
+		game->dataSystem->currentGameData.shots--;
+		if(game->dataSystem->currentGameData.shouldFlyAway()){
 			// fly away script
-			game.logicSystem->addScript(new FlyAwayScript(game));
+			game->logicSystem->addScript(new FlyAwayScript(game));
 			Lib::input->setProcessor(nullptr);
 		}
 	}
@@ -38,6 +42,4 @@ void ModShots::reinit() {
 	init();
 }
 
-ModShots::ModShots(Gamelib& game) : game(game){
 
-}

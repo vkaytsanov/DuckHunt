@@ -13,8 +13,8 @@ private:
 	float currentTime = 0.0f;
 	const float WAIT_TIME = 1.5f;
 public:
-	explicit FlyAwayScript(Gamelib& game);
-	bool update(Gamelib& game) override;
+	explicit FlyAwayScript(Gamelib* game);
+	bool update(Gamelib* game) override;
 };
 
 

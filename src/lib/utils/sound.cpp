@@ -25,7 +25,6 @@ void Sound::play(int channel, bool loopable) {
 
 Sound::~Sound() {
 	Mix_FreeChunk(rawSound);
-	rawSound = nullptr;
 }
 
 void Sound::stop(int channel) {

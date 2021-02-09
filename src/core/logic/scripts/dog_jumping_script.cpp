@@ -8,12 +8,12 @@
 #include "../../../lib/include/lib.h"
 #include "../events/include/start_spawning.h"
 
-DogJumpingScript::DogJumpingScript(Gamelib& game) {
+DogJumpingScript::DogJumpingScript(Gamelib* game) {
 
 }
 
-bool DogJumpingScript::update(Gamelib& game) {
-	Dog& dog = game.dataSystem->dogData.getDog();
+bool DogJumpingScript::update(Gamelib* game) {
+	Dog& dog = game->dataSystem->dogData.getDog();
 	currentWaitTime += Lib::graphics->getDeltaTime();
 	if(currentWaitTime < WAIT_TIME){
 		dog.resetStateTime();
@@ -21,7 +21,7 @@ bool DogJumpingScript::update(Gamelib& game) {
 	}
 	if(!didBark){
 		didBark = true;
-		game.audioSystem->playSound(BARKS);
+		game->audioSystem->playSound(BARKS);
 	}
 	// Jumping
 	dog.setDY(-4.0f);
@@ -38,9 +38,9 @@ bool DogJumpingScript::update(Gamelib& game) {
 			dog.setVisible(false);
 
 			// add event to start spawning
-			game.logicSystem->post(new StartSpawning());
+			game->logicSystem->post(new StartSpawning());
 			// Gives input to the playing screen
-			game.graphicsSystem->start(Playing);
+			game->graphicsSystem->start(Playing);
 			return true;
 		}
 	}

@@ -27,6 +27,8 @@ public:
 	int minimumDucksToAdvance;
 	DifficultyLevel difficultyLevel;
 	DuckTracker ducksTracker[10];
+	bool shouldFlyAway();
+	void setDuckKilled();
 };
 
 

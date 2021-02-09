@@ -12,10 +12,10 @@
 
 class ModScriptHandler : ModLogic{
 private:
-	Gamelib& game;
+	Gamelib* game;
 	std::list<Script*> scripts;
 public:
-	explicit ModScriptHandler(Gamelib& game);
+	explicit ModScriptHandler(Gamelib* game);
 	void addScript(Script* s);
 	void init() override;
 	void update() override;

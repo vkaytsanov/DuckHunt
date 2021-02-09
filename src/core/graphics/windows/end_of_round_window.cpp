@@ -5,13 +5,13 @@
 #include "include/end_of_round_window.h"
 #include "../../include/game_utils.h"
 
-EndOfRoundWindow::EndOfRoundWindow(Gamelib& game) {
-	background = game.dataSystem->assets.getSprite("window");
+EndOfRoundWindow::EndOfRoundWindow(Gamelib* game, Fonts* fonts) {
+	background = game->dataSystem->assets.getSprite("window");
 
 
 	setVisible(false);
 
-	LabelStyle style("pixel-emulator.ttf", 20);
+	LabelStyle style(fonts->getMainFont(), 20);
 
 	gameOverLabel.setText("GAME OVER");
 	perfectLabel.setText("PERFECT");
@@ -22,27 +22,24 @@ EndOfRoundWindow::EndOfRoundWindow(Gamelib& game) {
 	pointsLabel.setStyle(&style);
 
 
-
-
 }
 
 void EndOfRoundWindow::draw() {
-	if(currentType != NOTHING) {
+	if (currentType != NOTHING) {
 		Window::draw();
-		if(currentType == PERFECT){
+		if (currentType == PERFECT) {
 			perfectLabel.draw();
 			pointsLabel.draw();
-		}
-		else{
+		} else {
 			gameOverLabel.draw();
 		}
 	}
 }
 
 void EndOfRoundWindow::update(EndOfRoundType type) {
-	if(this->isVisible()) return;
+	if (this->isVisible()) return;
 	currentType = type;
-	if(type == PERFECT){
+	if (type == PERFECT) {
 		this->setVisible(true);
 		perfectLabel.setVisible(true);
 		pointsLabel.setVisible(true);
@@ -56,8 +53,7 @@ void EndOfRoundWindow::update(EndOfRoundType type) {
 		pointsLabel.setSize(100, 40);
 		pointsLabel.setPosition(this->getX() + (this->getWidth() - pointsLabel.getWidth()) / 2,
 		                        perfectLabel.getY() + pointsLabel.getHeight());
-	}
-	else if(type == GAME_OVER){
+	} else if (type == GAME_OVER) {
 		this->setVisible(true);
 		perfectLabel.setVisible(false);
 		pointsLabel.setVisible(false);

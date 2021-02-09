@@ -8,18 +8,21 @@
 #include "abstract_screen.h"
 #include "../../../../lib/utils/ui/include/label.h"
 #include "../../../../lib/utils/include/texture.h"
+#include "../../include/fonts.h"
 
 class MenuScreen : public AbstractScreen{
 private:
     Texture* logo;
     Texture* pointer;
+	LabelStyle* greenLabelStyle;
     Label playLabel[2];
     Label copyright;
     int currentlySelected = 0;
 public:
 	Label maximumScore;
-    explicit MenuScreen(Gamelib& game);
-    void render(const float& dt) override;
+    explicit MenuScreen(Gamelib* game, Fonts* fonts);
+    ~MenuScreen() override;
+    void render(const float dt) override;
 };
 
 

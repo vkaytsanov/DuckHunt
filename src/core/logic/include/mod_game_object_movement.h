@@ -13,11 +13,11 @@ class GameObject;
 
 class ModGameObjectMovement : public ModLogic{
 private:
-	Gamelib& game;
+	Gamelib* game;
 	void keepInBounds(GameObject* duck);
-	void move(GameObject* e, const float& dx, const float& dy);
+	void move(GameObject* e, const float dx, const float dy);
 public:
-	explicit ModGameObjectMovement(Gamelib& game);
+	explicit ModGameObjectMovement(Gamelib* game);
 	void init() override;
 	void update() override;
 	void post(Event* e) override;

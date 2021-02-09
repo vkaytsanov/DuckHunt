@@ -15,14 +15,14 @@
 
 class PlayingScreen : public AbstractScreen{
 private:
-    Gamelib& game;
+    Gamelib* game;
     Entity background;
     GameObjectRenderer gameObjectRenderer;
     ShotsReceiver shotsReceiver;
 public:
 	HudRenderer hudRenderer;
-    explicit PlayingScreen(Gamelib& game);
-    void render(const float& dt) override;
+    explicit PlayingScreen(Gamelib* game, Fonts* fonts);
+    void render(const float dt) override;
 	void start() override;
 };
 

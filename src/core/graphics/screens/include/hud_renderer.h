@@ -17,12 +17,15 @@
 
 class HudRenderer {
 private:
-	Gamelib& game;
+	Gamelib* game;
 	Texture* bullet;
 	TextureRegion ducks[2];
 	Texture* minimumDucksIndicator;
 	UserInterface userInterface;
+	LabelStyle* whiteStyle;
+	LabelStyle* greenStyle;
 public:
+	~HudRenderer();
 	FlyAwayWindow flyAwayWindow;
 	RoundWindow roundWindow;
 	EndOfRoundWindow endOfRoundWindow;
@@ -30,8 +33,8 @@ public:
 	Label shotScoreLabel;
 	Label scoreLabel;
 	Label roundLabel;
-	explicit HudRenderer(Gamelib& game);
-	void draw(const float& dt);
+	explicit HudRenderer(Gamelib* game, Fonts* fonts);
+	void draw(const float dt);
 };
 
 

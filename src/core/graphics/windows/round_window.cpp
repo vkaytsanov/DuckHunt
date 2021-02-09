@@ -5,12 +5,12 @@
 #include "include/round_window.h"
 #include "../../include/game_utils.h"
 
-RoundWindow::RoundWindow(Gamelib& game) : game(game) {
-	background = game.dataSystem->assets.getSprite("window");
+RoundWindow::RoundWindow(Gamelib* game, Fonts* fonts) : game(game) {
+	background = game->dataSystem->assets.getSprite("window");
 	setSize(200, 90);
 	setPosition(GRAPHICS_WIDTH / 2 - getWidth() / 2, GRAPHICS_HEIGHT / 2 - getHeight() * 2);
 	setVisible(false);
-	auto* style = new LabelStyle("pixel-emulator.ttf", 20);
+	style = new LabelStyle(fonts->getMainFont(), 20);
 
 	roundLabel.setText("ROUND");
 	roundLabel.setStyle(style);
@@ -32,7 +32,10 @@ void RoundWindow::draw() {
 }
 
 void RoundWindow::update() {
-	roundNumber.setText(std::to_string(game.dataSystem->currentGameData.round));
+	roundNumber.setText(std::to_string(game->dataSystem->currentGameData.round));
 	roundNumber.updateText();
 }
 
+RoundWindow::~RoundWindow() {
+	delete style;
+}

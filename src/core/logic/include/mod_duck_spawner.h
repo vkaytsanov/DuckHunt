@@ -19,17 +19,19 @@ const int RED_DUCK_SPAWN_RATE = BLACK_DUCK_SPAWN_RATE + BLUE_DUCK_SPAWN_RATE + 1
 
 class ModDuckSpawner : public ModLogic{
 private:
-	Gamelib& game;
+	Gamelib* game;
 	std::mt19937 generator;
-	const std::uniform_int_distribution<int> dist;
+	const std::uniform_int_distribution<int> typesDistribution;
+	const std::uniform_int_distribution<int> locationDistribution;
+	const std::uniform_real_distribution<>   speedDistribution;
 	bool canSpawn;
 	int lastBlackDuckIndex;
 	int lastBlueDuckIndex;
 	int lastRedDuckIndex;
-	int getCandidate(const int& percent);
-	void spawn(Duck* duck) const;
+	int getCandidate(const int percent);
+	void spawn(Duck* duck);
 public:
-	explicit ModDuckSpawner(Gamelib& game);
+	explicit ModDuckSpawner(Gamelib* game);
 	void init() override;
 	void update() override;
 	void post(Event* e) override;

@@ -21,7 +21,7 @@
 
 class LogicSystem : public ModLogic{
 private:
-	Gamelib& game;
+	Gamelib* game;
 	std::vector<ModLogic*> modules;
 	ModEventHandler eventHandler;
 	ModScriptHandler scriptHandler;
@@ -35,7 +35,7 @@ private:
 	ModDifficultyController modDifficultyController;
 	bool initialLoadingComplete = false;
 public:
-    explicit LogicSystem(Gamelib& game);
+    explicit LogicSystem(Gamelib* game);
 	void init() override;
 	void update() override;
 	void post(Event* e) override;

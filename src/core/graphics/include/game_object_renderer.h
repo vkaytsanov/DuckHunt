@@ -11,11 +11,11 @@
 
 class GameObjectRenderer {
 private:
-	Gamelib& game;
-	void drawObject(EntityAnimated* e, const float& dt);
+	Gamelib* game;
+	void drawObject(EntityAnimated* e, const float dt);
 public:
-	explicit GameObjectRenderer(Gamelib& game);
-	void draw(const float& dt);
+	explicit GameObjectRenderer(Gamelib* game);
+	void draw(const float dt);
 
 };
 

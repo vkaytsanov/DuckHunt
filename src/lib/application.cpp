@@ -104,9 +104,9 @@ void Application::exitApp() {
 }
 
 Application::~Application() {
+	delete listener;
 	delete audio;
     delete logger;
-    delete listener;
     delete graphics;
     delete config;
 }

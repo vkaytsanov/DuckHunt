@@ -11,7 +11,7 @@
 
 #define SKIP_INTRO 0
 
-LogicSystem::LogicSystem(Gamelib& game) : game(game),
+LogicSystem::LogicSystem(Gamelib* game) : game(game),
                                           modCreateObjects(game),
                                           eventHandler(),
                                           scriptHandler(game),
@@ -40,7 +40,7 @@ void LogicSystem::init() {
 }
 
 void LogicSystem::update() {
-	if (game.gameStateManager->getCurrentState() == Playing) {
+	if (game->gameStateManager->getCurrentState() == Playing) {
 		eventHandler.update(modules);
 		scriptHandler.update();
 		for (ModLogic* mod : modules) {
@@ -54,20 +54,20 @@ void LogicSystem::post(Event* e) {
 		Lib::app->log("Event", "StartRound posted");
 #if SKIP_INTRO
 		// add event to start spawning
-		game.logicSystem->post(new StartSpawning());
+		game->logicSystem->post(new StartSpawning());
 		// Gives input to the playing screen
-		game.graphicsSystem->start(Playing);
-		Dog& dog = game.dataSystem->dogData.getDog();
+		game->graphicsSystem->start(Playing);
+		Dog& dog = game->dataSystem->dogData.getDog();
 		dog.setDrawBefore(true);
 		dog.setVisible(false);
 #else
-		game.audioSystem->playMusic(INTRO);
+		game->audioSystem->playMusic(INTRO);
 		scriptHandler.addScript(new DogSniffingScript(game));
 #endif
 		auto* s = dynamic_cast<StartRound*>(e);
 		if(s->difficultyLevel != NONE) {
-			game.gameStateManager->changeState(Playing);
-			game.dataSystem->currentGameData.difficultyLevel = s->difficultyLevel;
+			game->gameStateManager->changeState(Playing);
+			game->dataSystem->currentGameData.difficultyLevel = s->difficultyLevel;
 		}
 	}
 	if(e->name == "Reinitialize"){
